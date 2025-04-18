@@ -6,7 +6,7 @@ src = "src"
 title = "Super Dead"
 
 [build]
-build-dir = "superdead-rules"
+build-dir = "docs"
 create-missing = false
 
 [output.html]
