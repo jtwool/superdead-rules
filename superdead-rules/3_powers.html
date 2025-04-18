@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Powers - Super Dead</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Super Dead</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="powers"><a class="header" href="#powers">Powers</a></h1>
+<h2 id="using-powers"><a class="header" href="#using-powers">Using Powers</a></h2>
+<p>When you use a power, roll the dice associated with the level of the power you are using. If any of the dice meet or exceed the target number for the power, you succeed. If all of the dice you rolled are below your target number, then you have partially succeeded, and incur stress.</p>
+<p>Superhuman feats of power levels two or more levels below your own power level are trivial, and you can succeed at these feats without rolling.</p>
+<h2 id="power-level"><a class="header" href="#power-level">Power Level</a></h2>
+<p>In coordination with the Department of Justice and the Department of Defense,  the Department of Homeland Security's Mutant Registration and Protection Agency enumerated four categories of mutants, based on the threat they posed to public safety:</p>
+<ul>
+<li>Alpha-level mutants, who pose limited or no threat to public safety;</li>
+<li>Bravo-level mutants who pose moderate threat to public safety;</li>
+<li>Charlie-level mutants who pose a severe threat to public safety; and</li>
+<li>Zulu-level mutants, who pose a critical threat to public safety.</li>
+</ul>
+<p>MRPA did not require Alpha-level mutants to register with the government, but all mutants at Bravo-level and above were required to be registered. Charlie- and Zulu-level mutants were required to register, and serve 10-years in the U.S. armed forces.</p>
+<p>Powers at the Alpha and Bravo level, the domain of player characters in Super Dead, are considered "street level". At this level, heroes' powers are approximately equal to the destructiveness of handheld weapons. Though in practice, because of the versatility of powers, mutants will be more dangerous than an armed individual.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Level</th><th style="text-align: center">Dice</th><th style="text-align: center">TN</th><th style="text-align: left">Comparable Weapon</th><th style="text-align: left">Strength</th><th style="text-align: center">Speed</th></tr></thead><tbody>
+<tr><td style="text-align: left">Alpha</td><td style="text-align: center">2d4</td><td style="text-align: center">2</td><td style="text-align: left">Bat / Knife</td><td style="text-align: left">800 lbs</td><td style="text-align: center">30 MPH</td></tr>
+<tr><td style="text-align: left">Bravo 1</td><td style="text-align: center">2d6</td><td style="text-align: center">3</td><td style="text-align: left">Handgun</td><td style="text-align: left">2000 lbs</td><td style="text-align: center">45 MPH</td></tr>
+<tr><td style="text-align: left">Bravo 2</td><td style="text-align: center">2d8</td><td style="text-align: center">4</td><td style="text-align: left">Rifle</td><td style="text-align: left">5 ton</td><td style="text-align: center">60 MPH</td></tr>
+<tr><td style="text-align: left">Bravo 3</td><td style="text-align: center">3d8</td><td style="text-align: center">4</td><td style="text-align: left">Automatic Weapon</td><td style="text-align: left">10 ton</td><td style="text-align: center">75 MPH</td></tr>
+<tr><td style="text-align: left">Bravo 4</td><td style="text-align: center">3d10</td><td style="text-align: center">5</td><td style="text-align: left">Machine Gun</td><td style="text-align: left">20 ton</td><td style="text-align: center">90 MPH</td></tr>
+</tbody></table>
+</div>
+<h2 id="using-your-powers"><a class="header" href="#using-your-powers">Using your powers</a></h2>
+<p>When you declare your intent to use super powers, the gamemaster may have you roll to determine the outcome. If they do, you will attempt to roll your dice pool associated with the level of that power, against the target number of the effect you are trying to create. If at least 1 die exceeds the target number, you succeed.</p>
+<p>If no die exceeds the target number, your attempt succeeds, but you incur a point of <strong>stress</strong> may <strong>crack</strong> as a result.</p>
+<p>Normally, you may attempt to create any effect at your power level or below it. Any effect three or more power levels below your current power level is considered trivial and should not require a roll.</p>
+<p>To create more intense effects, you will need to use a <a href="#power-surge"><strong>power surge</strong></a>.</p>
+<blockquote>
+<p><em><strong>Example:</strong> Sammy Strong has the power Super Strength at power-level Bravo 3. He can attempt to lift 10 tons by rolling 3d8 and attempting to get at least one 4, or 1 ton by exceeding a 3. He may also attempt to lift 800lbs without rolling. To lift 20 tons, he would need to power surge.</em></p>
+</blockquote>
+<h3 id="using-powers-while-cracked"><a class="header" href="#using-powers-while-cracked">Using Powers While Cracked</a></h3>
+<p>When you have cracked, your stress reduces your ability to control your powers.</p>
+<p>To succeed in using your powers while cracked, one die must exceed your target number as usual, and one other die must exceed your stress.</p>
+<p>If both conditions are not met, you lose control of your powers and the gamemaster determines what happens.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Power Mishap</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Disfigure Self</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Harm Ally</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Lose Access to Power</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Harm Self</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Harm Random</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">No effect</td></tr>
+</tbody></table>
+</div>
+<h2 id="power-surge"><a class="header" href="#power-surge">Power Surge</a></h2>
+<p>Your powers are not fixed; they ebb and flow with your energy, adrenaline and intensity. At critical times, you can surge your powers to achieve a more incredible effect than you are normally capable of. Doing so is stressful, but allows you to temporarily exceed your normal limitations.</p>
+<p>When you make a power surge attempt, pick a power level one or two levels above your current power level and roll your power dice against the target number for that power level. If you succeed, you achieve the intended effect. If you fail, your power surge attempt will fail or succeed with a significant cost.</p>
+<p>Regardless if you succeed or fail, you will incur <strong>stress</strong> after you power surge. Following a power surge attempt, you will take 1 point of stress for a 1 level power surge, and 3 points of stress for a 2 level power surge.</p>
+<h2 id="power-soak"><a class="header" href="#power-soak">Power Soak</a></h2>
+<p>Your powers also provide you with an enhanced durability. You can use your powers to soak damage. Whenever you would take a wound, instead, you may choose to soak that damage with one of your powers.</p>
+<p>When you soak damage, you temporarily reduce a power by as many levels as you would have taken wounds. Your power stays at this reduced level for 24 hours, or until you have a full night's sleep, whichever is longer.</p>
+<p>Powers reduced below Alpha in this way cannot be used until you have recovered.</p>
+<p>If you incur more wounds than you can soak with a single power, you can use multiple powers to soak the damage. If damage is partially soaked, the remainder is incurred as wounds.</p>
+<h2 id="complete-power-tables"><a class="header" href="#complete-power-tables">Complete Power Tables</a></h2>
+<p>While the tables above are sufficient for player characters, non-player characters may be more powerful. These complete power tables include the effectiveness of Charlie- and Zulu-level mutants.</p>
+<h5 id="table-complete-strength-speed-and-area-of-powers"><a class="header" href="#table-complete-strength-speed-and-area-of-powers">Table. Complete Strength, Speed and Area of Powers</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Level</th><th style="text-align: center">Strength</th><th style="text-align: center">Speed</th><th style="text-align: center">Area</th></tr></thead><tbody>
+<tr><td style="text-align: left">Alpha</td><td style="text-align: center">800 lbs</td><td style="text-align: center">30 MPH</td><td style="text-align: center">Personal</td></tr>
+<tr><td style="text-align: left">Bravo 1</td><td style="text-align: center">2000 lbs</td><td style="text-align: center">45 MPH</td><td style="text-align: center">Wall</td></tr>
+<tr><td style="text-align: left">Bravo 2</td><td style="text-align: center">5 ton</td><td style="text-align: center">60 MPH</td><td style="text-align: center">Small Room</td></tr>
+<tr><td style="text-align: left">Bravo 3</td><td style="text-align: center">10 ton</td><td style="text-align: center">75 MPH</td><td style="text-align: center">Large Room</td></tr>
+<tr><td style="text-align: left">Bravo 4</td><td style="text-align: center">20 ton</td><td style="text-align: center">90 MPH</td><td style="text-align: center">Floor</td></tr>
+<tr><td style="text-align: left">Charlie 1</td><td style="text-align: center">50 tons</td><td style="text-align: center">125 MPH</td><td style="text-align: center">Small Building</td></tr>
+<tr><td style="text-align: left">Charlie 2</td><td style="text-align: center">100 tons</td><td style="text-align: center">200 MPH</td><td style="text-align: center">Large Building</td></tr>
+<tr><td style="text-align: left">Zulu 1</td><td style="text-align: center">500 tons</td><td style="text-align: center">300 MPH</td><td style="text-align: center">City Block</td></tr>
+<tr><td style="text-align: left">Zulu 2</td><td style="text-align: center">1000 tons</td><td style="text-align: center">600 MPH</td><td style="text-align: center">Neighborhood</td></tr>
+<tr><td style="text-align: left">Zulu 3</td><td style="text-align: center">*</td><td style="text-align: center">*</td><td style="text-align: center">*</td></tr>
+</tbody></table>
+</div>
+<h5 id="table-complete-weapon-comparisons-of-powers"><a class="header" href="#table-complete-weapon-comparisons-of-powers">Table. Complete Weapon Comparisons of Powers</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Level</th><th style="text-align: center">Dice</th><th style="text-align: center">TN</th><th style="text-align: left">Comparable Weapon</th></tr></thead><tbody>
+<tr><td style="text-align: left">Alpha</td><td style="text-align: center">2d4</td><td style="text-align: center">2</td><td style="text-align: left">Bat / Knife</td></tr>
+<tr><td style="text-align: left">Bravo 1</td><td style="text-align: center">2d6</td><td style="text-align: center">3</td><td style="text-align: left">Handgun</td></tr>
+<tr><td style="text-align: left">Bravo 2</td><td style="text-align: center">2d8</td><td style="text-align: center">4</td><td style="text-align: left">Rifle</td></tr>
+<tr><td style="text-align: left">Bravo 3</td><td style="text-align: center">3d8</td><td style="text-align: center">4</td><td style="text-align: left">Automatic Weapon</td></tr>
+<tr><td style="text-align: left">Bravo 4</td><td style="text-align: center">3d10</td><td style="text-align: center">5</td><td style="text-align: left">Machine Gun</td></tr>
+<tr><td style="text-align: left">Charlie 1</td><td style="text-align: center">4d10</td><td style="text-align: center">6</td><td style="text-align: left">Rocket Propelled Grenade</td></tr>
+<tr><td style="text-align: left">Charlie 2</td><td style="text-align: center">4d12</td><td style="text-align: center">7</td><td style="text-align: left">Tank Gun</td></tr>
+<tr><td style="text-align: left">Zulu 1</td><td style="text-align: center">6d12</td><td style="text-align: center">8</td><td style="text-align: left">Tactical Missile</td></tr>
+<tr><td style="text-align: left">Zulu 2</td><td style="text-align: center">6d20</td><td style="text-align: center">9</td><td style="text-align: left">Short-Range Missile</td></tr>
+<tr><td style="text-align: left">Zulu 3</td><td style="text-align: center">10d20</td><td style="text-align: center">10</td><td style="text-align: left">Nuclear Bomb</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="2_1_character_creation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="4_combat.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="2_1_character_creation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="4_combat.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

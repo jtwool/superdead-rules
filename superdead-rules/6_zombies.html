@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Zombies - Super Dead</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Super Dead</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="zombies"><a class="header" href="#zombies">Zombies</a></h1>
+<p>Zombies are the omnipresent dread in the world of Super Dead. They lurk around every corner, and are an insatiable threat to even the strongest supers.</p>
+<h2 id="zombies-bites-and-turning-undead"><a class="header" href="#zombies-bites-and-turning-undead">Zombies Bites and Turning Undead</a></h2>
+<p>The thing that makes zombies terrifying as that if they bite you, you will turn into a zombie. Because the virus was originally created as a bioweapon to kill supers, are especially susceptible to this effect.</p>
+<p>A bite does not <em>always</em> turn someone undead.</p>
+<p>If you are a bitten, the game master will make a bite roll in secret and narrate the effects to you.</p>
+<h5 id="bite-outcome-table"><a class="header" href="#bite-outcome-table">Bite Outcome Table.</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Outcome</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Turn in seconds</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Turn in minutes</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Turn in hours</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Turn in days</td></tr>
+<tr><td style="text-align: center">5-6</td><td style="text-align: left">Safe</td></tr>
+</tbody></table>
+</div>
+<p>If you turn in minutes, hours or days, over the course of that time you will develop flu-like symptoms, that peak, break, and then disappear as your body gets cold and you become undead.</p>
+<h2 id="the-zomb-3"><a class="header" href="#the-zomb-3">The Zomb-3</a></h2>
+<p>Zombies are ravenous monsters that mindlessly hunt their prey. To a human, it looks like they follow a three-step process.</p>
+<ol>
+<li><strong>Search.</strong> The zombie wanders about, following sights and sounds to find potential prey. Zombies will always follow the closest sight or sound that suggest viable prey.</li>
+<li><strong>Close.</strong> The zombie makes its way towards its prey by the most direct means possible. Zombies can avoid obvious obstructions, but will fall for even a modestly disguised trap.</li>
+<li><strong>Devour.</strong> Once a zombie has closed on its prey, it will begin to grab and bite. With each bite, the virus will make its way into the zombie's victim. If they are lucky, they will bleed out before the virus turns them.</li>
+</ol>
+<h2 id="fighting-zombies"><a class="header" href="#fighting-zombies">Fighting Zombies</a></h2>
+<p>Zombies are a predictable, but deadly foe -- you must not let yourself get complacent.</p>
+<p><strong>During the <a href="4_combat.html#the-movement-phase">movement phase</a>,</strong> zombies will attempt to move towards the nearest person they see, until they are in immediate range of at least one opponent.</p>
+<p>If zombies are in immediate range of one or more opponents, they will attempt to stay in immediate range.</p>
+<p><strong>During the <a href="4_combat.html#the-hand-to-hand-phase">hand-to-hand phase</a>,</strong> zombies will attack with their rigor-mortis hardened, claw-like fingers and their infectious bites. Because most zombies are shambling, uncoordinated creatures, their bite only occurs if the zombie is still standing at the <strong>end of the hand-to-hand phase</strong>.</p>
+<p>This means that most zombies killed during the hand-to-hand phase will not be able to infect you.</p>
+<h3 id="killing-zombies"><a class="header" href="#killing-zombies">Killing Zombies</a></h3>
+<h2 id="threat-and-noise"><a class="header" href="#threat-and-noise">Threat and Noise</a></h2>
+<p>If a zombies is not actively devouring a victim, it is on the lookout for its next. Zombies feel neither fear nor exhaustion, and their hunger for flesh is never ending.</p>
+<p>If you are spotted by a zombie, you are in <a href="#fighting-zombies"><strong>combat with a zombie</strong></a>.</p>
+<p>If you are out of sight of zombies, and you make a loud enough noise, you will attract zombies.</p>
+<p>During the daytime, anything louder than a normal conversation will attract zombies. At nighttime, anything louder than a whisper can bring out the flesh-eating beasts.</p>
+<h5 id="table-zombies-attracted-by-noise-level"><a class="header" href="#table-zombies-attracted-by-noise-level">Table. Zombies Attracted by Noise Level</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Noise</th><th style="text-align: center">Daytime</th><th style="text-align: center">Nighttime</th></tr></thead><tbody>
+<tr><td style="text-align: left">Whisper</td><td style="text-align: center">-</td><td style="text-align: center">-</td></tr>
+<tr><td style="text-align: left">Conversation</td><td style="text-align: center">-</td><td style="text-align: center">1d10</td></tr>
+<tr><td style="text-align: left">Shout</td><td style="text-align: center">1d6</td><td style="text-align: center">2d10</td></tr>
+<tr><td style="text-align: left">Starting a car</td><td style="text-align: center">1d6</td><td style="text-align: center">2d10</td></tr>
+<tr><td style="text-align: left">Breaking a window</td><td style="text-align: center">2d6</td><td style="text-align: center">3d10</td></tr>
+<tr><td style="text-align: left">Starting a Motorcycle</td><td style="text-align: center">2d6</td><td style="text-align: center">3d10</td></tr>
+<tr><td style="text-align: left">Gunfire</td><td style="text-align: center">3d6</td><td style="text-align: center">4d10</td></tr>
+</tbody></table>
+</div>
+<p>Once a noise loud enough to attract zombies is made, the zombies are on their way.</p>
+<p>If the zombies will <strong>arrive all at once</strong>, they arrive in 2d6 minutes of real time.</p>
+<p>If the zombies will <strong>arrive in waves</strong>, then the first wave arrives in 1d8 minutes, each each subsequent wave arrives 1d8 minutes later.</p>
+<blockquote>
+<p><strong>Designer's note:</strong> If you are the game master, making these roles in secret can increase suspense. Set a timer on your phone out of sight of the players, and interrupt the action when the timer goes off.</p>
+</blockquote>
+<h3 id="fleeing-the-scene"><a class="header" href="#fleeing-the-scene">Fleeing the Scene</a></h3>
+<p>When players make noise to attract zombies, they will naturally want to flee the scene. Their chance of successfully fleeing depends on how close the zombies are to closing in on them and how many viable ways their are to approach the location where the noise is coming from.</p>
+<p>Zombies will use doors and other obvious pathways to get to their destinations, so if the players attempt to escape by the most obvious means, they are more likely to run into zombies.</p>
+<h5 id="table-fleeing-zombies"><a class="header" href="#table-fleeing-zombies">Table. Fleeing Zombies</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">2d6</th><th style="text-align: left">Flee Result</th><th style="text-align: left">Escape Tactic</th><th style="text-align: center">Modifier</th></tr></thead><tbody>
+<tr><td style="text-align: center">1-7</td><td style="text-align: left">Escape</td><td style="text-align: left">Take obvious path</td><td style="text-align: center">+1</td></tr>
+<tr><td style="text-align: center">8-9</td><td style="text-align: left">Spotted by Zombies</td><td style="text-align: left">Zombies are less than 2m away</td><td style="text-align: center">+1</td></tr>
+<tr><td style="text-align: center">10+</td><td style="text-align: left">Run into Zombies</td><td style="text-align: left">+10 zombies*</td><td style="text-align: center">+1</td></tr>
+</tbody></table>
+</div>
+<h2 id="zombie-hordes"><a class="header" href="#zombie-hordes">Zombie Hordes</a></h2>
+<p>A single zombie may be a threat to a normal person, but most survivors have figured out how to outsmart zombies 1-on-1. Zombies are most dangerous in groups. And in big groups, they are especially deadly.</p>
+<p>Groups of 20 or more zombies form a horde. Hordes move insatiably and undeterrably towards their victims before devouring them.</p>
+<p>Anyone who sees a horde incurs 1 point of <a href="2_characters.html#stress"><strong>stress</strong></a> and must make a <strong>courage save</strong>.</p>
+<p>Anyone who finds themselves within immediate range of a horde is devoured unless the entire horde is destroyed during the <a href="4_combat.html#the-hand-to-hand-phase"><strong>hand-to-hand combat phase</strong></a>.</p>
+<p>Your best bet to survive a horde is to run away. A successful <strong>athletics save</strong> allows you to move one zone away from a horde. If you fail your athletics save, you must succeed at a subsequent save, or else the horde <strong>closes in on you</strong>.</p>
+<p>When a horde closes in on you, your distance to the horde is reduced by one range. This is stressful. And if this would put you in immediate range of the horde, you immediately enter a <strong>hand-to-hand combat</strong> phase.</p>
+<p>Hordes can also be deterred, blocked, or delayed by environmental effects. For most supers, this will be their best approach to surviving a horde.</p>
+<h5 id="table-zombies-destroyed-by-environmental-feature"><a class="header" href="#table-zombies-destroyed-by-environmental-feature">Table. Zombies destroyed by environmental feature</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Environmental Feature</th><th style="text-align: right">Weight</th><th style="text-align: right">Zombies</th></tr></thead><tbody>
+<tr><td style="text-align: left">Car</td><td style="text-align: right">1 T</td><td style="text-align: right">2d20</td></tr>
+<tr><td style="text-align: left">Truck</td><td style="text-align: right">5 T</td><td style="text-align: right">3d20</td></tr>
+<tr><td style="text-align: left">Semi-Truck</td><td style="text-align: right">20 T</td><td style="text-align: right">5d20</td></tr>
+<tr><td style="text-align: left">Subway Car</td><td style="text-align: right">40 T</td><td style="text-align: right">8d20</td></tr>
+<tr><td style="text-align: left">Small Building</td><td style="text-align: right">+100 T</td><td style="text-align: right">15d20</td></tr>
+<tr><td style="text-align: left">Lg. Building</td><td style="text-align: right">+1,000 T</td><td style="text-align: right">25d20</td></tr>
+</tbody></table>
+</div>
+<p><strong>Shooting</strong> at hordes is mostly ineffective because of the sheer number of zombies present. Some very high output, area fire weapons, like machine guns, can be useful against hordes of less than 50 zombies.</p>
+<h2 id="kinds-of-zombies"><a class="header" href="#kinds-of-zombies">Kinds of Zombies</a></h2>
+<h3 id="shamblers"><a class="header" href="#shamblers">Shamblers</a></h3>
+<p>Most zombies are shamblers: slow, drudging zombies that move at you as fast as they can, but that is not very fast at all.</p>
+<p><strong>Stats.</strong> 4 Ath., 2 Int.</p>
+<p><strong>Movement.</strong> Shamblers always move at <a href="4_combat.html#the-movement-phase">regular speed</a>.</p>
+<p><strong>Attack.</strong> Shamblers bite only at the end of the <a href="4_combat.html#the-hand-to-hand-phase">hand-to-hand phase</a>.</p>
+<h3 id="crickets"><a class="header" href="#crickets">Crickets</a></h3>
+<p>Crickets get their name from the way they hop about on all fours. These zombies are fast and agile, in addition to being enraged.</p>
+<p><strong>Stats.</strong> 8 Ath., 2 Int.</p>
+<p><strong>Movement.</strong> Crickets always move at <a href="4_combat.html#the-movement-phase">reckless speed</a>.</p>
+<p><strong>Attack.</strong> Crickets bites happen at the end of each hand-to-hand <strong>exchange</strong>.</p>
+<h3 id="poppers"><a class="header" href="#poppers">Poppers</a></h3>
+<p>Poppers are bloated zombies, full of infectious fluid. They move slowly and awkwardly, with stiff joints struggling against taught, waterlogged flesh.</p>
+<p><strong>Stats.</strong> 3 Ath., 2 Int.</p>
+<p><strong>Movement.</strong> Poppers always move at <a href="4_combat.html#the-movement-phase">regular speed</a>.</p>
+<p><strong>Attack.</strong> Poppers bite at the end of every hand-to-hand phase, like shamblers.</p>
+<p><strong>Popping.</strong> If a popper takes damage during any phase, it has a 1-in-2 chance of <strong>popping</strong>. If you are in immediate range of a popping popper, you must succeed at a <strong>hard</strong> athletics save or be subject to the effects of <a href="#bite-outcome-table">a bite</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="5_gear.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="7_exploration.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="5_gear.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="7_exploration.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

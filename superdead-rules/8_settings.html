@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Micro Settings - Super Dead</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Super Dead</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="micro-settings"><a class="header" href="#micro-settings">Micro Settings</a></h1>
+<p>The following micro settings are designed to get you into the game quickly.</p>
+<h2 id="gulf-pearl-texas"><a class="header" href="#gulf-pearl-texas">Gulf Pearl, Texas</a></h2>
+<p>Gulf Pearl is a massive, sprawling graveyard of a city. It’s giant highways served as deathtraps for those who sought to escape, and the mobs of zombies that roam the streets at night prove it: everything is bigger in Texas.</p>
+<p>The shining beacon of Gulf Pearl is and has always been the headquarters of the American Oil Corporation. Their business has long since diversified from oil, but now it rests almost entirely on surviving the end of days.</p>
+<p>Other surviving factions include the remnants of an international drug cartel and government rocket scientists at NASA.</p>
+<h6 id="gulf-pearl-rumors-table"><a class="header" href="#gulf-pearl-rumors-table">Gulf Pearl Rumors Table</a></h6>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Rumors</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">A group of survivors have escaped from the AOC compound and have information about what life is like on the inside.</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">An area previously held by the cartels has been overrun by zombies. Likely leaving tons of weapons and ammo behind.</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">A group of survivors is going to break into the gearing up to break into the NASA complex, to see if there is anyone alive capable of creating a cure.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">American Oil executives believe that one of their rigs in the gulf remains entirely uninfected and is commissioning a mission to investigate.</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Valencia Vibora, a powerful mutant, is trying to reassemble the cartel, beginning with drug- and gun-running operations.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Scientists at NASA believe they are close to finding a way to inoculate people against the virus, but the treatment is killing many of those its tested on.</td></tr>
+</tbody></table>
+</div>
+<h2 id="san-buho-california"><a class="header" href="#san-buho-california">San Buho, California</a></h2>
+<p>They say a criminal always returns to the scene of the crime. That’s exactly what some survivors of San Buho think that the Navy is doing back in town.</p>
+<p>With an operational aircraft carrier, and a third of the naval base liberated from the undead, the Navy’s outpost in San Buho may be the most secure place to lay one’s head in the world after.</p>
+<p>But some factions aren’t quick to forgive: like the Blind Devil biker gang, or local parishioners and survivors of Our Lady of Guadalupe’s mutant priest: Father Juan Ayala.</p>
+<h6 id="san-buho-rumors-table"><a class="header" href="#san-buho-rumors-table">San Buho Rumors Table</a></h6>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Rumors</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">The Navy is planning to welcome healthy survivors onto the base on Saturday.</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">The Blind Devil biker gang is planning a joy ride to bring massive hordes of zombies to the doorstep of the San Buho navel based.</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Father Ayala's flock is growing too big, and he needs to find a new safe place to shelter his congregation.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">The Blind Devils have a small marijuana plantation that is drawing the ire of Father Ayala.</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Frank the Frog is sheltering a few survivors in an old public swimming pool complex.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Hundreds of zombies have been seen milling around the parking lot of an Big Box store.</td></tr>
+</tbody></table>
+</div>
+<h2 id="skunk-city-iowa"><a class="header" href="#skunk-city-iowa">Skunk City, Iowa</a></h2>
+<p>Skunk City’s survivors are the motly, scrappy residents of a Midwestern College town. While farmers and academics, pastors and doctors wouldn’t normally have much in common, they’re finding ways to get along.</p>
+<p>But as it has always been with Skunk City, new people keep showing up and they don’t always care about the survivors of Skunk City.</p>
+<p>Skunk City’s factions include a coalition of independent farmers, holding onto their land, and a mutant doctor who will do anything to find a cure.</p>
+<h6 id="skunk-city-rumors-table"><a class="header" href="#skunk-city-rumors-table">Skunk City Rumors Table</a></h6>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Rumors</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Dr. Lori Osprey has established a small compound in a wing of the hospital, where she is searching for a cure.</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">The university football stadium is now overgrown with corn, after two mutants have moved in.</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">A group of survivors has been holed up in the library for weeks, but is running out of supplies.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">A new group of survivors has come West from Chicago and is plundering everything they can find.</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Henry Hodgesen and a few other farmers are planning to confront Skunk City's new guests.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">The Ferris brothers have styled themselves as samurai and started selling moonshine out of an apartment building south of town.</td></tr>
+</tbody></table>
+</div>
+<h2 id="fellsmore-maryland"><a class="header" href="#fellsmore-maryland">Fellsmore, Maryland</a></h2>
+<p>The streets of Fell, Maryland are as dangerous as ever.  The surviving residents take to heart that the gang violence their city could never tamper would not be stopped by a zombie apocalpyse either.</p>
+<p>While eastside and westside gangsters fight between and amongst themselves, the Dockworkers Union have carved out a patch of life down by the docks, and a group of survivors are holed up in the reknowned Sammuel Johns hospital searching for a cure.</p>
+<p>And on the streets, a rumor is going around that a member of the Fell’s Street Five superhero team may have survived after all.</p>
+<h6 id="fellsmore-rumors-table"><a class="header" href="#fellsmore-rumors-table">Fellsmore Rumors Table</a></h6>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Rumors</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">The westside gang WMD is demanding protection payments from the survivors at Sammuel Johns' hospital, but the survivors haven't been able to pay</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Eastside gang violence has become so extreme, that the daytime is now as dangerous as night.</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">A group of former police are waging a guerilla war against the gangs and rallying independent survivors.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">The Dockworkers are running out of food, but are afraid to leave their bay-side sanctuary.</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Carver's Killer Krab gang has been gaining swathes of territory on the westside, and is trying to unite the westside gangs.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">The survivors at Sammuel Johns' hospital need a power supply to better investigate a cure; they have located a mobile nuclear reactor at a data center outside the city.</td></tr>
+</tbody></table>
+</div>
+<h2 id="west-moriches-new-york"><a class="header" href="#west-moriches-new-york">West Moriches, New York</a></h2>
+<p>60 miles from the ruins of New York City, a small sanctuary has emerged in the city of West Moriches.</p>
+<p>Protected by Gregory "Geo Dude" Godwin and the rock walls he has erected around the city, West Moriches offers a haven from which survivors can venture out into the zombie wasteland, in search of survivors or a cure.</p>
+<blockquote>
+<p><strong>Designer's Note:</strong> Though this setting can be used for any type of campaign, it is particularly intended for a "West Marches" style campaign that gets more challenging as the players farther and farther west towards New York City.</p>
+</blockquote>
+<h5 id="west-moriches-adventure-hooks"><a class="header" href="#west-moriches-adventure-hooks">West Moriches Adventure Hooks</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Hooks</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Some survivors are taking refuge at a former Italian restaurant.</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">The Hockey Store a town over has a great supply of gear that could be used as armor.</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">A nearby police station looks like its undistributed. There is surely a stockpile of ammunition and weapons to be had there.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Katzenelli's never served fresh fish. They always kept it in a huge freezer in the basement. Maybe there still some left?</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Gunfire was spotted last night in North Moriches. There could still be survivors there.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Several people spotted a man flying around the Moriches Water Tower last night. It could be useful to have a flying mutant ally.</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="7_exploration.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="9_inspiration.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="7_exploration.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="9_inspiration.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

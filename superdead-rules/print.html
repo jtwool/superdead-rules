@@ -1,0 +1,978 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Super Dead</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Super Dead</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p><strong>Super Dead</strong> is a superhero-horror roleplaying game that takes place in a zombie-apocalypse world caused by the U.S. Navy's botched attempt to prevent World War 3. In this game, you will take the role of a mutant-powered survivor and attempt to make what you can out of the end of the world.</p>
+<p>You will gather supplies, rescue survivors, and face off against villains, while staying one step ahead of the ever present zombie threat.</p>
+<p>Super Dead is designed to be rules-light and intuitive, encouraging quick, narrative-driven decision making, inspired by the <a href="https://newschoolrevolution.com/what-is-the-new-school-revolution-part-1/">New School Revolution</a> in tabletop gaming as well as modern tactical war games.</p>
+<p>Everything you need to play can be found in this ruleset.</p>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">The rules to Super Dead are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+<hr />
+<h1 id="quick-start-28-rules-later"><a class="header" href="#quick-start-28-rules-later">Quick Start: 28 Rules Later</a></h1>
+<p>If you're an experienced TTRPG player, or you have already read the rules, the following 28 rules might be enough for you to play an entire game of Super Dead.</p>
+<p>Other plays can read the full rules.</p>
+<p><strong>Characters</strong></p>
+<ol>
+<li>Characters are defined by super powers and <a href="2_characters.html#attributes-and-saves"><strong>four attributes</strong></a>: athleticism, intellignece, personality, courage.</li>
+<li>To make an attribute save roll 1d10 under the attribute.</li>
+<li>To use your powers, roll your power die pool and look for one die above the target number.</li>
+</ol>
+<p><strong>Powers</strong></p>
+<ol start="4">
+<li><a href="3_powers.html"><strong>Powers</strong></a> can be used to create supernatural effects; all power uses must be narratively consistent.</li>
+<li>You can <a href="3_powers.html#power-surge"><strong>power surge</strong></a> to create particularly powerful effects, at the cost of stress.</li>
+<li>You can also <a href="3_powers.html#power-soak"><strong>power soak</strong></a> instead of taking a wound.</li>
+<li>If there is a question about whether a power could be used in a given way, err on the side of allowing a <a href="3_powers.html#power-surge"><strong>power surge</strong></a> attempt to decide.</li>
+</ol>
+<p><strong>Combat</strong></p>
+<ol start="8">
+<li>Combat takes place in rounds of three phases: movement, hand-to-hand, and shooting.</li>
+<li>During <strong><a href="4_combat.html#the-movement-phase">the movement phase</a></strong>, you can move 30 feet normally, or 100 feet recklessly.</li>
+<li>If you move into another's line of sight, they can make a ranged opportunity attack against you.</li>
+<li>During the <strong><a href="4_combat.html#the-hand-to-hand-phase">hand-to-hand phase</a></strong>, up to three exchanges of hand-to-hand combat can take place for all combatants in immediate range of one another.</li>
+<li>During <strong><a href="4_combat.html#the-shooting-phase">the shooting phase</a></strong>, each combatant outside immediate range may shoot at one target.</li>
+</ol>
+<p><strong>Wounds</strong></p>
+<ol start="13">
+<li>When you take damage, subtract your armor from the damage taken. If there is damage remaining, you take one wound for every three damage taken.</li>
+<li>There are four levels of <a href="4_combat.html#attacks-damage-and-wounds"><strong>wounds</strong></a>: healthy, hurt, wounded, disfigured.</li>
+<li>You recover from being hurt after each combat, and from being wounded after receiving medical attention.</li>
+<li>Wounds have lingering effects that last for up to 28 days.</li>
+<li><a href="4_combat.html#disfigurement-and-death"><strong>Disfigurement</strong></a> is permanent; if you would be disfigured in the same way twice, you die instead.</li>
+</ol>
+<p><strong>Stress</strong></p>
+<ol start="18">
+<li>Life in the apocalypse is stressful. You will accumulate stress when you do hard things.</li>
+<li>If you accumulate a point of stress, you must succeed at a courage save or crack.</li>
+<li>While <a href="2_characters.html#stress"><strong>cracked</strong></a>, everything is hard, and any time you try to use your powers, you must exceed both your target number and your stress number.</li>
+<li>You can <a href="2_characters.html#stress-relief"><strong>relieve stress</strong></a> by doing relaxing or enjoyable activities and making a successful personality save.</li>
+</ol>
+<p><strong>Zombies</strong></p>
+<ol start="22">
+<li>Making noise attracts zombies and you are more likely to attract them at night.</li>
+<li>Zombies will move towards you as fast and directly as they can and attempt to bite you.</li>
+<li>If you get bitten you will likely (4/6) die.</li>
+<li>Dying may take (1/6) seconds, minutes (1/6), hours (1/6) or (1/6) days, depending on how the virus effects you.</li>
+<li>Encountering a horde of twnety of more zombies is terrifying and stressful.</li>
+<li>Though hordes may be defeated,through combat, your best is to run away or use environmental features.</li>
+<li>Anyone who finds themselves in immediate range of a zombie horde is devoured.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="characters"><a class="header" href="#characters">Characters</a></h1>
+<h2 id="attributes-and-saves"><a class="header" href="#attributes-and-saves">Attributes and Saves</a></h2>
+<p>The non-super traits of your character in Super Dead are represented by four attributes: athleticism, intelligence, personality, and courage.</p>
+<ul>
+<li><strong>Athleticism</strong> represents feats of strength, speed, and agility.</li>
+<li><strong>Intelligence</strong> represents cunning and knowledge.</li>
+<li><strong>Personality</strong> represents your ability to persuade and convince others.</li>
+<li><strong>Courage</strong> represents your ability to overcome fear and stress.</li>
+</ul>
+<p>When something you do might have a cost to you, you will make a save against the relevant attribute by rolling 1d10. If the roll is under your attribute, you have succeeded and you will avoid all or most of the cost. If the roll is above your attribute, you may succeed, but you will incur a setback or pay a cost.</p>
+<p>Because not all tasks are created equal, some saves will be harder than others. When a save is easier than normal, you will subtract a number from your roll; when the save is harder than normal, you will add a number to your roll. These bonuses or penalties are added at the game master's discretion.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Circumstance</th><th style="text-align: center">Modifier</th></tr></thead><tbody>
+<tr><td style="text-align: left">Very Easy</td><td style="text-align: center">-2</td></tr>
+<tr><td style="text-align: left">Easy</td><td style="text-align: center">-1</td></tr>
+<tr><td style="text-align: left"><strong>Normal</strong></td><td style="text-align: center">-</td></tr>
+<tr><td style="text-align: left">Hard</td><td style="text-align: center">+1</td></tr>
+<tr><td style="text-align: left">Very Hard</td><td style="text-align: center">+2</td></tr>
+<tr><td style="text-align: left">Extremely Hard</td><td style="text-align: center">+4</td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p><strong>Designer's Note:</strong> <em>Super Dead is not a "bonus tallying" system. So two things that are hard do not necessarily become very hard, and hard and easy do not necessarily cancel out. The narrative scenario is evaluated in full by the game master and a single bonus is determined for the roll.</em></p>
+</blockquote>
+<h2 id="skills"><a class="header" href="#skills">Skills</a></h2>
+<p>Skills are areas of training where characters have mastered tasks that would ordinarily be challenging or impossible if untrained.</p>
+<p>The following tasks are <strong>hard</strong>, unless trained: <strong>fighting</strong>, <strong>first aid</strong>, <strong>repair</strong>, <strong>shooting</strong>.</p>
+<p>The following tasks are impossible unless trained: <strong>engineering</strong>, <strong>medicine</strong>, <strong>performance</strong>, <strong>science</strong>.</p>
+<p>Most characters are unprepared for the end of days and will not have any skills.</p>
+<h2 id="stress"><a class="header" href="#stress">Stress</a></h2>
+<p>After avoiding zombies, the next most important thing you can do in the end of days is keep your cool. Your success at keeping your cool is measured by your <strong>stress</strong>.</p>
+<p>As you adventure, you will suffer from the stresses of the end of the world. Each time you incur a point of stress, you must make a <strong>courage save</strong>. If you fail, you have <strong>cracked</strong>.</p>
+<p>When you crack, everything you do becomes <strong>hard</strong>. If you have cracked and have more than four points of stress, everything you do is <strong>very hard</strong>; If you have cracked with more than eight points of stress, everything you do is <strong>extremely hard</strong>.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">Stress</th><th style="text-align: center">Difficulty</th><th style="text-align: center">Modifier</th></tr></thead><tbody>
+<tr><td style="text-align: center">0-4</td><td style="text-align: center">Hard</td><td style="text-align: center">+1</td></tr>
+<tr><td style="text-align: center">5-7</td><td style="text-align: center">Very Hard</td><td style="text-align: center">+2</td></tr>
+<tr><td style="text-align: center">8+</td><td style="text-align: center">Extremely Hard</td><td style="text-align: center">+4</td></tr>
+</tbody></table>
+</div>
+<h3 id="stress-relief"><a class="header" href="#stress-relief">Stress Relief</a></h3>
+<p>Resting in a safe place provides some relief from stress. If you can manage to find such a place, a successful <strong>personality test</strong> reduces your stress by 1 point for every 8 hours of rest.</p>
+<p>Additionally, you will have a preferred form of stress relief. If you engage in that activity during your rest, you reduce your stress by an additional 1 point.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Form of Stress Relief</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Creative Pursuit</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Indulgence</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Physical Exercise</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Play Games</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Substance Abuse</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Socializing</td></tr>
+</tbody></table>
+</div>
+<h2 id="background"><a class="header" href="#background">Background</a></h2>
+<p>Even if it's hard to remember now, you were someone before the end of the world.</p>
+<p>Every character has a background. This background may allow you to have skills, at the game masters discretion, and may make certain tasks easier for you than others.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">d20</th><th style="text-align: left">Background</th><th style="text-align: center">d20</th><th style="text-align: left">Background</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Agriculture</td><td style="text-align: center">11</td><td style="text-align: left">Hospitality</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Arts &amp; Ent.</td><td style="text-align: center">12</td><td style="text-align: left">Law</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Athletics</td><td style="text-align: center">13</td><td style="text-align: left">Manufacturing</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Business</td><td style="text-align: center">14</td><td style="text-align: left">Military</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Construction</td><td style="text-align: center">15</td><td style="text-align: left">Police or Fire</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Education</td><td style="text-align: center">16</td><td style="text-align: left">Retail or Sales</td></tr>
+<tr><td style="text-align: center">7</td><td style="text-align: left">Engineering</td><td style="text-align: center">17</td><td style="text-align: left">Science</td></tr>
+<tr><td style="text-align: center">8</td><td style="text-align: left">Food Serv.</td><td style="text-align: center">18</td><td style="text-align: left">Technology</td></tr>
+<tr><td style="text-align: center">9</td><td style="text-align: left">Government</td><td style="text-align: center">19</td><td style="text-align: left">Therapy</td></tr>
+<tr><td style="text-align: center">10</td><td style="text-align: left">Healthcare</td><td style="text-align: center">20</td><td style="text-align: left">Transportation</td></tr>
+</tbody></table>
+</div>
+<p>Backgrounds are not strictly professions, but rather broad areas of familiarity. You should specify your background as it applies to your character.</p>
+<h2 id="improving-your-character"><a class="header" href="#improving-your-character">Improving Your Character</a></h2>
+<p>As you adventure, you will gain experience.</p>
+<p>When you gain 300 experience points, you can improve your character. Every subsequent improvement costs an additional 300 experience, (e.g., 600, 900, 1200, etc.)</p>
+<p>When you improve your character, roll 1d6. On a 1-3, select from list A; on a 4-5, select from list B; on a 6, select from both lists.</p>
+<p>Note that there is a limit to the number of times a given improvement can be taken.</p>
+<p><strong>Personal Improvements</strong></p>
+<ul>
+<li>Increase your Athleticism by 1 (2 times)</li>
+<li>Increase your Intelligence by 1 (3 times)</li>
+<li>Increase your Personality by 1 (2 times)</li>
+<li>Increase your Courage by 1 (4 times)</li>
+</ul>
+<p><strong>Power Improvements</strong></p>
+<ul>
+<li>Develop a new Alpha power (2d4) (1 time)</li>
+<li>Develop a new power Bravo 1 power (2d6) (1 time)</li>
+<li>Increase a power one die type (6 times)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="character-creation"><a class="header" href="#character-creation">Character Creation</a></h1>
+<p>The following steps can be used to quickly create Super Dead characters.</p>
+<h4 id="1-roll-attributes"><a class="header" href="#1-roll-attributes">1. Roll Attributes</a></h4>
+<p>Roll 4d6. Add 2 to each die and assign each value to an attribute. Higher is better.</p>
+<h4 id="2-powers"><a class="header" href="#2-powers">2. Powers</a></h4>
+<p>Select either 2 powers at the Bravo 1 (2d6) level or 1 power at the Bravo 2 (2d8) level.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">d20</th><th style="text-align: left">Power</th><th style="text-align: center">d20</th><th style="text-align: left">Power</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Absorption</td><td style="text-align: center">11</td><td style="text-align: left">Senses</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Alternate Form</td><td style="text-align: center">12</td><td style="text-align: left">Speed</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Energy Control</td><td style="text-align: center">13</td><td style="text-align: left">Strength</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Healing</td><td style="text-align: center">14</td><td style="text-align: left">Super Skill</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Intelligence</td><td style="text-align: center">15</td><td style="text-align: left">Super Weapon</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Invisibility</td><td style="text-align: center">16</td><td style="text-align: left">Telekinesis</td></tr>
+<tr><td style="text-align: center">7</td><td style="text-align: left">Magic</td><td style="text-align: center">17</td><td style="text-align: left">Telepathy</td></tr>
+<tr><td style="text-align: center">8</td><td style="text-align: left">Marksmanship</td><td style="text-align: center">18</td><td style="text-align: left">Teleportation</td></tr>
+<tr><td style="text-align: center">9</td><td style="text-align: left">Matter Control</td><td style="text-align: center">19</td><td style="text-align: left">Toughness</td></tr>
+<tr><td style="text-align: center">10</td><td style="text-align: left">Mind Control</td><td style="text-align: center">20</td><td style="text-align: left">Transformation</td></tr>
+</tbody></table>
+</div>
+<h4 id="3-background"><a class="header" href="#3-background">3. Background</a></h4>
+<p>Roll 1d20 for a random background.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">d20</th><th style="text-align: left">Background</th><th style="text-align: center">d20</th><th style="text-align: left">Background</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Agriculture</td><td style="text-align: center">11</td><td style="text-align: left">Hospitality</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Arts &amp; Ent.</td><td style="text-align: center">12</td><td style="text-align: left">Law</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Athletics</td><td style="text-align: center">13</td><td style="text-align: left">Manufacturing</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Business</td><td style="text-align: center">14</td><td style="text-align: left">Military</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Construction</td><td style="text-align: center">15</td><td style="text-align: left">Police or Fire</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Education</td><td style="text-align: center">16</td><td style="text-align: left">Retail or Sales</td></tr>
+<tr><td style="text-align: center">7</td><td style="text-align: left">Engineering</td><td style="text-align: center">17</td><td style="text-align: left">Science</td></tr>
+<tr><td style="text-align: center">8</td><td style="text-align: left">Food Serv.</td><td style="text-align: center">18</td><td style="text-align: left">Technology</td></tr>
+<tr><td style="text-align: center">9</td><td style="text-align: left">Government</td><td style="text-align: center">19</td><td style="text-align: left">Therapy</td></tr>
+<tr><td style="text-align: center">10</td><td style="text-align: left">Healthcare</td><td style="text-align: center">20</td><td style="text-align: left">Transportation</td></tr>
+</tbody></table>
+</div>
+<h4 id="4-flaws"><a class="header" href="#4-flaws">4. Flaws</a></h4>
+<p>Roll  1d20 for a random flaw.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d20</th><th style="text-align: left">Flaw</th><th style="text-align: center">1d20</th><th style="text-align: left">Flaw</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Addicted</td><td style="text-align: center">11</td><td style="text-align: left">Indecisive</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Arrogant</td><td style="text-align: center">12</td><td style="text-align: left">Jealous</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Bleeding Heart</td><td style="text-align: center">13</td><td style="text-align: left">Lazy</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Clumsy</td><td style="text-align: center">14</td><td style="text-align: left">Liar</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Cold</td><td style="text-align: center">15</td><td style="text-align: left">Mean</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Cowardly</td><td style="text-align: center">16</td><td style="text-align: left">Narcissist</td></tr>
+<tr><td style="text-align: center">7</td><td style="text-align: left">Death Wish</td><td style="text-align: center">17</td><td style="text-align: left">Reckless</td></tr>
+<tr><td style="text-align: center">8</td><td style="text-align: left">Despair</td><td style="text-align: center">18</td><td style="text-align: left">Secret</td></tr>
+<tr><td style="text-align: center">9</td><td style="text-align: left">Heroic</td><td style="text-align: center">19</td><td style="text-align: left">Stubborn</td></tr>
+<tr><td style="text-align: center">10</td><td style="text-align: left">Honorable</td><td style="text-align: center">20</td><td style="text-align: left">Tongue Tied</td></tr>
+</tbody></table>
+</div>
+<h4 id="5-stress-relief"><a class="header" href="#5-stress-relief">5. Stress Relief</a></h4>
+<p>Roll  1d6 for a random form of stress relief.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Form of Stress Relief</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Creative Pursuit</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Indulgence</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Physical Exercise</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Play Games</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Substance Abuse</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Socializing</td></tr>
+</tbody></table>
+</div>
+<h4 id="6-equipment"><a class="header" href="#6-equipment">6. Equipment</a></h4>
+<p>Add any equipment your character may have, depending on their background.</p>
+<h2 id="new-survivors"><a class="header" href="#new-survivors">New Survivors</a></h2>
+<p>When creating new parties, roll on the following table to create bonds between the characters.</p>
+<p>Assuming there are more than two players in the party, each player should roll at least twice. Each time, pick a player you do not already have a bond with.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d10</th><th style="text-align: left">Bond</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">They have confided a secret in you. They'll tell you what it is and why nobody else can know.</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">You have saved their life. They'll tell you how.</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">You've given a player something they desperately needed. They'll tell you what it was and why they needed it.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">You've done something terrible to another player. They'll tell you what it was and how they feel about it now.</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">You've tended to another player while they were injured. They'll tell you what injury they had and what you did for them.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">You helped another player find something personal to them. They'll tell you what it was and add it to their gear.</td></tr>
+<tr><td style="text-align: center">7</td><td style="text-align: left">You helped another player steal something. They'll tell you what you still, who you stole it from, and add it to their character sheet.</td></tr>
+<tr><td style="text-align: center">8</td><td style="text-align: left">Another player and you are friends from before the end of the world. They'll tell you how the two of you two met and how long you've known each other.</td></tr>
+<tr><td style="text-align: center">9</td><td style="text-align: left">Another player was there when you first manifested your powers. They'll tell you how it happened.</td></tr>
+<tr><td style="text-align: center">10</td><td style="text-align: left">You got another player out of a tight spot. They'll tell you what it was.</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="powers"><a class="header" href="#powers">Powers</a></h1>
+<h2 id="using-powers"><a class="header" href="#using-powers">Using Powers</a></h2>
+<p>When you use a power, roll the dice associated with the level of the power you are using. If any of the dice meet or exceed the target number for the power, you succeed. If all of the dice you rolled are below your target number, then you have partially succeeded, and incur stress.</p>
+<p>Superhuman feats of power levels two or more levels below your own power level are trivial, and you can succeed at these feats without rolling.</p>
+<h2 id="power-level"><a class="header" href="#power-level">Power Level</a></h2>
+<p>In coordination with the Department of Justice and the Department of Defense,  the Department of Homeland Security's Mutant Registration and Protection Agency enumerated four categories of mutants, based on the threat they posed to public safety:</p>
+<ul>
+<li>Alpha-level mutants, who pose limited or no threat to public safety;</li>
+<li>Bravo-level mutants who pose moderate threat to public safety;</li>
+<li>Charlie-level mutants who pose a severe threat to public safety; and</li>
+<li>Zulu-level mutants, who pose a critical threat to public safety.</li>
+</ul>
+<p>MRPA did not require Alpha-level mutants to register with the government, but all mutants at Bravo-level and above were required to be registered. Charlie- and Zulu-level mutants were required to register, and serve 10-years in the U.S. armed forces.</p>
+<p>Powers at the Alpha and Bravo level, the domain of player characters in Super Dead, are considered "street level". At this level, heroes' powers are approximately equal to the destructiveness of handheld weapons. Though in practice, because of the versatility of powers, mutants will be more dangerous than an armed individual.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Level</th><th style="text-align: center">Dice</th><th style="text-align: center">TN</th><th style="text-align: left">Comparable Weapon</th><th style="text-align: left">Strength</th><th style="text-align: center">Speed</th></tr></thead><tbody>
+<tr><td style="text-align: left">Alpha</td><td style="text-align: center">2d4</td><td style="text-align: center">2</td><td style="text-align: left">Bat / Knife</td><td style="text-align: left">800 lbs</td><td style="text-align: center">30 MPH</td></tr>
+<tr><td style="text-align: left">Bravo 1</td><td style="text-align: center">2d6</td><td style="text-align: center">3</td><td style="text-align: left">Handgun</td><td style="text-align: left">2000 lbs</td><td style="text-align: center">45 MPH</td></tr>
+<tr><td style="text-align: left">Bravo 2</td><td style="text-align: center">2d8</td><td style="text-align: center">4</td><td style="text-align: left">Rifle</td><td style="text-align: left">5 ton</td><td style="text-align: center">60 MPH</td></tr>
+<tr><td style="text-align: left">Bravo 3</td><td style="text-align: center">3d8</td><td style="text-align: center">4</td><td style="text-align: left">Automatic Weapon</td><td style="text-align: left">10 ton</td><td style="text-align: center">75 MPH</td></tr>
+<tr><td style="text-align: left">Bravo 4</td><td style="text-align: center">3d10</td><td style="text-align: center">5</td><td style="text-align: left">Machine Gun</td><td style="text-align: left">20 ton</td><td style="text-align: center">90 MPH</td></tr>
+</tbody></table>
+</div>
+<h2 id="using-your-powers"><a class="header" href="#using-your-powers">Using your powers</a></h2>
+<p>When you declare your intent to use super powers, the gamemaster may have you roll to determine the outcome. If they do, you will attempt to roll your dice pool associated with the level of that power, against the target number of the effect you are trying to create. If at least 1 die exceeds the target number, you succeed.</p>
+<p>If no die exceeds the target number, your attempt succeeds, but you incur a point of <strong>stress</strong> may <strong>crack</strong> as a result.</p>
+<p>Normally, you may attempt to create any effect at your power level or below it. Any effect three or more power levels below your current power level is considered trivial and should not require a roll.</p>
+<p>To create more intense effects, you will need to use a <a href="3_powers.html#power-surge"><strong>power surge</strong></a>.</p>
+<blockquote>
+<p><em><strong>Example:</strong> Sammy Strong has the power Super Strength at power-level Bravo 3. He can attempt to lift 10 tons by rolling 3d8 and attempting to get at least one 4, or 1 ton by exceeding a 3. He may also attempt to lift 800lbs without rolling. To lift 20 tons, he would need to power surge.</em></p>
+</blockquote>
+<h3 id="using-powers-while-cracked"><a class="header" href="#using-powers-while-cracked">Using Powers While Cracked</a></h3>
+<p>When you have cracked, your stress reduces your ability to control your powers.</p>
+<p>To succeed in using your powers while cracked, one die must exceed your target number as usual, and one other die must exceed your stress.</p>
+<p>If both conditions are not met, you lose control of your powers and the gamemaster determines what happens.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Power Mishap</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Disfigure Self</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Harm Ally</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Lose Access to Power</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Harm Self</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Harm Random</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">No effect</td></tr>
+</tbody></table>
+</div>
+<h2 id="power-surge"><a class="header" href="#power-surge">Power Surge</a></h2>
+<p>Your powers are not fixed; they ebb and flow with your energy, adrenaline and intensity. At critical times, you can surge your powers to achieve a more incredible effect than you are normally capable of. Doing so is stressful, but allows you to temporarily exceed your normal limitations.</p>
+<p>When you make a power surge attempt, pick a power level one or two levels above your current power level and roll your power dice against the target number for that power level. If you succeed, you achieve the intended effect. If you fail, your power surge attempt will fail or succeed with a significant cost.</p>
+<p>Regardless if you succeed or fail, you will incur <strong>stress</strong> after you power surge. Following a power surge attempt, you will take 1 point of stress for a 1 level power surge, and 3 points of stress for a 2 level power surge.</p>
+<h2 id="power-soak"><a class="header" href="#power-soak">Power Soak</a></h2>
+<p>Your powers also provide you with an enhanced durability. You can use your powers to soak damage. Whenever you would take a wound, instead, you may choose to soak that damage with one of your powers.</p>
+<p>When you soak damage, you temporarily reduce a power by as many levels as you would have taken wounds. Your power stays at this reduced level for 24 hours, or until you have a full night's sleep, whichever is longer.</p>
+<p>Powers reduced below Alpha in this way cannot be used until you have recovered.</p>
+<p>If you incur more wounds than you can soak with a single power, you can use multiple powers to soak the damage. If damage is partially soaked, the remainder is incurred as wounds.</p>
+<h2 id="complete-power-tables"><a class="header" href="#complete-power-tables">Complete Power Tables</a></h2>
+<p>While the tables above are sufficient for player characters, non-player characters may be more powerful. These complete power tables include the effectiveness of Charlie- and Zulu-level mutants.</p>
+<h5 id="table-complete-strength-speed-and-area-of-powers"><a class="header" href="#table-complete-strength-speed-and-area-of-powers">Table. Complete Strength, Speed and Area of Powers</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Level</th><th style="text-align: center">Strength</th><th style="text-align: center">Speed</th><th style="text-align: center">Area</th></tr></thead><tbody>
+<tr><td style="text-align: left">Alpha</td><td style="text-align: center">800 lbs</td><td style="text-align: center">30 MPH</td><td style="text-align: center">Personal</td></tr>
+<tr><td style="text-align: left">Bravo 1</td><td style="text-align: center">2000 lbs</td><td style="text-align: center">45 MPH</td><td style="text-align: center">Wall</td></tr>
+<tr><td style="text-align: left">Bravo 2</td><td style="text-align: center">5 ton</td><td style="text-align: center">60 MPH</td><td style="text-align: center">Small Room</td></tr>
+<tr><td style="text-align: left">Bravo 3</td><td style="text-align: center">10 ton</td><td style="text-align: center">75 MPH</td><td style="text-align: center">Large Room</td></tr>
+<tr><td style="text-align: left">Bravo 4</td><td style="text-align: center">20 ton</td><td style="text-align: center">90 MPH</td><td style="text-align: center">Floor</td></tr>
+<tr><td style="text-align: left">Charlie 1</td><td style="text-align: center">50 tons</td><td style="text-align: center">125 MPH</td><td style="text-align: center">Small Building</td></tr>
+<tr><td style="text-align: left">Charlie 2</td><td style="text-align: center">100 tons</td><td style="text-align: center">200 MPH</td><td style="text-align: center">Large Building</td></tr>
+<tr><td style="text-align: left">Zulu 1</td><td style="text-align: center">500 tons</td><td style="text-align: center">300 MPH</td><td style="text-align: center">City Block</td></tr>
+<tr><td style="text-align: left">Zulu 2</td><td style="text-align: center">1000 tons</td><td style="text-align: center">600 MPH</td><td style="text-align: center">Neighborhood</td></tr>
+<tr><td style="text-align: left">Zulu 3</td><td style="text-align: center">*</td><td style="text-align: center">*</td><td style="text-align: center">*</td></tr>
+</tbody></table>
+</div>
+<h5 id="table-complete-weapon-comparisons-of-powers"><a class="header" href="#table-complete-weapon-comparisons-of-powers">Table. Complete Weapon Comparisons of Powers</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Level</th><th style="text-align: center">Dice</th><th style="text-align: center">TN</th><th style="text-align: left">Comparable Weapon</th></tr></thead><tbody>
+<tr><td style="text-align: left">Alpha</td><td style="text-align: center">2d4</td><td style="text-align: center">2</td><td style="text-align: left">Bat / Knife</td></tr>
+<tr><td style="text-align: left">Bravo 1</td><td style="text-align: center">2d6</td><td style="text-align: center">3</td><td style="text-align: left">Handgun</td></tr>
+<tr><td style="text-align: left">Bravo 2</td><td style="text-align: center">2d8</td><td style="text-align: center">4</td><td style="text-align: left">Rifle</td></tr>
+<tr><td style="text-align: left">Bravo 3</td><td style="text-align: center">3d8</td><td style="text-align: center">4</td><td style="text-align: left">Automatic Weapon</td></tr>
+<tr><td style="text-align: left">Bravo 4</td><td style="text-align: center">3d10</td><td style="text-align: center">5</td><td style="text-align: left">Machine Gun</td></tr>
+<tr><td style="text-align: left">Charlie 1</td><td style="text-align: center">4d10</td><td style="text-align: center">6</td><td style="text-align: left">Rocket Propelled Grenade</td></tr>
+<tr><td style="text-align: left">Charlie 2</td><td style="text-align: center">4d12</td><td style="text-align: center">7</td><td style="text-align: left">Tank Gun</td></tr>
+<tr><td style="text-align: left">Zulu 1</td><td style="text-align: center">6d12</td><td style="text-align: center">8</td><td style="text-align: left">Tactical Missile</td></tr>
+<tr><td style="text-align: left">Zulu 2</td><td style="text-align: center">6d20</td><td style="text-align: center">9</td><td style="text-align: left">Short-Range Missile</td></tr>
+<tr><td style="text-align: left">Zulu 3</td><td style="text-align: center">10d20</td><td style="text-align: center">10</td><td style="text-align: left">Nuclear Bomb</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="combat"><a class="header" href="#combat">Combat</a></h1>
+<p>You likely never thought you'd find yourself in a life or death fight. Unfortunately, that has become all too common.</p>
+<p>Whether you are fighting humans, mutants, or zombies, combat is now a fact of life.</p>
+<blockquote>
+<p><strong>Designer's Note:</strong> Combat in Super Dead is not modeled on standard tabletop roleplaying game systems that allows for heroes to make decisions on a second-by-second basis. Rather, Super Dead combat is inspired by modern tactical war games. We've chosen to do this because modern firearms and Super Powers, which are present in Super Dead, feel silly in the extended duel-like encounters of fantasy TTRPGs. Firearms and Super Powers are too deadly, from too far away -- and encourage a style of combat where engaging rarely, and on your own terms, is the best approach.</p>
+</blockquote>
+<h2 id="phases-of-combat"><a class="header" href="#phases-of-combat">Phases of Combat</a></h2>
+<p>Combat in Super Dead takes place in rounds of three phases: <a href="4_combat.html#the-movement-phase">the movement phase</a>, <a href="4_combat.html#the-hand-to-hand-phase">the hand-to-hand phase</a>, and <a href="4_combat.html#the-shooting-phase">the shooting phase</a>.</p>
+<h3 id="the-movement-phase"><a class="header" href="#the-movement-phase">The Movement Phase</a></h3>
+<p>During the movement phase, you declare your intent to move. You may move 30 feet with <strong>standard movement</strong> or up to 100 feet with <strong>reckless movement</strong>.</p>
+<p>Reckless movement makes any other task <strong>very hard</strong> and makes attacks against you <strong>easy</strong>.</p>
+<p>If you move into another character's line of sight, you are exposed to <strong>opportunity fire</strong>. If you take opportunity fire, regardless of whether or not you take damage, you must make a <strong>courage save</strong>. On a failed save, you must retreat and find cover.</p>
+<p><strong>Opportunity fire</strong> is a free ranged attack against a combatant who enters your line of sight. You may take one opportunity attack per target so long as you have ammunition (if necessary).</p>
+<h3 id="the-hand-to-hand-phase"><a class="header" href="#the-hand-to-hand-phase">The Hand-to-Hand Phase</a></h3>
+<p>After the <a href="4_combat.html#the-movement-phase">movement phase</a> is resolved, if there are any combatants within <a href="4_combat.html#ranges"><strong>immediate range</strong></a> of one another, the hand-to-hand phase of combat occurs.</p>
+<p>The hand-to-hand phase consists of up to <strong>three exchanges</strong> of attacks. Within an exchange, each combatant declares their intention, and then attacks are resolved simultaneously.</p>
+<p>Shooting a pistol or shotgun at immediate range is <strong>hard</strong>, and shooting a long-gun is <strong>very hard</strong>. Attacks with ranged powers are also <strong>hard</strong>.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Situation</th><th style="text-align: left">Difficulty in H2H</th><th style="text-align: center">Modifier</th></tr></thead><tbody>
+<tr><td style="text-align: left">Handheld Weapon</td><td style="text-align: left">Normal</td><td style="text-align: center">-</td></tr>
+<tr><td style="text-align: left">Pistol</td><td style="text-align: left">Hard</td><td style="text-align: center">+1</td></tr>
+<tr><td style="text-align: left">Shotgun</td><td style="text-align: left">Hard</td><td style="text-align: center">+1</td></tr>
+<tr><td style="text-align: left">Other gun</td><td style="text-align: left">Very Hard</td><td style="text-align: center">+2</td></tr>
+<tr><td style="text-align: left">Melee Power</td><td style="text-align: left">Normal</td><td style="text-align: center">-</td></tr>
+<tr><td style="text-align: left">Ranged Power</td><td style="text-align: left">Hard</td><td style="text-align: center">+1</td></tr>
+</tbody></table>
+</div>
+<p>After damage has been dealt, for each exchange, another exchange occurs until one side has been entirely eliminated or until three hand-to-hand exchanges have occurred.</p>
+<p>Fighting in hand-to-hand combat when outnumbered is at least <strong>hard</strong>, but can be <strong>very hard</strong>, or <strong>extremely hard</strong> depending on the number and skill of your opponents.</p>
+<h4 id="fighting"><a class="header" href="#fighting">Fighting</a></h4>
+<p>To hit in hand-to-hand combat with a handheld weapon--such as a bat, knife, axe, or even your fists--you must make a fighting check. On a successful fighting check, you deal damage to your opponent determined by the weapon you are using.</p>
+<p>Because most characters will not be skilled in fighting, the default is a <strong>hard</strong> <strong>athletics</strong> save.</p>
+<h3 id="the-shooting-phase"><a class="header" href="#the-shooting-phase">The Shooting Phase</a></h3>
+<p>Once the movement and hand-to-hand phases have been resolved, combatants in the ranges close, near, and far may declare one target within range of their weapon and make a ranged attack.</p>
+<p>All successful ranged attackers roll damage, and damage is evaluated simultaneously for all combatants.</p>
+<p>The best way to avoid enemy fire is by hiding behind <strong>cover</strong>. Cover may make you <strong>hard</strong>, <strong>very hard</strong>, or <strong>extremely hard</strong> to hit, depending on the quality and degree of cover. If you are completely shielded by cover, you may not be targeted.</p>
+<h4 id="shooting"><a class="header" href="#shooting">Shooting</a></h4>
+<p>To hit a target with a firearm, you must make a successful shooting check. On a successful shooting check, you deal damage to your opponent determined by the weapon you are using.</p>
+<p>Because most characters will not be skilled in shooting, the default is a <strong>hard</strong> <strong>athletics</strong> save.</p>
+<h2 id="ranges"><a class="header" href="#ranges">Ranges</a></h2>
+<p>There are four ranges of engagement. From farthest to nearest, they are:</p>
+<ol>
+<li>Far range</li>
+<li>Near range</li>
+<li>Close range, and</li>
+<li>Immediate range.</li>
+</ol>
+<p><strong>Far range</strong> begins at 1,000 feet and requires the use of specialized weapons.</p>
+<p><strong>Near range</strong>, from 300 feet up to 1,000 feet, is the ideal range to engage with a rifle, but too far for many powers.</p>
+<p><strong>Close range</strong>, from 30 to 300 feet is the most typical engagement distance, and is the effective range of both handguns and ranged powers.</p>
+<p><strong>Immediate range</strong>, within 30 feet, is the range for hand-to-hand combat.</p>
+<p>Shooting beyond the range of your weapon is <strong>very hard</strong> or <strong>extremely hard</strong>.</p>
+<p>Zombies must get to immediate range to attack.</p>
+<h2 id="attacks-damage-and-wounds"><a class="header" href="#attacks-damage-and-wounds">Attacks, Damage, and Wounds</a></h2>
+<p>When you take damage, subtract any armor you have from the damage taken. For every three points of damage remaining, you incur one wound.</p>
+<p>If you have taken no wounds, you are <strong>healthy</strong>. If you have taken one wound you are <strong>hurt</strong>. If you have taken two wounds you are <strong>wounded</strong>. Once you have taken three wounds, you suffer from <strong>disfigurement</strong> or <strong>death</strong>.</p>
+<p>Being hurt makes things <strong>hard</strong>. Being wounded makes things <strong>very hard</strong>.</p>
+<p>You naturally go from <strong>hurt</strong> back to <strong>healthy</strong> as soon as combat ends.</p>
+<div class="table-wrapper"><table><thead><tr><th>Wounds</th><th>Status</th><th>Recovery</th></tr></thead><tbody>
+<tr><td>0</td><td>Healthy</td><td>-</td></tr>
+<tr><td>1</td><td>Hurt</td><td>End of Combat</td></tr>
+<tr><td>2</td><td>Wounded</td><td>First Aid / Medicine</td></tr>
+<tr><td>3</td><td>Disfigured or Dead</td><td>Never</td></tr>
+</tbody></table>
+</div>
+<p>If you are wounded, however, you need medical attention. A successful <strong>first aid</strong> save will treat the wound, but leave you with its lingering effects for 14 days. A failed <strong>first aid</strong> save will leave you with the lingering effects of the wound for 28 days.</p>
+<p>A successful <strong>medicine</strong> save will relieve you of all effects of the wound.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">2d6</th><th style="text-align: left">Wound</th></tr></thead><tbody>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Severe Burn</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Dislocation</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Laceration</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Minor Burn</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Bruising</td></tr>
+<tr><td style="text-align: center">7</td><td style="text-align: left">Sprained Ligaments</td></tr>
+<tr><td style="text-align: center">8</td><td style="text-align: left">Broken Bone</td></tr>
+<tr><td style="text-align: center">9</td><td style="text-align: left">Minor Concussion</td></tr>
+<tr><td style="text-align: center">10</td><td style="text-align: left">Compound Fracture</td></tr>
+<tr><td style="text-align: center">11</td><td style="text-align: left">Severe Concussion</td></tr>
+<tr><td style="text-align: center">12</td><td style="text-align: left">Tissue Loss</td></tr>
+</tbody></table>
+</div>
+<h4 id="disfigurement-and-death"><a class="header" href="#disfigurement-and-death">Disfigurement and Death</a></h4>
+<p>Upon taking your third wound, you may elect to take a disfigurement, by rolling on the disfigurement table. If you choose not to take a disfigurement, or your disfigurement roll would double a disfigurement you already have, you die.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d8</th><th style="text-align: left">Disfigurement</th><th style="text-align: center">1d8</th><th style="text-align: left">Disfigurement</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Death</td><td style="text-align: center">5</td><td style="text-align: left">Severed Hand</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Facial Scar</td><td style="text-align: center">6</td><td style="text-align: left">Lost Eye</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Lost Ear</td><td style="text-align: center">7</td><td style="text-align: left">Mangled Jaw</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Limp Leg</td><td style="text-align: center">8</td><td style="text-align: left">Annihilated Arm</td></tr>
+</tbody></table>
+</div>
+<h2 id="using-powers-in-combat"><a class="header" href="#using-powers-in-combat">Using Powers in Combat</a></h2>
+<p>You will often want to use super powers in combat. When you do so, your single die pool roll will serve as both attack and damage.</p>
+<p>So long as you achieve at least one success with your die pool, you can deal damage to one or more targets. Damage must be distributed based on whole dice rolled.</p>
+<blockquote>
+<p><em><strong>Example</strong>: Fionna Firefist is engaged in hand-to-hand combat with two bad guys. She rolls her Bravo 2 power "fire control" and gets a 3 and an 6. The 6 is above her target number (4), so she succeeds in her attack and can deal damage. She can either choose to deal 9 damage to one opponent, or 3 damage to one and 6 to the other.</em></p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gear"><a class="header" href="#gear">Gear</a></h1>
+<p>Equipment is essential to surviving the end of the world. Here are some common items you'll need or encounter.</p>
+<h2 id="bartering-and-scavenging"><a class="header" href="#bartering-and-scavenging">Bartering and Scavenging</a></h2>
+<p>There is no central bank. No dollar. And nobody needs gold. What people need is food, shelter, ways to stay safe. Ways to relax. And ways to get away.</p>
+<p>You won't find stores or shopkeepers in the world of Super Dead. Instead, anything you want, you'll have to find, or barter for. And since everyone has so little, you're going to need to give up something good if you want what someone else has.</p>
+<h2 id="hand-to-hand-weapons"><a class="header" href="#hand-to-hand-weapons">Hand-to-Hand Weapons</a></h2>
+<p>Hand-to-hand weapons aren't the best way to take on groups of zombies. But for one or two zombies, they are quiet and effective ways of getting the job done.</p>
+<h5 id="table-hand-to-hand-weapons"><a class="header" href="#table-hand-to-hand-weapons">Table. Hand-to-Hand Weapons</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Weapon</th><th style="text-align: center">Damage</th><th style="text-align: center">Range</th><th style="text-align: left">Rarity</th></tr></thead><tbody>
+<tr><td style="text-align: left">Axe</td><td style="text-align: center">2d6</td><td style="text-align: center">-</td><td style="text-align: left">Common</td></tr>
+<tr><td style="text-align: left">Baseball Bat</td><td style="text-align: center">2d4</td><td style="text-align: center">-</td><td style="text-align: left">Common</td></tr>
+<tr><td style="text-align: left">Chainsaw</td><td style="text-align: center">4d8</td><td style="text-align: center">-</td><td style="text-align: left">Uncommon</td></tr>
+<tr><td style="text-align: left">Club</td><td style="text-align: center">2d4</td><td style="text-align: center">-</td><td style="text-align: left">Common</td></tr>
+<tr><td style="text-align: left">Fists</td><td style="text-align: center">1d6</td><td style="text-align: center">-</td><td style="text-align: left">-</td></tr>
+<tr><td style="text-align: left">Hatchet</td><td style="text-align: center">1d8</td><td style="text-align: center">-</td><td style="text-align: left">Common</td></tr>
+<tr><td style="text-align: left">Knife</td><td style="text-align: center">1d8</td><td style="text-align: center">-</td><td style="text-align: left">Common</td></tr>
+<tr><td style="text-align: left">Maul</td><td style="text-align: center">1d10</td><td style="text-align: center">-</td><td style="text-align: left">Uncommon</td></tr>
+<tr><td style="text-align: left">Sledge</td><td style="text-align: center">1d10</td><td style="text-align: center">-</td><td style="text-align: left">Uncommon</td></tr>
+<tr><td style="text-align: left">Sword</td><td style="text-align: center">2d6</td><td style="text-align: center">-</td><td style="text-align: left">Rare</td></tr>
+</tbody></table>
+</div>
+<p><strong>Chainsaw.</strong> Attacking with a chainsaw is <strong>hard</strong> because they are unwieldy. Because they are clumsy, chainsaws only deal damage during the second and third exchanges of a <a href="4_combat.html#the-hand-to-hand-phase">hand-to-hand phase</a>. Using a chainsaw is as <a href="6_zombies.html#threat-and-noise"><strong>loud as a motorcycle</strong></a>.</p>
+<h2 id="firearms"><a class="header" href="#firearms">Firearms</a></h2>
+<p>Firearms are a reliable form of self-defense with the significant advantage of being effective outside of biting distance. They are all but ubiquitous in the United States. However, they are as loud as they are deadly.</p>
+<h4 id="ammunition"><a class="header" href="#ammunition">Ammunition</a></h4>
+<p>A significant limitation of firearms is that they need ammunition to fire.</p>
+<p>The amount of ammunition you have of a given type is represented by a die: 1d4 to 1d12.</p>
+<p>Anytime after shooting a firearm, roll your ammunition die for the ammunition associated with that weapon.</p>
+<p>If you roll a 1, reduce the die type by 1 step (e.g., 1d12 becomes 1d10; 1d10 becomes 1d8, etc.) If your ammo would be reduced below 1d4, you are <strong>out of ammo</strong>. You cannot shoot a weapon if you are out of ammo.</p>
+<p>When you <strong>find ammunition</strong> out in the world, roll your ammunition die. If you roll a 3 or less, increase your ammunition die by one step. If you find lots of ammunition, your game master may provide you a fixed size increase.</p>
+<h5 id="table-firearms"><a class="header" href="#table-firearms">Table. Firearms</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Weapon</th><th style="text-align: center">Damage</th><th style="text-align: left">Range</th><th style="text-align: left">Ammo</th><th style="text-align: left">Rarity</th></tr></thead><tbody>
+<tr><td style="text-align: left">Handgun</td><td style="text-align: center">2d6</td><td style="text-align: left">Close</td><td style="text-align: left">9mm</td><td style="text-align: left">Uncommon</td></tr>
+<tr><td style="text-align: left">Machine Gun</td><td style="text-align: center">4d10</td><td style="text-align: left">Far</td><td style="text-align: left">7.62</td><td style="text-align: left">Very Rare</td></tr>
+<tr><td style="text-align: left">Rifle, Assault</td><td style="text-align: center">3d6</td><td style="text-align: left">Near</td><td style="text-align: left">5.56</td><td style="text-align: left">Very Rare</td></tr>
+<tr><td style="text-align: left">Rifle, Civilian</td><td style="text-align: center">3d6</td><td style="text-align: left">Near</td><td style="text-align: left">5.56</td><td style="text-align: left">Rare</td></tr>
+<tr><td style="text-align: left">Rifle, Hunting</td><td style="text-align: center">3d6</td><td style="text-align: left">Near</td><td style="text-align: left">.375</td><td style="text-align: left">Uncommon</td></tr>
+<tr><td style="text-align: left">Rifle, Sniper</td><td style="text-align: center">3d10</td><td style="text-align: left">Far</td><td style="text-align: left">7.62</td><td style="text-align: left">Very Rare</td></tr>
+<tr><td style="text-align: left">Shotgun</td><td style="text-align: center">4d4*</td><td style="text-align: left">Close</td><td style="text-align: left">12-gauge</td><td style="text-align: left">Uncommon</td></tr>
+</tbody></table>
+</div>
+<p><strong>Machine guns</strong> and <strong>Assault rifles</strong> are capable of providing <strong>suppressive fire</strong>. Suppressive fire makes it <strong>very hard</strong> to take actions in the area under fire.</p>
+<p><strong>Shotgun.</strong> Attacking with a shotgun at immediate range is deadly; shotguns do double damage in immediate range.</p>
+<h2 id="armor"><a class="header" href="#armor">Armor</a></h2>
+<p>Armor is hard to come by in the modern world, but against unarmed zombies, even makeshift protection can be the difference between life and death.</p>
+<p>Each piece of armor has three properties:</p>
+<ol>
+<li>an armor value indicating how much protection it provides;</li>
+<li>a type, indicating what type of attacks it defends against; and</li>
+<li>a durability, indicating how it holds up to damage.</li>
+</ol>
+<h5 id="table-armor"><a class="header" href="#table-armor">Table. Armor</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Kind</th><th style="text-align: center">Armor</th><th style="text-align: left">Type</th><th style="text-align: right">Durability</th><th style="text-align: left">Rarity</th></tr></thead><tbody>
+<tr><td style="text-align: left">Makeshift Armor</td><td style="text-align: center">1</td><td style="text-align: left">Hand-to-Hand</td><td style="text-align: right">1d4</td><td style="text-align: left">Common</td></tr>
+<tr><td style="text-align: left">Bulletproof Vest</td><td style="text-align: center">1</td><td style="text-align: left">Firearms</td><td style="text-align: right">1d6</td><td style="text-align: left">Very Rare</td></tr>
+<tr><td style="text-align: left">Rifle Plate</td><td style="text-align: center">2</td><td style="text-align: left">Firearms</td><td style="text-align: right">1d8</td><td style="text-align: left">Very Rare</td></tr>
+<tr><td style="text-align: left">Riot Gear</td><td style="text-align: center">2</td><td style="text-align: left">Hand-to-Hand</td><td style="text-align: right">1d10</td><td style="text-align: left">Very Rare</td></tr>
+<tr><td style="text-align: left">Ballistic Shield</td><td style="text-align: center">3</td><td style="text-align: left">Both</td><td style="text-align: right">1d12</td><td style="text-align: left">Very Rare</td></tr>
+</tbody></table>
+</div>
+<p><strong>Armor value</strong> is subtracted from damage taken to determine whether or not you suffer wounds.</p>
+<p><strong>Armor type</strong> indicates whether the armor protects against hand-to-hand weapons, firearms, or both.</p>
+<p><strong>Durability</strong> indicates the durability die of the armor in perfect condition. After any combat round in which you take damage, roll the durability die associated with your armor. If that roll is a 1, reduce the die by 1 step. If the die would be reduced below 1d4 in this fashion, the armor has broken and offers no more protection.</p>
+<h2 id="equipment-and-vehicles"><a class="header" href="#equipment-and-vehicles">Equipment and Vehicles</a></h2>
+<h5 id="table-equipment"><a class="header" href="#table-equipment">Table. Equipment</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Item</th><th style="text-align: left">Rarity</th><th style="text-align: left">Item</th><th style="text-align: left">Rarity</th></tr></thead><tbody>
+<tr><td style="text-align: left">Backpack</td><td style="text-align: left">Common</td><td style="text-align: left">Flashlight</td><td style="text-align: left">Common</td></tr>
+<tr><td style="text-align: left">Binoculars</td><td style="text-align: left">Common</td><td style="text-align: left">Gas Mask</td><td style="text-align: left">Rare</td></tr>
+<tr><td style="text-align: left">Bolt Cutters</td><td style="text-align: left">Uncommon</td><td style="text-align: left">Handcuffs</td><td style="text-align: left">Uncommon</td></tr>
+<tr><td style="text-align: left">Camera</td><td style="text-align: left">Common</td><td style="text-align: left">Lighter</td><td style="text-align: left">Common</td></tr>
+<tr><td style="text-align: left">Camouflage</td><td style="text-align: left">Uncommon</td><td style="text-align: left">Radio</td><td style="text-align: left">Rare</td></tr>
+<tr><td style="text-align: left">Clothes</td><td style="text-align: left">Common</td><td style="text-align: left">Rations</td><td style="text-align: left">Common</td></tr>
+<tr><td style="text-align: left">Compass</td><td style="text-align: left">Uncommon</td><td style="text-align: left">Rope</td><td style="text-align: left">Common</td></tr>
+<tr><td style="text-align: left">Duct Tape</td><td style="text-align: left">Common</td><td style="text-align: left">Shovel</td><td style="text-align: left">Common</td></tr>
+<tr><td style="text-align: left">Fire Extinguisher</td><td style="text-align: left">Common</td><td style="text-align: left">Syringe</td><td style="text-align: left">Rare</td></tr>
+<tr><td style="text-align: left">First Aid Kit</td><td style="text-align: left">Uncommon</td><td style="text-align: left"></td><td style="text-align: left"></td></tr>
+</tbody></table>
+</div>
+<h2 id="anti-mutant-weapons"><a class="header" href="#anti-mutant-weapons">Anti-Mutant Weapons</a></h2>
+<p>When the power of the mutants was understood, the Army Research Labratory developed anti-mutant weapons for both war and policing. Becasue of the unique dangers of the mutant threat, even small-town police forces were provided anti-mutant weapons by the federal government.</p>
+<p>These weapons work by delivering an M-shock: an electrical shock similar to a taser, that vibrates at a specific frequency capable of suppressing mutant powers.</p>
+<p><strong>Suppression.</strong> In addition to their damage, anti-mutant weapons also reduce the power level of mutants a number of steps based on their suppression. These reductions are always applied to the highest-level power first. If any mutant power would be reduced below 1d4 in this way, the super is incapacitated.</p>
+<h5 id="table-anti-mutant-wepaons"><a class="header" href="#table-anti-mutant-wepaons">Table. Anti-Mutant Wepaons</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Weapon</th><th style="text-align: center">Damage</th><th style="text-align: center">Supression</th><th style="text-align: left">Range</th></tr></thead><tbody>
+<tr><td style="text-align: left">Stun Baton</td><td style="text-align: center">2d4</td><td style="text-align: center">1d4</td><td style="text-align: left">Immediate</td></tr>
+<tr><td style="text-align: left">Suppressor Net</td><td style="text-align: center">-</td><td style="text-align: center">1d4</td><td style="text-align: left">Immediate</td></tr>
+<tr><td style="text-align: left">Shock Blaster</td><td style="text-align: center">2d6</td><td style="text-align: center">2d4</td><td style="text-align: left">Close</td></tr>
+<tr><td style="text-align: left">Shock Grenade</td><td style="text-align: center">2d6</td><td style="text-align: center">2d4</td><td style="text-align: left">Near</td></tr>
+<tr><td style="text-align: left">Suppressor Cannon </td><td style="text-align: center">3d6</td><td style="text-align: center">3d4</td><td style="text-align: left">Far</td></tr>
+</tbody></table>
+</div>
+<p><strong>Suppressor Net.</strong> The suppressor net must be thrown at immediate range. Once a mutant is entangled in the suppressor net, they must make an <strong>athletics save</strong> to escape. Until they escape, they may take no actions other than attempting to escape. You may make one escape attempt during each phase of combat.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="zombies"><a class="header" href="#zombies">Zombies</a></h1>
+<p>Zombies are the omnipresent dread in the world of Super Dead. They lurk around every corner, and are an insatiable threat to even the strongest supers.</p>
+<h2 id="zombies-bites-and-turning-undead"><a class="header" href="#zombies-bites-and-turning-undead">Zombies Bites and Turning Undead</a></h2>
+<p>The thing that makes zombies terrifying as that if they bite you, you will turn into a zombie. Because the virus was originally created as a bioweapon to kill supers, are especially susceptible to this effect.</p>
+<p>A bite does not <em>always</em> turn someone undead.</p>
+<p>If you are a bitten, the game master will make a bite roll in secret and narrate the effects to you.</p>
+<h5 id="bite-outcome-table"><a class="header" href="#bite-outcome-table">Bite Outcome Table.</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Outcome</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Turn in seconds</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Turn in minutes</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Turn in hours</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Turn in days</td></tr>
+<tr><td style="text-align: center">5-6</td><td style="text-align: left">Safe</td></tr>
+</tbody></table>
+</div>
+<p>If you turn in minutes, hours or days, over the course of that time you will develop flu-like symptoms, that peak, break, and then disappear as your body gets cold and you become undead.</p>
+<h2 id="the-zomb-3"><a class="header" href="#the-zomb-3">The Zomb-3</a></h2>
+<p>Zombies are ravenous monsters that mindlessly hunt their prey. To a human, it looks like they follow a three-step process.</p>
+<ol>
+<li><strong>Search.</strong> The zombie wanders about, following sights and sounds to find potential prey. Zombies will always follow the closest sight or sound that suggest viable prey.</li>
+<li><strong>Close.</strong> The zombie makes its way towards its prey by the most direct means possible. Zombies can avoid obvious obstructions, but will fall for even a modestly disguised trap.</li>
+<li><strong>Devour.</strong> Once a zombie has closed on its prey, it will begin to grab and bite. With each bite, the virus will make its way into the zombie's victim. If they are lucky, they will bleed out before the virus turns them.</li>
+</ol>
+<h2 id="fighting-zombies"><a class="header" href="#fighting-zombies">Fighting Zombies</a></h2>
+<p>Zombies are a predictable, but deadly foe -- you must not let yourself get complacent.</p>
+<p><strong>During the <a href="4_combat.html#the-movement-phase">movement phase</a>,</strong> zombies will attempt to move towards the nearest person they see, until they are in immediate range of at least one opponent.</p>
+<p>If zombies are in immediate range of one or more opponents, they will attempt to stay in immediate range.</p>
+<p><strong>During the <a href="4_combat.html#the-hand-to-hand-phase">hand-to-hand phase</a>,</strong> zombies will attack with their rigor-mortis hardened, claw-like fingers and their infectious bites. Because most zombies are shambling, uncoordinated creatures, their bite only occurs if the zombie is still standing at the <strong>end of the hand-to-hand phase</strong>.</p>
+<p>This means that most zombies killed during the hand-to-hand phase will not be able to infect you.</p>
+<h3 id="killing-zombies"><a class="header" href="#killing-zombies">Killing Zombies</a></h3>
+<h2 id="threat-and-noise"><a class="header" href="#threat-and-noise">Threat and Noise</a></h2>
+<p>If a zombies is not actively devouring a victim, it is on the lookout for its next. Zombies feel neither fear nor exhaustion, and their hunger for flesh is never ending.</p>
+<p>If you are spotted by a zombie, you are in <a href="6_zombies.html#fighting-zombies"><strong>combat with a zombie</strong></a>.</p>
+<p>If you are out of sight of zombies, and you make a loud enough noise, you will attract zombies.</p>
+<p>During the daytime, anything louder than a normal conversation will attract zombies. At nighttime, anything louder than a whisper can bring out the flesh-eating beasts.</p>
+<h5 id="table-zombies-attracted-by-noise-level"><a class="header" href="#table-zombies-attracted-by-noise-level">Table. Zombies Attracted by Noise Level</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Noise</th><th style="text-align: center">Daytime</th><th style="text-align: center">Nighttime</th></tr></thead><tbody>
+<tr><td style="text-align: left">Whisper</td><td style="text-align: center">-</td><td style="text-align: center">-</td></tr>
+<tr><td style="text-align: left">Conversation</td><td style="text-align: center">-</td><td style="text-align: center">1d10</td></tr>
+<tr><td style="text-align: left">Shout</td><td style="text-align: center">1d6</td><td style="text-align: center">2d10</td></tr>
+<tr><td style="text-align: left">Starting a car</td><td style="text-align: center">1d6</td><td style="text-align: center">2d10</td></tr>
+<tr><td style="text-align: left">Breaking a window</td><td style="text-align: center">2d6</td><td style="text-align: center">3d10</td></tr>
+<tr><td style="text-align: left">Starting a Motorcycle</td><td style="text-align: center">2d6</td><td style="text-align: center">3d10</td></tr>
+<tr><td style="text-align: left">Gunfire</td><td style="text-align: center">3d6</td><td style="text-align: center">4d10</td></tr>
+</tbody></table>
+</div>
+<p>Once a noise loud enough to attract zombies is made, the zombies are on their way.</p>
+<p>If the zombies will <strong>arrive all at once</strong>, they arrive in 2d6 minutes of real time.</p>
+<p>If the zombies will <strong>arrive in waves</strong>, then the first wave arrives in 1d8 minutes, each each subsequent wave arrives 1d8 minutes later.</p>
+<blockquote>
+<p><strong>Designer's note:</strong> If you are the game master, making these roles in secret can increase suspense. Set a timer on your phone out of sight of the players, and interrupt the action when the timer goes off.</p>
+</blockquote>
+<h3 id="fleeing-the-scene"><a class="header" href="#fleeing-the-scene">Fleeing the Scene</a></h3>
+<p>When players make noise to attract zombies, they will naturally want to flee the scene. Their chance of successfully fleeing depends on how close the zombies are to closing in on them and how many viable ways their are to approach the location where the noise is coming from.</p>
+<p>Zombies will use doors and other obvious pathways to get to their destinations, so if the players attempt to escape by the most obvious means, they are more likely to run into zombies.</p>
+<h5 id="table-fleeing-zombies"><a class="header" href="#table-fleeing-zombies">Table. Fleeing Zombies</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">2d6</th><th style="text-align: left">Flee Result</th><th style="text-align: left">Escape Tactic</th><th style="text-align: center">Modifier</th></tr></thead><tbody>
+<tr><td style="text-align: center">1-7</td><td style="text-align: left">Escape</td><td style="text-align: left">Take obvious path</td><td style="text-align: center">+1</td></tr>
+<tr><td style="text-align: center">8-9</td><td style="text-align: left">Spotted by Zombies</td><td style="text-align: left">Zombies are less than 2m away</td><td style="text-align: center">+1</td></tr>
+<tr><td style="text-align: center">10+</td><td style="text-align: left">Run into Zombies</td><td style="text-align: left">+10 zombies*</td><td style="text-align: center">+1</td></tr>
+</tbody></table>
+</div>
+<h2 id="zombie-hordes"><a class="header" href="#zombie-hordes">Zombie Hordes</a></h2>
+<p>A single zombie may be a threat to a normal person, but most survivors have figured out how to outsmart zombies 1-on-1. Zombies are most dangerous in groups. And in big groups, they are especially deadly.</p>
+<p>Groups of 20 or more zombies form a horde. Hordes move insatiably and undeterrably towards their victims before devouring them.</p>
+<p>Anyone who sees a horde incurs 1 point of <a href="2_characters.html#stress"><strong>stress</strong></a> and must make a <strong>courage save</strong>.</p>
+<p>Anyone who finds themselves within immediate range of a horde is devoured unless the entire horde is destroyed during the <a href="4_combat.html#the-hand-to-hand-phase"><strong>hand-to-hand combat phase</strong></a>.</p>
+<p>Your best bet to survive a horde is to run away. A successful <strong>athletics save</strong> allows you to move one zone away from a horde. If you fail your athletics save, you must succeed at a subsequent save, or else the horde <strong>closes in on you</strong>.</p>
+<p>When a horde closes in on you, your distance to the horde is reduced by one range. This is stressful. And if this would put you in immediate range of the horde, you immediately enter a <strong>hand-to-hand combat</strong> phase.</p>
+<p>Hordes can also be deterred, blocked, or delayed by environmental effects. For most supers, this will be their best approach to surviving a horde.</p>
+<h5 id="table-zombies-destroyed-by-environmental-feature"><a class="header" href="#table-zombies-destroyed-by-environmental-feature">Table. Zombies destroyed by environmental feature</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Environmental Feature</th><th style="text-align: right">Weight</th><th style="text-align: right">Zombies</th></tr></thead><tbody>
+<tr><td style="text-align: left">Car</td><td style="text-align: right">1 T</td><td style="text-align: right">2d20</td></tr>
+<tr><td style="text-align: left">Truck</td><td style="text-align: right">5 T</td><td style="text-align: right">3d20</td></tr>
+<tr><td style="text-align: left">Semi-Truck</td><td style="text-align: right">20 T</td><td style="text-align: right">5d20</td></tr>
+<tr><td style="text-align: left">Subway Car</td><td style="text-align: right">40 T</td><td style="text-align: right">8d20</td></tr>
+<tr><td style="text-align: left">Small Building</td><td style="text-align: right">+100 T</td><td style="text-align: right">15d20</td></tr>
+<tr><td style="text-align: left">Lg. Building</td><td style="text-align: right">+1,000 T</td><td style="text-align: right">25d20</td></tr>
+</tbody></table>
+</div>
+<p><strong>Shooting</strong> at hordes is mostly ineffective because of the sheer number of zombies present. Some very high output, area fire weapons, like machine guns, can be useful against hordes of less than 50 zombies.</p>
+<h2 id="kinds-of-zombies"><a class="header" href="#kinds-of-zombies">Kinds of Zombies</a></h2>
+<h3 id="shamblers"><a class="header" href="#shamblers">Shamblers</a></h3>
+<p>Most zombies are shamblers: slow, drudging zombies that move at you as fast as they can, but that is not very fast at all.</p>
+<p><strong>Stats.</strong> 4 Ath., 2 Int.</p>
+<p><strong>Movement.</strong> Shamblers always move at <a href="4_combat.html#the-movement-phase">regular speed</a>.</p>
+<p><strong>Attack.</strong> Shamblers bite only at the end of the <a href="4_combat.html#the-hand-to-hand-phase">hand-to-hand phase</a>.</p>
+<h3 id="crickets"><a class="header" href="#crickets">Crickets</a></h3>
+<p>Crickets get their name from the way they hop about on all fours. These zombies are fast and agile, in addition to being enraged.</p>
+<p><strong>Stats.</strong> 8 Ath., 2 Int.</p>
+<p><strong>Movement.</strong> Crickets always move at <a href="4_combat.html#the-movement-phase">reckless speed</a>.</p>
+<p><strong>Attack.</strong> Crickets bites happen at the end of each hand-to-hand <strong>exchange</strong>.</p>
+<h3 id="poppers"><a class="header" href="#poppers">Poppers</a></h3>
+<p>Poppers are bloated zombies, full of infectious fluid. They move slowly and awkwardly, with stiff joints struggling against taught, waterlogged flesh.</p>
+<p><strong>Stats.</strong> 3 Ath., 2 Int.</p>
+<p><strong>Movement.</strong> Poppers always move at <a href="4_combat.html#the-movement-phase">regular speed</a>.</p>
+<p><strong>Attack.</strong> Poppers bite at the end of every hand-to-hand phase, like shamblers.</p>
+<p><strong>Popping.</strong> If a popper takes damage during any phase, it has a 1-in-2 chance of <strong>popping</strong>. If you are in immediate range of a popping popper, you must succeed at a <strong>hard</strong> athletics save or be subject to the effects of <a href="6_zombies.html#bite-outcome-table">a bite</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="exploration"><a class="header" href="#exploration">Exploration</a></h1>
+<h2 id="point-to-point-travel"><a class="header" href="#point-to-point-travel">Point-to-Point Travel</a></h2>
+<p>No one <strong>wanders</strong> in the end of days. At least no one you can trust. That means that travel in Super Dead involves moving from one point to another. The process of traveling from place to place via point is known as <strong>point crawling</strong>.</p>
+<p><strong>Point Crawling</strong> has three stages, once the players have decided they would like to travel to a new location:</p>
+<ol>
+<li>The players are presented the paths to their destination, as well as the information they have about each of those paths. They debate the best path to take.</li>
+<li>The players make preparations and set out on their journey. Based on the when, how, and where they travel, they will face one or more encounters.</li>
+<li>The encounters are resolved as they occur. Each of these encounters has a may interrupt the rest of the point crawl entirely.</li>
+<li>The players arrive at the location for which they set out.</li>
+</ol>
+<h3 id="encounters-noise-and-danger"><a class="header" href="#encounters-noise-and-danger">Encounters, Noise, and Danger</a></h3>
+<p>As the players travel between two places, the question becomes, what do they find as they travel.</p>
+<p>This will break down into three kinds of answers:</p>
+<ol>
+<li>Something the players expect, and you expect</li>
+<li>Something the players do not expect, but you knew was there</li>
+<li>Something that surprises both you and the players</li>
+</ol>
+<p>In case one, the players have either been to this place before, or gathered information about it, and the situation is mostly as they left it. These types of encounters can be strategic for the players, when they involve people they players are looking to build relationships with or whose knowledge they wish to use.</p>
+<p>In case two, the players have stumbled upon something you have kept hidden from them. These are the exciting things that make exploration special and make the world feel alive! These can be an extended series of encounters that takes the players away from their intended task, or a curiosity that they must come back to later.</p>
+<p>In case three, we have entered the world of random encounters. These are the spice that makes the world seem alive. When you can, make your random encounters as specific to your setting and adventure hooks as possible.</p>
+<h4 id="designing-encounter-tables"><a class="header" href="#designing-encounter-tables">Designing Encounter Tables</a></h4>
+<p>In Super Dead, random point crawl encounters serve as a way to color the world. If tabletop roleplaying games are 1/3 exploration, 1/3 roleplaying, and 1/3 combat, you should consider dividing your encounter tables into thirds as well.</p>
+<p>That is, split your encounter tables in thirds.</p>
+<p>The <strong>exploration</strong> third of your encounter tables should be filled suspicious or intriguing places. If the players investigate these places, they should find clues for current or future tasks, or useful equipment or gear.</p>
+<p>The <strong>combat</strong> third of your encounter tables should be filled with zombies, opposing factions, lone wolf mutants, zombies, and even more zombies. This isn't the apocalypse for nothing! Make the number and activity of foe encountered memorable.</p>
+<p>The <strong>roleplaying</strong> third of your encounter table can be stocked with faction figures, independent survivors, and even faction leaders out doing important things. For these encounters, it is critical that something important is going on <em>before</em> the players arrive.</p>
+<h4 id="nighttime-encounter-tables"><a class="header" href="#nighttime-encounter-tables">Nighttime Encounter Tables</a></h4>
+<p>Because nighttime is more dangerous than daytime, once you've created your daytime encounter table, it is often beneficial to create a nighttime version of the same table. Good rules of them are fewer roleplaying encounters involving factions survivors, and more zombie encounters.</p>
+<p>For example, the <em>"Villain and Minions"</em> encounter might become <em>"Fiona Frost and her snowmen are entering a derelict jewelry store: Veronica's Diamond Atelier. After they enter, Fiona seals the entrance with a wall of ice..."</em></p>
+<h5 id="generic-encounter-table"><a class="header" href="#generic-encounter-table">Generic Encounter Table</a></h5>
+<p>The following generic encounter table can serve as a boilerplate for your session prep. To prep for your game, replace the generic encounters with specific encounters relevant to ongoing storylines in your game.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">2d10</th><th style="text-align: left">Daytime Encounter</th><th style="text-align: left">Nighttime Encounter</th></tr></thead><tbody>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Villain and Minions</td><td style="text-align: left">Villain and Minions</td></tr>
+<tr><td style="text-align: center">3-4</td><td style="text-align: left">Medicine</td><td style="text-align: left">Medicine + zombies</td></tr>
+<tr><td style="text-align: center">5-6</td><td style="text-align: left">Ammo</td><td style="text-align: left">Ammo + zombies</td></tr>
+<tr><td style="text-align: center">7</td><td style="text-align: left">Clue #1</td><td style="text-align: left">Clue #1</td></tr>
+<tr><td style="text-align: center">8</td><td style="text-align: left">Zombies (1d6)</td><td style="text-align: left">Zombies (2d6)</td></tr>
+<tr><td style="text-align: center">9</td><td style="text-align: left">Clue #2</td><td style="text-align: left">Clue #2</td></tr>
+<tr><td style="text-align: center">10</td><td style="text-align: left">Indepdent Survivor</td><td style="text-align: left">Survivor fleeing zombies</td></tr>
+<tr><td style="text-align: center">11</td><td style="text-align: left">Zombie (1)</td><td style="text-align: left">Zombie (1d4)</td></tr>
+<tr><td style="text-align: center">12</td><td style="text-align: left">Clue #3</td><td style="text-align: left">Clue #3 + 1d4 zombies</td></tr>
+<tr><td style="text-align: center">13</td><td style="text-align: left">Faction Mooks</td><td style="text-align: left">Faction Mooks</td></tr>
+<tr><td style="text-align: center">14</td><td style="text-align: left">Clue #4</td><td style="text-align: left">Clue #4</td></tr>
+<tr><td style="text-align: center">15</td><td style="text-align: left">Independent Survivors</td><td style="text-align: left">Survivors fleeing zombies</td></tr>
+<tr><td style="text-align: center">16-18</td><td style="text-align: left">Villain's Minions</td><td style="text-align: left">Villain's Minions</td></tr>
+<tr><td style="text-align: center">19</td><td style="text-align: left">Zombies (2d6)</td><td style="text-align: left">Zombies (4d6)</td></tr>
+<tr><td style="text-align: center">20</td><td style="text-align: left">Faction Leader w. Mooks</td><td style="text-align: left">Faction Leader w. Mooks</td></tr>
+</tbody></table>
+</div>
+<h5 id="tables-for-creating-random-encounters"><a class="header" href="#tables-for-creating-random-encounters">Tables for Creating Random Encounters</a></h5>
+<p>Having trouble coming up with your own random encounters? Use the following tables to help. Again, it works best to take these general ideas for encounters and specify them down to specific encounter that can be used at the table.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Encounter</th><th style="text-align: center">1d8</th><th style="text-align: left">Location</th><th style="text-align: center">1d10</th><th style="text-align: left">Modifier</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Zombies</td><td style="text-align: center">1</td><td style="text-align: left">Art / Culture</td><td style="text-align: center">1</td><td style="text-align: left">Aggressive</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Factions</td><td style="text-align: center">2</td><td style="text-align: left">Education</td><td style="text-align: center">2</td><td style="text-align: left">Bloody</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Survivors</td><td style="text-align: center">3</td><td style="text-align: left">Government / Law</td><td style="text-align: center">3</td><td style="text-align: left">Cautious</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Clue</td><td style="text-align: center">4</td><td style="text-align: left">Medical</td><td style="text-align: center">4</td><td style="text-align: left">Chaotic</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Goods</td><td style="text-align: center">5</td><td style="text-align: left">Recreation / Sports</td><td style="text-align: center">5</td><td style="text-align: left">Curious</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Zombies + Roll Again</td><td style="text-align: center">6</td><td style="text-align: left">Residential</td><td style="text-align: center">6</td><td style="text-align: left">Noisy</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: left"></td><td style="text-align: center">7</td><td style="text-align: left">Restaurant / Shopping</td><td style="text-align: center">7</td><td style="text-align: left">Obvious</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: left"></td><td style="text-align: center">8</td><td style="text-align: left">Vehicle</td><td style="text-align: center">8</td><td style="text-align: left">Quiet</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: left"></td><td style="text-align: center"></td><td style="text-align: left"></td><td style="text-align: center">9</td><td style="text-align: left">Silly</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: left"></td><td style="text-align: center"></td><td style="text-align: left"></td><td style="text-align: center">10</td><td style="text-align: left">Surprising</td></tr>
+</tbody></table>
+</div>
+<h2 id="running-a-city"><a class="header" href="#running-a-city">Running a City</a></h2>
+<p>While Super Dead cities are not like their modern thriving forebearers, they are still cities. And running a city is a challenging feat at the table. Consider the following as a procedure for running Super Dead cities.</p>
+<ol>
+<li>Create and maintain a list of factions that occupy the city along with the players</li>
+<li>After each session, update the world based on what the factions did "off screen"</li>
+<li>Create new clues and adventure hooks based on those off-screen events.</li>
+<li>Provide those clues and adventure hooks to the players.</li>
+</ol>
+<h4 id="enumerate-the-factions"><a class="header" href="#enumerate-the-factions">Enumerate the Factions</a></h4>
+<p>Because survival is hard, survivors will likely organize themselves into groups. These groups will want different things, even if they are all nominally working together. These groups are factions. They must take actions, independent of the players, to achieve their own interests.</p>
+<h4 id="update-the-world"><a class="header" href="#update-the-world">Update the World</a></h4>
+<p>After each session, go through your list of factions and what they want. Then, think about what they would have been doing during the last session of gameplay to further their interests.</p>
+<p>For example, a faction that wants to run away might be looking for gas or vehicles. A faction that is afraid might be looking for weapons or a powerful ally.</p>
+<p>How did these endeavors go? Were they successful, or are they now worse off than they started? Decide what each faction did and which outcome they realized.</p>
+<h4 id="create-clues--hooks"><a class="header" href="#create-clues--hooks">Create Clues + Hooks</a></h4>
+<p>For each outcome, create a clue or hook--some way that the players can learn about what the factions are up to. These are great to stock your random encounter tables, or to make the topic of conversation amongst your NPCs.</p>
+<h4 id="provide-clues--hooks"><a class="header" href="#provide-clues--hooks">Provide Clues + Hooks</a></h4>
+<p>At the next session, provide those clues and hooks to the players. Don't feel like you need to provide all the clues and hooks you come up with at each session. But it is okay, even good, to provide more hooks than the players can act on.</p>
+<p>In a city with three or more factions, there is more going on than the players could possible hope to be involved with. They will have to prioritize and strategize--an important part of the game!</p>
+<h2 id="creating-a-point-crawl"><a class="header" href="#creating-a-point-crawl">Creating a Point-Crawl</a></h2>
+<p>One nice thing about point crawls is that they are easy to create. You write down the points of interest, draw lines between them, and you're (mostly) done.</p>
+<p>If you have a map, point crawls can trivially be super-imposed on top of a map, by reducing the opacity of the map-layer, and drawing your points and connections on top of it.</p>
+<p>Between each point on the map, indicate the number of encounters that would occur when traveling between those two locations. This should roughly correspond to the distance and danger of the journey.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="micro-settings"><a class="header" href="#micro-settings">Micro Settings</a></h1>
+<p>The following micro settings are designed to get you into the game quickly.</p>
+<h2 id="gulf-pearl-texas"><a class="header" href="#gulf-pearl-texas">Gulf Pearl, Texas</a></h2>
+<p>Gulf Pearl is a massive, sprawling graveyard of a city. It’s giant highways served as deathtraps for those who sought to escape, and the mobs of zombies that roam the streets at night prove it: everything is bigger in Texas.</p>
+<p>The shining beacon of Gulf Pearl is and has always been the headquarters of the American Oil Corporation. Their business has long since diversified from oil, but now it rests almost entirely on surviving the end of days.</p>
+<p>Other surviving factions include the remnants of an international drug cartel and government rocket scientists at NASA.</p>
+<h6 id="gulf-pearl-rumors-table"><a class="header" href="#gulf-pearl-rumors-table">Gulf Pearl Rumors Table</a></h6>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Rumors</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">A group of survivors have escaped from the AOC compound and have information about what life is like on the inside.</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">An area previously held by the cartels has been overrun by zombies. Likely leaving tons of weapons and ammo behind.</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">A group of survivors is going to break into the gearing up to break into the NASA complex, to see if there is anyone alive capable of creating a cure.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">American Oil executives believe that one of their rigs in the gulf remains entirely uninfected and is commissioning a mission to investigate.</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Valencia Vibora, a powerful mutant, is trying to reassemble the cartel, beginning with drug- and gun-running operations.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Scientists at NASA believe they are close to finding a way to inoculate people against the virus, but the treatment is killing many of those its tested on.</td></tr>
+</tbody></table>
+</div>
+<h2 id="san-buho-california"><a class="header" href="#san-buho-california">San Buho, California</a></h2>
+<p>They say a criminal always returns to the scene of the crime. That’s exactly what some survivors of San Buho think that the Navy is doing back in town.</p>
+<p>With an operational aircraft carrier, and a third of the naval base liberated from the undead, the Navy’s outpost in San Buho may be the most secure place to lay one’s head in the world after.</p>
+<p>But some factions aren’t quick to forgive: like the Blind Devil biker gang, or local parishioners and survivors of Our Lady of Guadalupe’s mutant priest: Father Juan Ayala.</p>
+<h6 id="san-buho-rumors-table"><a class="header" href="#san-buho-rumors-table">San Buho Rumors Table</a></h6>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Rumors</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">The Navy is planning to welcome healthy survivors onto the base on Saturday.</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">The Blind Devil biker gang is planning a joy ride to bring massive hordes of zombies to the doorstep of the San Buho navel based.</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Father Ayala's flock is growing too big, and he needs to find a new safe place to shelter his congregation.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">The Blind Devils have a small marijuana plantation that is drawing the ire of Father Ayala.</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Frank the Frog is sheltering a few survivors in an old public swimming pool complex.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Hundreds of zombies have been seen milling around the parking lot of an Big Box store.</td></tr>
+</tbody></table>
+</div>
+<h2 id="skunk-city-iowa"><a class="header" href="#skunk-city-iowa">Skunk City, Iowa</a></h2>
+<p>Skunk City’s survivors are the motly, scrappy residents of a Midwestern College town. While farmers and academics, pastors and doctors wouldn’t normally have much in common, they’re finding ways to get along.</p>
+<p>But as it has always been with Skunk City, new people keep showing up and they don’t always care about the survivors of Skunk City.</p>
+<p>Skunk City’s factions include a coalition of independent farmers, holding onto their land, and a mutant doctor who will do anything to find a cure.</p>
+<h6 id="skunk-city-rumors-table"><a class="header" href="#skunk-city-rumors-table">Skunk City Rumors Table</a></h6>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Rumors</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Dr. Lori Osprey has established a small compound in a wing of the hospital, where she is searching for a cure.</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">The university football stadium is now overgrown with corn, after two mutants have moved in.</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">A group of survivors has been holed up in the library for weeks, but is running out of supplies.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">A new group of survivors has come West from Chicago and is plundering everything they can find.</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Henry Hodgesen and a few other farmers are planning to confront Skunk City's new guests.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">The Ferris brothers have styled themselves as samurai and started selling moonshine out of an apartment building south of town.</td></tr>
+</tbody></table>
+</div>
+<h2 id="fellsmore-maryland"><a class="header" href="#fellsmore-maryland">Fellsmore, Maryland</a></h2>
+<p>The streets of Fell, Maryland are as dangerous as ever.  The surviving residents take to heart that the gang violence their city could never tamper would not be stopped by a zombie apocalpyse either.</p>
+<p>While eastside and westside gangsters fight between and amongst themselves, the Dockworkers Union have carved out a patch of life down by the docks, and a group of survivors are holed up in the reknowned Sammuel Johns hospital searching for a cure.</p>
+<p>And on the streets, a rumor is going around that a member of the Fell’s Street Five superhero team may have survived after all.</p>
+<h6 id="fellsmore-rumors-table"><a class="header" href="#fellsmore-rumors-table">Fellsmore Rumors Table</a></h6>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Rumors</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">The westside gang WMD is demanding protection payments from the survivors at Sammuel Johns' hospital, but the survivors haven't been able to pay</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Eastside gang violence has become so extreme, that the daytime is now as dangerous as night.</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">A group of former police are waging a guerilla war against the gangs and rallying independent survivors.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">The Dockworkers are running out of food, but are afraid to leave their bay-side sanctuary.</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Carver's Killer Krab gang has been gaining swathes of territory on the westside, and is trying to unite the westside gangs.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">The survivors at Sammuel Johns' hospital need a power supply to better investigate a cure; they have located a mobile nuclear reactor at a data center outside the city.</td></tr>
+</tbody></table>
+</div>
+<h2 id="west-moriches-new-york"><a class="header" href="#west-moriches-new-york">West Moriches, New York</a></h2>
+<p>60 miles from the ruins of New York City, a small sanctuary has emerged in the city of West Moriches.</p>
+<p>Protected by Gregory "Geo Dude" Godwin and the rock walls he has erected around the city, West Moriches offers a haven from which survivors can venture out into the zombie wasteland, in search of survivors or a cure.</p>
+<blockquote>
+<p><strong>Designer's Note:</strong> Though this setting can be used for any type of campaign, it is particularly intended for a "West Marches" style campaign that gets more challenging as the players farther and farther west towards New York City.</p>
+</blockquote>
+<h5 id="west-moriches-adventure-hooks"><a class="header" href="#west-moriches-adventure-hooks">West Moriches Adventure Hooks</a></h5>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d6</th><th style="text-align: left">Hooks</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Some survivors are taking refuge at a former Italian restaurant.</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">The Hockey Store a town over has a great supply of gear that could be used as armor.</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">A nearby police station looks like its undistributed. There is surely a stockpile of ammunition and weapons to be had there.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Katzenelli's never served fresh fish. They always kept it in a huge freezer in the basement. Maybe there still some left?</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Gunfire was spotted last night in North Moriches. There could still be survivors there.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">Several people spotted a man flying around the Moriches Water Tower last night. It could be useful to have a flying mutant ally.</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="inspiration"><a class="header" href="#inspiration">Inspiration</a></h1>
+<p>This work stands on the shoulders of giants. The following sources of media and games were inspirational in the creation of this work.</p>
+<h2 id="media"><a class="header" href="#media">Media</a></h2>
+<ul>
+<li><strong>28 Days Later</strong> by Alex Garland and Danny Boyle</li>
+<li><strong>Amazing Spiderman</strong> by Stan Lee and Steve Ditko</li>
+<li><strong>Batman</strong> by Robert Kanigher and Sheldon Moldoff</li>
+<li><strong>Dawn of the Dead</strong> by George Romero</li>
+<li><strong>Dawn of the Dead</strong> by Zack Snyder</li>
+<li><strong>From Dusk til Dawn</strong> by Quentin Tarantino and Robert Rodriguez</li>
+<li><strong>Poison Ivy</strong> by G. Willow Wilson and Marcio Takara</li>
+<li><strong>Rec</strong> by Paco Plaza and Jaume Balaguero</li>
+<li><strong>Walking Dead</strong> by Tony Moore and Robert Kirkman</li>
+<li><strong>X-Men</strong> by Stan Lee and Jack Kirby</li>
+<li><strong>X-Statix</strong> by Peter Milligan and Mike Allred</li>
+<li><strong>Zombieland</strong> by Rhett Reese, Paul Wernick, and Ruben Fleischer</li>
+</ul>
+<h2 id="games"><a class="header" href="#games">Games</a></h2>
+<ul>
+<li><strong>All Flesh Must Be Eaten</strong> by George Vasilakos</li>
+<li><strong>Apocalypse World</strong> by D. Vincent Baker and Meguey Baker</li>
+<li><strong>Basic Action Super Heroes!</strong> by Chris Rutkowsky</li>
+<li><strong>Black Hack</strong> by David Black</li>
+<li><strong>Cairn</strong> by Yochai Gal</li>
+<li><strong>Force on Force</strong> by Shawn Carpenter</li>
+<li><strong>Marvel Superhero Roleplaying Game</strong> by Jeff Grubbs</li>
+<li><strong>Shadowdark</strong> by Kelsey Dionne</li>
+<li><strong>Rager</strong> by Colin Phillips and Chris Pooch</li>
+<li><strong>Tiny Supers</strong> by Alan Bahr</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
