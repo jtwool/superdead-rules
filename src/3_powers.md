@@ -60,6 +60,8 @@ When you make a power surge attempt, pick a power level one or two levels above 
 
 Regardless if you succeed or fail, you will incur **stress** after you power surge. Following a power surge attempt, you will take 1 point of stress for a 1 level power surge, and 3 points of stress for a 2 level power surge.
 
+> **Designer's Note:** Because this is a rules-light system that involving super powers, you will often find yourself wondering "would a player's powers be able to do that?" If the answer seems to rest somewhere between certainly yes and certainly not, allow the player to take a power surge to accomplish the feat.
+
 ## Power Soak
 Your powers also provide you with an enhanced durability. You can use your powers to soak damage. Whenever you would take a wound, instead, you may choose to soak that damage with one of your powers.
 
