@@ -14,9 +14,7 @@ Everything you need to play can be found in this ruleset.
 
 # Quick Start: 28 Rules Later
 
-If you're an experienced TTRPG player, or you have already read the rules, the following 28 rules might be enough for you to play an entire game of Super Dead.
-
-Other plays can read the full rules.
+If you're an experienced TTRPG player, or you have already read the rules, the following 28 rules might be enough for you to play an entire game or campaign of Super Dead.
 
 **Characters**
 
