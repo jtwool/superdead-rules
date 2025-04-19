@@ -85,12 +85,12 @@ Being hurt makes things **hard**. Being wounded makes things **very hard**.
 
 You naturally go from **hurt** back to **healthy** as soon as combat ends. 
 
-| Wounds | Status | Recovery |
-| - | - | - |
-| 0 | Healthy | - 
-| 1 | Hurt | End of Combat |
-| 2 | Wounded | First Aid / Medicine 
-| 3 | Disfigured or Dead | Never  
+| Wounds | Status | Recovery | Penalty |
+| - | - | - | - |
+| 0 | Healthy | - | - |
+| 1 | Hurt | End of Combat | Hard |
+| 2 | Wounded | First Aid / Medicine | Very Hard |
+| 3 | Disfigured or Dead | Never |  Very Hard |
 
 If you are wounded, however, you need medical attention. A successful **first aid** save will treat the wound, but leave you with its lingering effects for 14 days. A failed **first aid** save will leave you with the lingering effects of the wound for 28 days. 
 
