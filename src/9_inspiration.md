@@ -16,13 +16,13 @@ This work stands on the shoulders of giants. The following sources of media and 
 - **Zombieland** by Rhett Reese, Paul Wernick, and Ruben Fleischer
 
 ## Games
-- **All Flesh Must Be Eaten** by George Vasilakos
-- **Apocalypse World** by D. Vincent Baker and Meguey Baker
-- **Basic Action Super Heroes!** by Chris Rutkowsky
-- **Black Hack** by David Black
-- **Cairn** by Yochai Gal
-- **Force on Force** by Shawn Carpenter
-- **Marvel Superhero Roleplaying Game** by Jeff Grubbs
-- **Shadowdark** by Kelsey Dionne
-- **Rager** by Colin Phillips and Chris Pooch
-- **Tiny Supers** by Alan Bahr
+- [**All Flesh Must Be Eaten**](https://www.edenstudios.net/allflesh.html) by George Vasilakos
+- [**Apocalypse World**](http://apocalypse-world.com/) by D. Vincent Baker and Meguey Baker
+- [**Basic Action Super Heroes!**](https://www.bashrpg.com/index.htm) by Chris Rutkowsky
+- [**Black Hack**](https://the-black-hack.jehaisleprintemps.net/) by David Black
+- [**Cairn**](https://cairnrpg.com/) by Yochai Gal
+- [**Force on Force**](https://www.wargamevault.com/product/373295/Force-on-Force-1st-Edition) by Shawn Carpenter
+- **Marvel Superhero Roleplaying Game** by [Jeff Grubbs](https://grubbstreet.blogspot.com/)
+- [**Shadowdark**](https://www.thearcanelibrary.com/) by Kelsey Dionne
+- [**Skirmish Ragers**](https://haylandterrain.com/en-us/collections/skirmish-ragers) by Colin Phillips and Chris Pooch
+- [**Tiny Supers**](https://shop.gallantknightgames.com/products/tiny-supers) by Alan Bahr

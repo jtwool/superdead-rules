@@ -51,7 +51,7 @@ When you **find ammunition** out in the world, roll your ammunition die. If you 
 | Rifle, Sniper | 3d10 | Far | 7.62 | Very Rare
 | Shotgun | 4d4* | Close | 12-gauge | Uncommon
 
-**Machine guns** and **Assault rifles** are capable of providing **suppressive fire**. Suppressive fire makes it **very hard** to take actions in the area under fire.
+**Machine guns** and **Assault rifles** are capable of providing **suppressive fire**. Suppressive fire makes it **very hard** to take actions in the area under fire. Because **machine guns** are purpose made for suppressive fire, if you attempt to take an action while under suppressive fire from a machine gun it is **extremely hard**.
 
 **Shotgun.** Attacking with a shotgun at immediate range is deadly; shotguns do double damage in immediate range.
 
