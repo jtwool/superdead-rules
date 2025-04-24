@@ -1,6 +1,11 @@
 # Gear
 Equipment is essential to surviving the end of the world. Here are some common items you'll need or encounter.
 
+## Carrying and Encumbrance  
+You can carry a number of items equal to **five plus your athletics** score without effort. Heroes with super strength or a similar ability can carry 20 items.
+
+When carrying a number of items more than that, you are burdened by the weight. This makes many tasks **hard**, and some tasks like hiding or sneaking about **very hard**.
+
 ## Bartering and Scavenging
 There is no central bank. No dollar. And nobody needs gold. What people need is food, shelter, ways to stay safe. Ways to relax. And ways to get away.
 
@@ -32,23 +37,27 @@ Firearms are a reliable form of self-defense with the significant advantage of b
 #### Ammunition
 A significant limitation of firearms is that they need ammunition to fire.
 
-The amount of ammunition you have of a given type is represented by a die: 1d4 to 1d12. 
+The amount of ammunition that takes up a single slot in your inventory is determined by your magazine size.
 
-Anytime after shooting a firearm, roll your ammunition die for the ammunition associated with that weapon.
+| Ammo | Common Magazine Sizes | Rarity | 
+| :- | :- | :- |
+| 9mm | 10, 15, 20 | Uncommon
+| 5.56mm | 20, 30 | Very Rare
+| .375 | 3, 6 | Rare
+| 12-guade | 2, 4 | Uncommon
+| 7.62 | 100, 200 | Very Rare
 
-If you roll a 1, reduce the die type by 1 step (e.g., 1d12 becomes 1d10; 1d10 becomes 1d8, etc.) If your ammo would be reduced below 1d4, you are **out of ammo**. You cannot shoot a weapon if you are out of ammo.
-
-When you **find ammunition** out in the world, roll your ammunition die. If you roll a 3 or less, increase your ammunition die by one step. If you find lots of ammunition, your game master may provide you a fixed size increase.
+Keep track of the ammo that you use. When you have shot all the bullets in your magazine, you may reload only if you have another.
 
 ##### Table. Firearms
 | Weapon | Damage | Range | Ammo | Rarity | 
 | :- | :-: | :- | :- | :- |
 | Handgun | 2d6 | Close | 9mm |  Uncommon  
-| Machine Gun | 4d10 | Far | 7.62 | Very Rare
-| Rifle, Assault | 3d6 | Near | 5.56 | Very Rare
-| Rifle, Civilian | 3d6 | Near | 5.56 | Rare
-| Rifle, Hunting | 3d6 | Near | .375 | Uncommon
-| Rifle, Sniper | 3d10 | Far | 7.62 | Very Rare
+| Machine Gun | 4d10 | Far | 7.62mm | Very Rare
+| Rifle, Assault | 3d6 | Near | 5.56mm | Very Rare
+| Rifle, Civilian | 3d6 | Near | 5.56mm | Rare
+| Rifle, Hunting | 3d6 | Near | .375 caliber | Uncommon
+| Rifle, Sniper | 3d10 | Far | 7.62mm | Very Rare
 | Shotgun | 4d4* | Close | 12-gauge | Uncommon
 
 **Machine guns** and **Assault rifles** are capable of providing **suppressive fire**. Suppressive fire makes it **very hard** to take actions in the area under fire. Because **machine guns** are purpose made for suppressive fire, if you attempt to take an action while under suppressive fire from a machine gun it is **extremely hard**.

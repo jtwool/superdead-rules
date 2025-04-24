@@ -223,8 +223,16 @@
 </div>
 <p>Backgrounds are not strictly professions, but rather broad areas of familiarity. You should specify your background as it applies to your character.</p>
 <h2 id="improving-your-character"><a class="header" href="#improving-your-character">Improving Your Character</a></h2>
-<p>As you adventure, you will gain experience.</p>
-<p>When you gain 300 experience points, you can improve your character. Every subsequent improvement costs an additional 300 experience, (e.g., 600, 900, 1200, etc.)</p>
+<p>As you strive to survive the end of days, certain activities such as killing zombies, rescuing survivors, gathering supplies, and defeating villains will gain you experience points.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Activity</th><th style="text-align: center">Min XP</th><th style="text-align: center">Max XP</th></tr></thead><tbody>
+<tr><td style="text-align: left">Killing zombies</td><td style="text-align: center">50</td><td style="text-align: center">200</td></tr>
+<tr><td style="text-align: left">Rescuing survivors</td><td style="text-align: center">100</td><td style="text-align: center">200</td></tr>
+<tr><td style="text-align: left">Gathering supplies</td><td style="text-align: center">50</td><td style="text-align: center">200</td></tr>
+<tr><td style="text-align: left">Defeating a villain</td><td style="text-align: center">200</td><td style="text-align: center">500</td></tr>
+<tr><td style="text-align: left">Progress towards a cure</td><td style="text-align: center">50</td><td style="text-align: center">500</td></tr>
+</tbody></table>
+</div>
+<p>When you first gain 300 experience points, you can improve your character. Every subsequent improvement costs an additional 300 experience, (e.g., 600, 900, 1200, etc.)</p>
 <p>When you improve your character, roll 1d6. On a 1-3, select from list A; on a 4-5, select from list B; on a 6, select from both lists.</p>
 <p>Note that there is a limit to the number of times a given improvement can be taken.</p>
 <p><strong>Personal Improvements</strong></p>
@@ -270,6 +278,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

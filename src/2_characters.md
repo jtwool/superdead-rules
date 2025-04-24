@@ -84,9 +84,17 @@ Every character has a background. This background may allow you to have skills, 
 Backgrounds are not strictly professions, but rather broad areas of familiarity. You should specify your background as it applies to your character.
 
 ## Improving Your Character
-As you adventure, you will gain experience.
+As you strive to survive the end of days, certain activities such as killing zombies, rescuing survivors, gathering supplies, and defeating villains will gain you experience points.
 
-When you gain 300 experience points, you can improve your character. Every subsequent improvement costs an additional 300 experience, (e.g., 600, 900, 1200, etc.)
+| Activity | Min XP | Max XP |
+| :- | :-: | :-: | 
+| Killing zombies | 50 | 200| 
+| Rescuing survivors | 100 | 200 |
+| Gathering supplies | 50 | 200 |
+| Defeating a villain | 200 | 500 |
+| Progress towards a cure | 50 | 500 |
+
+When you first gain 300 experience points, you can improve your character. Every subsequent improvement costs an additional 300 experience, (e.g., 600, 900, 1200, etc.)
 
 When you improve your character, roll 1d6. On a 1-3, select from list A; on a 4-5, select from list B; on a 6, select from both lists.
 
