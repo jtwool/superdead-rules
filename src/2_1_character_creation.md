@@ -2,6 +2,8 @@
 
 The following steps can be used to quickly create Super Dead characters.
 
+Super Dead characters can be recorded on a note card, a piece of paper, or [dedicated character sheet.](./character-sheet.pdf)
+
 #### 1. Roll Attributes
 Roll 4d6. Add 2 to each die and assign each value to an attribute. Higher is better.
 
