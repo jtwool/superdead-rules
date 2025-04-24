@@ -595,7 +595,8 @@
 <tr><td style="text-align: left">5.56mm</td><td style="text-align: left">20, 30</td><td style="text-align: left">Very Rare</td></tr>
 <tr><td style="text-align: left">.375</td><td style="text-align: left">3, 6</td><td style="text-align: left">Rare</td></tr>
 <tr><td style="text-align: left">12-guade</td><td style="text-align: left">2, 4</td><td style="text-align: left">Uncommon</td></tr>
-<tr><td style="text-align: left">7.62</td><td style="text-align: left">100, 200</td><td style="text-align: left">Very Rare</td></tr>
+<tr><td style="text-align: left">7.62mm</td><td style="text-align: left">6, 100*, 200*</td><td style="text-align: left">Very Rare</td></tr>
+<tr><td style="text-align: left">*<em>100 and 200 round magazines for 7.26mm require 2 item slots to carry.</em></td><td style="text-align: left"></td><td style="text-align: left"></td></tr>
 </tbody></table>
 </div>
 <p>Keep track of the ammo that you use. When you have shot all the bullets in your magazine, you may reload only if you have another.</p>
@@ -968,22 +969,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

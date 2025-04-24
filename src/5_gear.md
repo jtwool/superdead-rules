@@ -45,7 +45,8 @@ The amount of ammunition that takes up a single slot in your inventory is determ
 | 5.56mm | 20, 30 | Very Rare
 | .375 | 3, 6 | Rare
 | 12-guade | 2, 4 | Uncommon
-| 7.62 | 100, 200 | Very Rare
+| 7.62mm | 6, 100*, 200* | Very Rare
+**100 and 200 round magazines for 7.26mm require 2 item slots to carry.*
 
 Keep track of the ammo that you use. When you have shot all the bullets in your magazine, you may reload only if you have another.
 
