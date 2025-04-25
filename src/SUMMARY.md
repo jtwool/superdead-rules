@@ -7,7 +7,7 @@
 - [Combat](./4_combat.md)
 - [Gear](./5_gear.md)
 - [Zombies](./6_zombies.md)
+  - [Enemies and NPCs](./6_statblocks.md)
 - [Exploration](./7_exploration.md)
-  
 - [Micro Settings](./8_settings.md)
 - [Inspiration](./9_inspiration.md)
