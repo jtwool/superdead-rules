@@ -4,7 +4,7 @@
 
 You will gather supplies, rescue survivors, and face off against villains, while staying one step ahead of the ever present zombie threat.
 
-Super Dead is designed to be rules-light and intuitive, encouraging quick, narrative-driven decision making, inspired by the [New School Revolution](https://newschoolrevolution.com/what-is-the-new-school-revolution-part-1/) in tabletop gaming as well as modern tactical war games.
+Super Dead is designed to be rules-light and intuitive, encouraging quick, narrative-driven decision making, inspired by the [New School Revolution](https://boneboxchant.wordpress.com/2022/05/04/revisiting-the-nsr/) (See also: [What is the NSR?](https://www.congas.blog/what-is-the-nsr/)) in tabletop gaming as well as modern tactical war games.
 
 Everything you need to play can be found in this ruleset.
 
