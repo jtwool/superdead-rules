@@ -481,14 +481,15 @@
 <p><strong>Opportunity fire</strong> is a free ranged attack against a combatant who enters your line of sight. You may take one opportunity attack per target so long as you have ammunition (if necessary).</p>
 <h3 id="the-hand-to-hand-phase"><a class="header" href="#the-hand-to-hand-phase">The Hand-to-Hand Phase</a></h3>
 <p>After the <a href="4_combat.html#the-movement-phase">movement phase</a> is resolved, if there are any combatants within <a href="4_combat.html#ranges"><strong>immediate range</strong></a> of one another, the hand-to-hand phase of combat occurs.</p>
-<p>The hand-to-hand phase consists of up to <strong>three exchanges</strong> of attacks. Within an exchange, each combatant declares their intention, and then attacks are resolved simultaneously.</p>
+<p>The hand-to-hand phase consists of up to <strong>three exchanges</strong> of attacks. Within an exchange, each combatant declares who and how they would like to attack, and then attacks are resolved simultaneously.</p>
 <p>Shooting a pistol or shotgun at immediate range is <strong>hard</strong>, and shooting a long-gun is <strong>very hard</strong>. Attacks with ranged powers are also <strong>hard</strong>.</p>
+<p><strong>Obstacles</strong> within immediate range can obstruct hand-to-hand combat. If during the hand-to-hand phase you are separated from your intended target by an obstacle, e.g., a table, a car, a chain link fence, etc., your damage from the first exchange occurs during second exchange.</p>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: left">Situation</th><th style="text-align: left">Difficulty in H2H</th><th style="text-align: center">Modifier</th></tr></thead><tbody>
 <tr><td style="text-align: left">Handheld Weapon</td><td style="text-align: left">Normal</td><td style="text-align: center">-</td></tr>
 <tr><td style="text-align: left">Pistol</td><td style="text-align: left">Hard</td><td style="text-align: center">+1</td></tr>
 <tr><td style="text-align: left">Shotgun</td><td style="text-align: left">Hard</td><td style="text-align: center">+1</td></tr>
 <tr><td style="text-align: left">Other gun</td><td style="text-align: left">Very Hard</td><td style="text-align: center">+2</td></tr>
-<tr><td style="text-align: left">Melee Power</td><td style="text-align: left">Normal</td><td style="text-align: center">-</td></tr>
+<tr><td style="text-align: left">Hand-to-Hand Power</td><td style="text-align: left">Normal</td><td style="text-align: center">-</td></tr>
 <tr><td style="text-align: left">Ranged Power</td><td style="text-align: left">Hard</td><td style="text-align: center">+1</td></tr>
 </tbody></table>
 </div>
@@ -581,6 +582,7 @@
 <h2 id="carrying-and-encumbrance"><a class="header" href="#carrying-and-encumbrance">Carrying and Encumbrance</a></h2>
 <p>You can carry a number of items equal to <strong>five plus your athletics</strong> score without effort. Heroes with super strength or a similar ability can carry 20 items.</p>
 <p>When carrying a number of items more than that, you are burdened by the weight. This makes many tasks <strong>hard</strong>, and some tasks like hiding or sneaking about <strong>very hard</strong>.</p>
+<p><strong>Stress</strong> wears on you both mentally and physically. Starting at two points of stress, and for every two points of stress thereafter, you can carry one less item.</p>
 <h2 id="bartering-and-scavenging"><a class="header" href="#bartering-and-scavenging">Bartering and Scavenging</a></h2>
 <p>There is no central bank. No dollar. And nobody needs gold. What people need is food, shelter, ways to stay safe. Ways to relax. And ways to get away.</p>
 <p>You won't find stores or shopkeepers in the world of Super Dead. Instead, anything you want, you'll have to find, or barter for. And since everyone has so little, you're going to need to give up something good if you want what someone else has.</p>
@@ -1044,22 +1046,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

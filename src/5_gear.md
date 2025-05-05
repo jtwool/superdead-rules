@@ -6,6 +6,8 @@ You can carry a number of items equal to **five plus your athletics** score with
 
 When carrying a number of items more than that, you are burdened by the weight. This makes many tasks **hard**, and some tasks like hiding or sneaking about **very hard**.
 
+**Stress** wears on you both mentally and physically. Starting at two points of stress, and for every two points of stress thereafter, you can carry one less item. 
+
 ## Bartering and Scavenging
 There is no central bank. No dollar. And nobody needs gold. What people need is food, shelter, ways to stay safe. Ways to relax. And ways to get away.
 
