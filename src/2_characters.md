@@ -94,19 +94,35 @@ As you strive to survive the end of days, certain activities such as killing zom
 | Defeating a villain | 200 | 500 |
 | Progress towards a cure | 50 | 500 |
 
-When you first gain 300 experience points, you can improve your character. Every subsequent improvement costs an additional 300 experience, (e.g., 600, 900, 1200, etc.)
+As you gain experience, you will **level up**. When you have enough XP to reach the next level, you can select one of the following improvements for your character:
 
-When you improve your character, roll 1d6. On a 1-3, select from list A; on a 4-5, select from list B; on a 6, select from both lists.
+### Improvements 
+- Gain a new power (+2)
+- Gain two new powers (+1)
+- Improve a power (+1)
+- Gain a skill 
+- Grain a trait 
+- Remove a flaw
+- Clear all stress
 
-Note that there is a limit to the number of times a given improvement can be taken.
+Once an improvement is selected, you may not select that same upgrade for either of the subsequent two levels.
 
-**Personal Improvements**
-- Increase your Athleticism by 1 (2 times)
-- Increase your Intelligence by 1 (3 times)
-- Increase your Personality by 1 (2 times)
-- Increase your Courage by 1 (4 times)
-
-**Power Improvements**
-- Develop a new Alpha power (2d4) (1 time)
-- Develop a new power Bravo 1 power (2d6) (1 time)
-- Increase a power one die type (6 times)
+### Advancement Table
+| Level | Cumulative | To Next Level |
+| :-: | -: | -: |
+1|-|-
+2|300|300
+3|600|300
+4|900|300
+5|1500|600
+6|2100|600
+7|2700|600
+8|3600|900
+9|4500|900
+10|5400|900
+11|6600|1200
+12|7800|1200
+13|9000|1200
+14|10500|1500
+15|12000|1500
+16|13500|1500
