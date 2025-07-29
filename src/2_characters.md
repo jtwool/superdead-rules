@@ -110,6 +110,7 @@ As you gain experience, you will **level up**. When you have enough XP to reach 
 - Grain a trait 
 - Remove a flaw
 - Clear all stress
+- Gain a new bond
 
 Once an improvement is selected, you may not select that same upgrade for either of the subsequent two levels.
 
