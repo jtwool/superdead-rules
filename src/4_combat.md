@@ -104,25 +104,21 @@ You naturally go from **hurt** back to **healthy** as soon as combat ends.
 
 ### Being Wounded
 
-If you are wounded, you will need medical attention to recover. A successful **first aid** save will treat the wound, but leave you with its lingering effects for 28 hours. A failed **first aid** save will leave you with the lingering effects of the wound for 7 days.
+If you are wounded, you will stay wounded until you receive medical attention. A successful **first aid** save will treat the wound, but leave you with its lingering effects for 28 hours. A failed **first aid** save will leave you with the lingering effects of the wound for 7 days.
 
 For a severe wound, you will suffering lingering effects of the wound for 7 days on a successful **first aid** check, and 28 days on a failed check.
 
-A successful **medicine** save will relieve you of all effects of the wound.
+The game master will tell you how those lingering effects impact your character.
 
-| 2d6 | Wound  
-| :-: | :- | 
-| 2 | Severe Burn |
-| 3 | Dislocation |
-| 4 | Laceration | 
-| 5 |  Minor Burn | 
-| 6 | Bruising | 
-| 7 | Sprained Ligaments | 
-| 8 | Broken Bone| 
-| 9 | Minor Concussion | 
-| 10 | Compound Fracture |
-| 11 | Severe Concussion |
-| 12 | Tissue Loss |
+A successful **medicine** save, assuming the appropriate medical equipment is available, will relieve you of all effects of the wound.
+
+| 1d10 | Wounds | 1d10 | Wounds |
+| :-: | :- |  :-: | :- | 
+| 1 | Severe Burn | 6 | Sprained Ligaments | 
+| 2 | Dislocation | 7 | Broken Bone| 
+| 3 | Laceration | 8 | Minor Concussion | 
+| 4 |  Minor Burn | 9 | Compound Fracture |
+| 5 | Major Bruising | 10 | Severe Concussion |
 
 #### Disfigurement and Death
 
@@ -132,12 +128,13 @@ You may elect to become disfigured up to three times. Each time you do so, you a
 
 If you already have three disfigurements, or you elect not to select a disfigurement, you die.
 
-| 1d8 | Disfigurement | 1d8 | Disfigurement
+| 1d10 | Disfigurement | 1d10 | Disfigurement
 | :-: | :- | :-: | :- 
-| 1 | Death | 5 | Severed Hand
-| 2 | Facial Scar | 6| Lost Eye
-| 3 | Lost Ear |7 | Mangled Jaw
-| 4 | Limp Leg | 8| Annihilated Arm
+| 1 | Blinded | 6 | Severed Hand
+| 2 | Facial Scar | 7| Lost Eye
+| 3 | Lost Ear | 8 | Mangled Jaw
+| 4 | Limp Leg | 9 | Annihilated Arm
+| 5 | Deafened | 10 | Destroyed Vocal Chords 
 
 ## Using Powers in Combat
 

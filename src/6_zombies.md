@@ -98,12 +98,12 @@ Hordes can also be deterred, blocked, or delayed by environmental effects. For m
 ##### Table. Zombies destroyed by environmental feature
 | Environmental Feature | Weight | Zombies | 
 | :- | -: | -: |
-| Car | 1 T | 2d20 |
-| Truck | 5 T | 3d20 |
-| Semi-Truck | 20 T | 5d20 |
-| Subway Car | 40 T | 8d20 |
-| Small Building | +100 T | 15d20 | 
-| Lg. Building | +1,000 T | 25d20 | 
+| Car | 1 T | 1d10x4 |
+| Truck | 5 T | 1d10x6 |
+| Semi-Truck | 20 T | 1d10x10 |
+| Subway Car | 40 T | 1dx16 |
+| Small Building | +100 T | 1d10x30 | 
+| Lg. Building | +1,000 T | 1d10x50 | 
 
 
 **Shooting** at hordes is mostly ineffective because of the sheer number of zombies present. Some very high output, area fire weapons, like machine guns, can be useful against hordes of less than 50 zombies.
