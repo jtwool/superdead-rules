@@ -76,7 +76,7 @@ Shooting beyond the range of your weapon is **very hard** or **extremely hard**.
 Zombies must get to immediate range to attack.
 
 ## Attacks, Damage, and Wounds
-When you deal damage, roll the damage dice associated with the weapon or power and count the total. All damage dice explode. That is, you can reroll any dice that show their maximum value.
+When you deal damage, roll the damage dice associated with the weapon or power and count the total. Damage dice always explode. That is, you can reroll any dice that show their maximum value.
 
 When you take damage, for every five points of damage, you incur one wound. You may choose to absorb any number of wounds with armor, if you are able.
 
