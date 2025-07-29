@@ -28,6 +28,8 @@ You do not need to select a power from the table below. And you should work with
 |9|Matter Control|19|Toughness|
 |10|Mind Control|20|Transformation|
 
+**Drawbacks:** Optionally, you may elect to have a minor (+1) or serious (+2) [drawback] for any of your powers.
+
 #### 3. Background
 Choose a background or roll 1d20 for a random background.
 

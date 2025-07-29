@@ -1,9 +1,6 @@
 # Powers
 
-## Powers 
-Your character's powers are rated by the bonus they apply to your power rolls. You will either start with 2 powers rated at +2 or a single power rated at +3. 
-
-### List of Powers
+Your character's powers are rated by the bonus they apply to your power rolls.
 
 ## Using Powers 
 To use a power, you will compare the result of a power roll to the power scale table to determine if you mustered enough energy to create your desired effect.
@@ -46,6 +43,24 @@ When you soak damage, you temporarily reduce a power by as many levels as you wo
 Powers reduced below +1 in this way cannot be used until you have recovered.
 
 If you incur more wounds than you can soak with a single power, you can use multiple powers to soak the damage. If damage is partially soaked, the remainder is incurred as wounds.
+
+## Drawbacks
+Your powers may have drawbacks: a cost associated with using the power.
+
+Some common drawbacks are:
+- Appearance: your appearance is disfigured
+- Activation: you must activate the power before using it
+- Charge Up: you must charge up the power before using it
+- Dependency: you must wait for something to happen before you can use the power
+- Utility Belts / Super Suits: you are dependent on items or equipment
+
+Power drawbacks can be **minor** (+1) or **major** (+2).
+
+**Minor drawbacks** are drawbacks that hinder the use of a power, but do not prevent the character from performing other tasks or fitting in in society. For example, dependency on a super suit, or the requirement to activate a "fire form" before manipulating fire energy would be minor drawbacks.
+
+**Major drawbacks** impact a character's ability to fit in in society or significantly reduce the utility of more than one power. Examples of a major drawback would be: an inability to make physical contact with others, or a grotesque and monstrous appearance.
+
+The same drawback cannot apply to more than one power.
 
 ## Using Powers While Cracked
 When you have cracked, controlling your powers becomes more difficult.

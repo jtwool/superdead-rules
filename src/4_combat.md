@@ -76,8 +76,17 @@ Shooting beyond the range of your weapon is **very hard** or **extremely hard**.
 Zombies must get to immediate range to attack.
 
 ## Attacks, Damage, and Wounds
+When you deal damage, roll the damage dice associated with the weapon or power and count the total. All damage dice explode. That is, you can reroll any dice that show their maximum value.
 
-When you take damage, you may subtract any armor you have from the damage taken. For every five points of damage remaining, you incur one wound.
+When you take damage, for every five points of damage, you incur one wound. You may choose to absorb any number of wounds with armor, if you are able.
+
+| Damage | Wounds |  Damage | Wounds |
+| :-: | :-: | :-: | :-: |
+| 1-5 | 1 | 21-25 | 5
+| 6-10 | 2 | 26-30 | 6
+| 11-15 | 3 | 31-35 | 7 
+| 16-20 | 4 | 36-40 | 8
+| 
 
 If you have taken no wounds, you are **healthy**. If you have taken one or two wounds you are **hurt**. If you have taken three wounds you are **wounded**. At four wounds, you are severly wounded. Upon five wounds, you suffer from **disfigurement** or **death**.
 
