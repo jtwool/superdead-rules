@@ -79,15 +79,16 @@ Each piece of armor has three properties:
 | Makeshift Armor | 1 | Hand-to-Hand | 1d4 | Common
 | Bulletproof Vest | 1 | Firearms | 1d6 | Very Rare
 | Rifle Plate | 2 | Firearms | 1d8  | Very Rare
-| Riot Gear | 2 | Hand-to-Hand | 1d10 | Very Rare
-| Ballistic Shield | 3 | Both | 1d12 | Very Rare
+| Riot Gear | 2 | Hand-to-Hand | 1d8 | Very Rare
+| Ballistic Shield | 3 | Both | 1d10 | Very Rare
 
-**Armor value** is subtracted from damage taken to determine whether or not you suffer wounds.
+**Armor value** indicates the number of wounds that can be absorbed by the armor in a single combat round. Whenever you take damage, you may choose to use one or more points of armor to absorb that damage instead.
 
-**Armor type** indicates whether the armor protects against hand-to-hand weapons, firearms, or both.
+**Armor type** indicates whether the armor protects against hand-to-hand weapons, firearms, or both. Armor is only useful against the type of damage indicated.
 
-**Durability** indicates the durability die of the armor in perfect condition. After any combat round in which you take damage, roll the durability die associated with your armor. If that roll is a 1, reduce the die by 1 step. If the die would be reduced below 1d4 in this fashion, the armor has broken and offers no more protection.
+**Durability** indicates the propensity for the armor to fail when it absorbs damage. Any time you absorb damage with your armor, roll your durability die. If your durability die shows a 1, your armor is broken and cannot be repaired.
 
+Anytime you absorb damage with your armor and still incur wounds, your armor is damaged beyond repair.
 
 ## Equipment and Vehicles
 
@@ -121,6 +122,6 @@ Stun Baton	| 2d4 | 1d4 | Immediate
 Suppressor Net | - | 1d4 | Immediate
 Shock Blaster |2d6 | 2d4 | Close
 Shock Grenade |2d6 | 2d4 | Near
-Suppressor Cannon |3d6 | 3d4 | Far
+Suppressor Cannon | 3d6 | 3d4 | Far
 
 **Suppressor Net.** The suppressor net must be thrown at immediate range. Once a mutant is entangled in the suppressor net, they must make an **athletics save** to escape. Until they escape, they may take no actions other than attempting to escape. You may make one escape attempt during each phase of combat.

@@ -77,22 +77,27 @@ Zombies must get to immediate range to attack.
 
 ## Attacks, Damage, and Wounds
 
-When you take damage, subtract any armor you have from the damage taken. For every three points of damage remaining, you incur one wound.
+When you take damage, you may subtract any armor you have from the damage taken. For every five points of damage remaining, you incur one wound.
 
-If you have taken no wounds, you are **healthy**. If you have taken one wound you are **hurt**. If you have taken two wounds you are **wounded**. Once you have taken three wounds, you suffer from **disfigurement** or **death**.
+If you have taken no wounds, you are **healthy**. If you have taken one or two wounds you are **hurt**. If you have taken three wounds you are **wounded**. At four wounds, you are severly wounded. Upon five wounds, you suffer from **disfigurement** or **death**.
+
+| Wounds | Status | Recovery | Penalty |
+| - | - | - | - |
+| 0 | Healthy | - | - |
+| 1-2 | Hurt | End of Combat | Hard |
+| 3 | Wounded | First Aid / Medicine | Very Hard |
+| 4 | Severely Wounded | First Aid / Medicine | Very Hard |
+| 5 | Disfigured or Dead | Never |  Very Hard |
 
 Being hurt makes things **hard**. Being wounded makes things **very hard**.
 
 You naturally go from **hurt** back to **healthy** as soon as combat ends. 
 
-| Wounds | Status | Recovery | Penalty |
-| - | - | - | - |
-| 0 | Healthy | - | - |
-| 1 | Hurt | End of Combat | Hard |
-| 2 | Wounded | First Aid / Medicine | Very Hard |
-| 3 | Disfigured or Dead | Never |  Very Hard |
+### Being Wounded
 
-If you are wounded, however, you need medical attention. A successful **first aid** save will treat the wound, but leave you with its lingering effects for 14 days. A failed **first aid** save will leave you with the lingering effects of the wound for 28 days. 
+If you are wounded, you will need medical attention to recover. A successful **first aid** save will treat the wound, but leave you with its lingering effects for 28 hours. A failed **first aid** save will leave you with the lingering effects of the wound for 7 days.
+
+For a severe wound, you will suffering lingering effects of the wound for 7 days on a successful **first aid** check, and 28 days on a failed check.
 
 A successful **medicine** save will relieve you of all effects of the wound.
 
@@ -112,7 +117,11 @@ A successful **medicine** save will relieve you of all effects of the wound.
 
 #### Disfigurement and Death
 
-Upon taking your third wound, you may elect to take a disfigurement, by rolling on the disfigurement table. If you choose not to take a disfigurement, or your disfigurement roll would double a disfigurement you already have, you die.
+Upon taking your fifth wound, you will either become disfigured or die. 
+
+You may elect to become disfigured up to three times. Each time you do so, you and your game master will come up with a permanent injury your character will suffer, and the penalty for that injury.
+
+If you already have three disfigurements, or you elect not to select a disfigurement, you die.
 
 | 1d8 | Disfigurement | 1d8 | Disfigurement
 | :-: | :- | :-: | :- 
@@ -121,11 +130,14 @@ Upon taking your third wound, you may elect to take a disfigurement, by rolling 
 | 3 | Lost Ear |7 | Mangled Jaw
 | 4 | Limp Leg | 8| Annihilated Arm
 
-
 ## Using Powers in Combat
 
-You will often want to use super powers in combat. When you do so, your single die pool roll will serve as both attack and damage.
+You will often want to use super powers in combat. When you do so, make a power roll to determine the strength of the expression of your powers. 
 
-So long as you achieve at least one success with your die pool, you can deal damage to one or more targets. Damage must be distributed based on whole dice rolled.
+As long as you achieve at least one success, in your power dice pool, you will deal damage. If you do, make a damage roll based on the corresponding intensity.
+
+If all your dice are below the target number you deal no damage.
+
+If you are **cracked**, subtract any dice below your stress level from the number of successes before counting your successes.
 
 > _**Example**: Fionna Firefist is engaged in hand-to-hand combat with two bad guys. She rolls her Bravo 2 power "fire control" and gets a 3 and an 6. The 6 is above her target number (4), so she succeeds in her attack and can deal damage. She can either choose to deal 9 damage to one opponent, or 3 damage to one and 6 to the other._

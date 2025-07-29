@@ -63,6 +63,12 @@ Additionally, you will have a preferred form of stress relief. If you engage in 
 | 5 | Substance Abuse |
 | 6 | Socializing |
 
+### Stress and Bonds
+The characters you have bonds with are especially important. If you engage in your stress release activity with a character you have a bond with, double the amount of stress relieved.
+
+If someone you have a bond with dies, you immediately incur five points of stress.
+
+
 ## Background
 Even if it's hard to remember now, you were someone before the end of the world.
 
@@ -74,12 +80,12 @@ Every character has a background. This background may allow you to have skills, 
 |2|	Arts & Ent.	|12	|Law
 |3|	Athletics	|13	|Manufacturing
 |4|	Business	|14	|Military
-|5|	Construction|	15	|Police or Fire
+|5|	Construction|15	|Police or Fire
 |6|	Education	|16	|Retail or Sales
 |7|	Engineering	|17	|Science
 |8|	Food Serv.	|18	|Technology
 |9|	Government	|19	|Therapy
-|10| Healthcare|	20	|Transportation
+|10| Healthcare| 20 |Transportation
 
 Backgrounds are not strictly professions, but rather broad areas of familiarity. You should specify your background as it applies to your character.
 
