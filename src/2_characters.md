@@ -107,7 +107,8 @@ As you gain experience, you will **level up**. When you have enough XP to reach 
 - Gain two new powers (+1)
 - Improve a power (+1)
 - Gain a skill 
-- Grain a trait 
+- Grain a trait
+- Gain a stunt
 - Remove a flaw
 - Clear all stress
 - Gain a new bond

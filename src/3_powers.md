@@ -11,20 +11,24 @@ To make a power roll, roll 3d10, count the number of dice that exceed the target
 
 ### Power Scale Table
 
-Successes|Scale|Damage|Weight|Speed|
+Successes|Distance|Damage|Weight|Speed|
 | :-: | :- | :-: | -: | -: |
-1|Personal|1d10|200 lbs|30 mph|
-2|Small Area|1d10|400 lbs|45 mph|
-4|Sm. Room|2d10|800 lbs|60 mph|
-5|Lg. Room|2d10|1000 lbs|70 mph|
-7|Sm. Building|3d10|2 tons|80 mph|
-8|Lg. Building|3d10|3 tons|95 mph|
-10|City Block|4d10|5 tons|120 mph|
-15|Neighborhood|5d10 + 15|10 tons|150 mph|
+2|Self|1d10|600 lbs|30 mph|
+3|30 feet|1d10|800 lbs|45 mph|
+4|60 feet|2d10|1200 lbs|60 mph|
+5|120 feet|2d10|2000 lbs|70 mph|
+7|300 feet|3d10|2 tons|80 mph|
+8|600 feet|3d10|3 tons|95 mph|
+10|1000 feet|4d10|5 tons|120 mph|
+15|2 miles|5d10 + 15|10 tons|150 mph|
 20|City|5d10 + 30|25 tons|170 mph|
 30|Nation|5d10 + 60|80 tons|200 mph|
 40|Continent|5d10 + 120|200 tons|500 mph|
 50|World| +250 | +1000 tons| +800 mph|
+
+In the power scale table, **weight** indicates the weight that can be lifted over head. The weight that can be thrown 50 feet is approximately 1/10th of the weight shown.
+
+The **speed** shown is the maximum running speed for 50m. Over a mile or more, the speed is approximately 1/2. 
 
 ## Power Surge
 Your powers are not fixed: they ebb and flow with your energy, adrenaline and intensity. At critical times, you can surge your powers to achieve incredible effects that you are normally incapable of. Doing so is stressful, but allows you to temporarily exceed your normal limitations.
@@ -44,6 +48,13 @@ Powers reduced below +1 in this way cannot be used until you have recovered.
 
 If you incur more wounds than you can soak with a single power, you can use multiple powers to soak the damage. If damage is partially soaked, the remainder is incurred as wounds.
 
+## Power Stunt
+Alternative, you can also use your powers to "stunt" other abilities. So long as it makes narrative sense, your game master may allow you to pay a stress to use your power to achieve effects normally associated with another.
+
+After a power stunt has been performed, the next time you advance in level, you may elect to be able to perform this stunt without paying the stress cost. If you elect not to gain the stunt at that level, you must perform the stunt again in order to take it again.
+
+> **Example.** Strong Steve is fighting three zombies. He wants to smash his hands into the ground and create a thunderwave. The game master rules he can do this. Steve rolls his Strength (+7) power pool (9, 4, 7) and counts 9 successes: his shockwave tosses the zombies back several hundred feet. Steve incurs a stress and must make a courage save.
+
 ## Drawbacks
 Your powers may have drawbacks: a cost associated with using the power.
 
@@ -52,7 +63,9 @@ Some common drawbacks are:
 - Activation: you must activate the power before using it
 - Charge Up: you must charge up the power before using it
 - Dependency: you must wait for something to happen before you can use the power
+- Linked: you must use another power to use this one
 - Utility Belts / Super Suits: you are dependent on items or equipment
+- Vulnerability / Weakness: you are particularly susceptible to something
 
 Power drawbacks can be **minor** (+1) or **major** (+2).
 
@@ -79,23 +92,3 @@ Roll on the table below:
 | 7-8 | Reroll with power surge (4d10, take 1 stress), random target
 | 9 | Reroll with power surge (5d10, take 2 stress), random target
 | 10 | Power surge (5d10, 0 stress), random target
-
-
-## Power Scale Table
-
-The following table shows approximate comparisons for the impact of the amount of power expressed at a given number of successes on a power roll.
-
-Successes|Class|Material|Scale|Weapon|Damage|Weight|Speed|
-|:-: | :- | :- | :- | :- | :- | -: | -: |
-1|Alpha|Cloth|Personal|Knife|1d10|200 lbs|30 mph|
-2|Beta|Plastic / Wood|Small Area|-||400 lbs|45 mph|
-4|Gamma|Soft Metals|Sm. Room|9mm|2d10|800 lbs|60 mph|
-5|Delta|Brick|Lg. Room|-||1000 lbs|70 mph|
-7|Epsilon|Concrete / Iron|Sm. Building|Assault Rifle|3d10|2 tons|80 mph|
-8|Eta|Bullet Proof Glass|Lg. Building|-||3 tons|95 mph|
-10|X|Steel|City Block|Machine Gun|4d10|5 tons|120 mph|
-15|Psi|-|Neighborhood|Rocket|5d10 + 15|10 tons|150 mph|
-20||Diamond|City|Missile |5d10 + 30|25 tons|170 mph|
-30||-|Nation|Bomb|5d10 + 60|80 tons|200 mph|
-40||Adamantium|Continent|Nuclear Bomb|5d10 + 120|200 tons|500 mph|
-50|Omega|Unearthly Materials|World|-|-|1000 tons|800 mph|

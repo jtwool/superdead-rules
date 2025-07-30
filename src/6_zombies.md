@@ -39,6 +39,23 @@ This means that most zombies killed during the hand-to-hand phase will not be ab
 
 ### Killing Zombies
 
+Zombies weaknesses are well known. But taking advantage of those weaknesses is harder than it seems.
+
+The most successful means of killing a zombie are:
+- destroying or severing the zombies head
+- crushing the entire zombie
+- burning or otherwise destroying the zombies body
+
+Many weapons that work well on humans, especially those that rely on causing internal bleeding or organ damage, are ineffective on zombies.
+
+For an attack to kill a zombie, it must:
+- deal 2 or more points of damage directed at the head
+- deal 10 or more points of damage via "blunt-force trauma"
+- deal 15 or more points of magical or elemental damage
+
+Otherwise the attack rends at the zombie's flesh, but it keeps advancing on its prey.
+
+Head shots with firearms are **very hard**. Targeting the head in hand-to-hand is **hard**.
 
 ## Threat and Noise
 If a zombies is not actively devouring a victim, it is on the lookout for its next. Zombies feel neither fear nor exhaustion, and their hunger for flesh is never ending.
@@ -53,18 +70,18 @@ During the daytime, anything louder than a normal conversation will attract zomb
 | Noise | Daytime | Nighttime |
 | :- | :-: | :-: |
 | Whisper | - | - |
-| Conversation | - | 1d10 |
-| Shout | 1d6 | 2d10 |
-| Starting a car | 1d6 | 2d10 |
-| Breaking a window | 2d6 | 3d10 |
-| Starting a Motorcycle | 2d6 | 3d10 | 
-| Gunfire | 3d6 | 4d10 |
+| Conversation | - | 1d10+1 |
+| Shout | 1d10-2 | 2d10+2 |
+| Starting a car | 1d10-1 | 2d10+4 |
+| Breaking a window | 1d10+1 | 3d10 |
+| Starting a Motorcycle | 1d10+2 | 3d10+2 | 
+| Gunfire | 2d10 | 4d10 |
 
 Once a noise loud enough to attract zombies is made, the zombies are on their way. 
 
-If the zombies will **arrive all at once**, they arrive in 2d6 minutes of real time. 
+If the zombies will **arrive all at once**, they arrive in 1d10+2 minutes of real time. 
 
-If the zombies will **arrive in waves**, then the first wave arrives in 1d8 minutes, each each subsequent wave arrives 1d8 minutes later.
+If the zombies will **arrive in waves**, then the first wave arrives in 1d10 minutes, each each subsequent wave arrives 1d10 minutes later.
 
 > **Designer's note:** If you are the game master, making these roles in secret can increase suspense. Set a timer on your phone out of sight of the players, and interrupt the action when the timer goes off.
 
