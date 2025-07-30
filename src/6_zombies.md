@@ -9,13 +9,13 @@ A bite does not *always* turn someone undead.
 If you are a bitten, the game master will make a bite roll in secret and narrate the effects to you.
 
 ##### Bite Outcome Table.
-| 1d6 | Outcome |
+| 1d10 | Outcome |
 | :-: | :- |
 | 1 | Turn in seconds |
-| 2 | Turn in minutes |
-| 3 | Turn in hours | 
-| 4 | Turn in days | 
-| 5-6 | Safe |
+| 2-4 | Turn in minutes |
+| 5-7 | Turn in hours | 
+| 8 | Turn in days | 
+| 9-10 | Safe |
 
 If you turn in minutes, hours or days, over the course of that time you will develop flu-like symptoms, that peak, break, and then disappear as your body gets cold and you become undead.
 

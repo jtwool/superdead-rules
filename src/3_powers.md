@@ -53,6 +53,8 @@ Alternative, you can also use your powers to "stunt" other abilities. So long as
 
 After a power stunt has been performed, the next time you advance in level, you may elect to be able to perform this stunt without paying the stress cost. If you elect not to gain the stunt at that level, you must perform the stunt again in order to take it again.
 
+If you are performing a stunt you have already performed this level, the courage save to resist cracking is **very easy**.
+
 > **Example.** Strong Steve is fighting three zombies. He wants to smash his hands into the ground and create a thunderwave. The game master rules he can do this. Steve rolls his Strength (+7) power pool (9, 4, 7) and counts 9 successes: his shockwave tosses the zombies back several hundred feet. Steve incurs a stress and must make a courage save.
 
 ## Drawbacks

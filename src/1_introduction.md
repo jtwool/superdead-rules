@@ -14,50 +14,50 @@ Everything you need to play can be found in this ruleset.
 
 # Quick Start: 28 Rules Later
 
-If you're an experienced TTRPG player, or you have already read the rules, the following 28 rules might be enough for you to play an entire game or campaign of Super Dead.
+If you're an experienced TTRPG player, or you have already read the rules, the following 28 rules might be enough for you to play an entire game or even a campaign of Super Dead.
 
 **Characters**
 
-1. Characters are defined by super powers and [**four attributes**](2_characters.md#attributes-and-saves): athleticism, intellignece, personality, courage.
-2. To make an attribute save roll 1d10 under the attribute.
-3. To use your powers, roll your power die pool and look for one die above the target number.
+1. Characters are defined by super powers and [**four attributes**](2_characters.md#attributes-and-saves): athleticism, intelligence, personality, courage.
+2. To make an attribute test roll 1d10 under the attribute.
+3. To use your powers, roll your power die pool (3d10), count the number of dice at or above the target number (6), and add your power rating.
 
 **Powers**
 
-4. [**Powers**](3_powers.md) can be used to create supernatural effects; all power uses must be narratively consistent.
+4. [**Powers**](3_powers.md) can be used to create supernatural effects; all power uses must be consistent with the narrative.
 5. You can [__power surge__](3_powers.md#power-surge) to create particularly powerful effects, at the cost of stress.
-6. You can also [__power soak__](3_powers.md#power-soak) instead of taking a wound.
-7. If there is a question about whether a power could be used in a given way, err on the side of allowing a [__power surge__](3_powers.md#power-surge) attempt to decide.
+6. You can [__power soak__](3_powers.md#power-soak) to reduce your power effectiveness, instead of taking a wound.
+7. You can [__power student__](3_powers.md#power-stunt) to use your powers in creative and impressive ways.
 
 **Combat**
 
-8. Combat takes place in rounds of three phases: movement, hand-to-hand, and shooting.
-2. During **[the movement phase](4_combat.md#the-movement-phase)**, you can move 30 feet normally, or 100 feet recklessly.
+8. Combat takes place in rounds of three phases: (1) movement, (2) hand-to-hand, and (3) shooting.
+2. During **[the movement phase](4_combat.md#the-movement-phase)**, each character can move 30 feet normally, or 100 feet recklessly.
 3. If you move into another's line of sight, they can make a ranged opportunity attack against you.
 4. During the **[hand-to-hand phase](4_combat.md#the-hand-to-hand-phase)**, up to three exchanges of hand-to-hand combat can take place for all combatants in immediate range of one another.
-12. During **[the shooting phase](4_combat.md#the-shooting-phase)**, each combatant outside immediate range may shoot at one target.
+5. During **[the shooting phase](4_combat.md#the-shooting-phase)**, each combatant outside immediate range may shoot at one target.
 
 **Wounds**
 
-13. When you take damage, subtract your armor from the damage taken. If there is damage remaining, you take one wound for every three damage taken.
-2. There are four levels of [**wounds**](4_combat.md#attacks-damage-and-wounds): healthy, hurt, wounded, disfigured.
-3. You recover from being hurt after each combat, and from being wounded after receiving medical attention.
-4. Wounds have lingering effects that last for up to 28 days.
-17.  [**Disfigurement**](4_combat.md#disfigurement-and-death) is permanent; if you would be disfigured in the same way twice, you die instead.
+13. You can be hurt twice, before being [wounded, severely wounded](4_combat.md#being-wounded), and then [disfigured](4_combat.md#disfigurement-and-death).
+2. [Armor can prevent a number of wounds](5_gear.md#armor) each round from some types of damage.
+3. Recovering from being hurt happens quickly, wounds happens slowly (28 hours for normal wounds, 28 days for severe wounds.)
+4. [**Disfigurement**](4_combat.md#disfigurement-and-death) is permanent; if you are disfigured three times, you die.
 
 **Stress**
 
-18.   Life in the apocalypse is stressful. You will accumulate stress when you do hard things.
-2.  If you accumulate a point of stress, you must succeed at a courage save or crack.
-3.  While [**cracked**](2_characters.md#stress), everything is hard, and any time you try to use your powers, you must exceed both your target number and your stress number.
-4.  You can [**relieve stress**](2_characters.md#stress-relief) by doing relaxing or enjoyable activities and making a successful personality save.
+17. Life in the apocalypse is stressful. You will accumulate stress when you do hard things.
+2.  If you accumulate a point of stress, you must succeed at a courage test or crack.
+3.  While [**cracked**](2_characters.md#stress), everything is hard, and any time you try to use your powers any dice below your stress level are subtracted from your successes.
+4.  You can [**relieve stress**](2_characters.md#stress-relief) by doing relaxing or enjoyable activities and making a successful personality test.
 
 **Zombies**
 
-22. Making noise attracts zombies and you are more likely to attract them at night.
-23.  Zombies will move towards you as fast and directly as they can and attempt to bite you.
-23.  If you get bitten you will likely (4/6) die.
-24.  Dying may take (1/6) seconds, minutes (1/6), hours (1/6) or (1/6) days, depending on how the virus effects you.
-25. Encountering a horde of twnety of more zombies is terrifying and stressful.
-26. Though hordes may be defeated,through combat, your best is to run away or use environmental features.
-28. Anyone who finds themselves in immediate range of a zombie horde is devoured.
+21. Zombies will move towards you [as fast and directly as they can, then attempt to bite you](6_zombies.md#the-zomb-3).
+2. If you [**get bitten**](6_zombies.md#zombies-bites-and-turning-undead) you will likely (8/10) turn undead.
+2. Turning may take (1/10) seconds, minutes (3/10), hours (3/10) or (1/10) days, depending on how the virus effects you.
+2. You can [**kill zombies**](6_zombies.md#killing-zombies) by destroying their head, crushing them, or destroying their bodies with magic or the elements.
+2. [**Making noise**](6_zombies.md#threat-and-noise) attracts zombies and you are more likely to attract them at night.
+2. Encountering [a **horde** of twenty of more zombies](6_zombies.md#zombie-hordes) is stressful and dangerous.
+2. Though hordes may be defeated through combat, your best is to run away or use environmental features.
+2. Anyone who finds themselves in immediate range of a zombie horde is devoured.

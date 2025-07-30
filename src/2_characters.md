@@ -68,7 +68,6 @@ The characters you have bonds with are especially important. If you engage in yo
 
 If someone you have a bond with dies, you immediately incur five points of stress.
 
-
 ## Background
 Even if it's hard to remember now, you were someone before the end of the world.
 
