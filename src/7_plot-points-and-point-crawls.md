@@ -1,25 +1,48 @@
-# Point-Based Campaigns
+# Point-Based Adventuring
 
 ## Plot-Point Campaigns
 
-### What is a plot-point campaign
+- key moments 
+- exploration and miscellany 
+- active villains 
+- mix between "linear adventure" and "sandbox"
 
 ### How do you run one
 
+- heading into the session, check progress
+- have the players done anything good?
+- have the villains done anything bad?
+- if so - plot point
+- else - explore / side quest 
+
 ### Building a plot-point campaign
+
+- come up with your plot points
+- story arcs: rise and fall
+- write your set piece adventures / scenes
+- start running your first adventure 
 
 ## Point-Crawls
 
-### What is a point crawl
-
 ### How does it work
+
+- players choose a place to go
+- they go there and explore
+- on their way, things may happen
+- update the world
 
 ### Rules for point crawls
 
+- travel time / distance
+- random encounters
+
 ### Building a point crawl 
 
+- locations
+- regions
+- random tables
+- clues and hooks
 
----
 
 
 ## Point-to-Point Travel
