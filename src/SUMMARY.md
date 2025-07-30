@@ -7,7 +7,8 @@
 - [Combat](./4_combat.md)
 - [Gear](./5_gear.md)
 - [Zombies](./6_zombies.md)
-- [Exploration](./7_exploration.md)
-  
+- [Running the World](./7a_Running_the_World.md)
+- [Point-Based Campaigns](./7_exploration.md)
+- [Organizations](./7b_organizations.md)
 - [Micro Settings](./8_settings.md)
 - [Inspiration](./9_inspiration.md)

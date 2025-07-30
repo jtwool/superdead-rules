@@ -1,4 +1,26 @@
-# Exploration
+# Point-Based Campaigns
+
+## Plot-Point Campaigns
+
+### What is a plot-point campaign
+
+### How do you run one
+
+### Building a plot-point campaign
+
+## Point-Crawls
+
+### What is a point crawl
+
+### How does it work
+
+### Rules for point crawls
+
+### Building a point crawl 
+
+
+---
+
 
 ## Point-to-Point Travel
 No one **wanders** in the end of days. At least no one you can trust. That means that travel in Super Dead involves moving from one point to another. The process of traveling from place to place via point is known as __point crawling__.
