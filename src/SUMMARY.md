@@ -8,7 +8,7 @@
 - [Gear](./5_gear.md)
 - [Zombies](./6_zombies.md)
 - [Running the World](./7_running-the-game.md)
-- [Point-Based Adventuring](./7_plot-points-and-point-crawls.md)
+- [Point-Based Adventuring](./7_adventuring.md)
 - [Organizations](./8_organizations.md)
 - [Micro Settings](./9_settings.md)
 - [Inspiration](./10_inspiration.md)
