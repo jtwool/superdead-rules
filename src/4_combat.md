@@ -15,7 +15,9 @@ Reckless movement makes any other task **very hard** and makes attacks against y
 
 If you move into another character's line of sight, you are exposed to **opportunity fire**. If you take opportunity fire, regardless of whether or not you take damage, you must make a **courage save**. On a failed save, you must retreat and find cover.
 
-__Opportunity fire__ is a free ranged attack against a combatant who enters your line of sight. You may take one opportunity attack per target so long as you have ammunition (if necessary).
+__Opportunity fire__ is a free ranged attack against a combatant who enters your line of sight. You may take one opportunity attack per target so long as you have ammunition (if necessary). Any target you hit with opportunity fire must immediately retreat to a safe position and make a courage check or be **pinned**.
+
+While you are __pinned__, ranged attacks against you by the enemy that pinned you are **very easy** and movement in the direction of the attackers requires a **very hard** courage test. You can only remove the pinned condition by retreating or if the attackers die or run out of ammo. 
 
 ### The Hand-to-Hand Phase 
 After the [movement phase](#the-movement-phase) is resolved, if there are any combatants within [**immediate range**](#ranges) of one another, the hand-to-hand phase of combat occurs.

@@ -1,4 +1,4 @@
-# Adventuring
+# Campaign Pointers
 
 In a good zombie horror supers campaign, you will create room for your players to adventure and explore. This exploration——discovering what is in new, unexplored parts of the world——is an essential part of the roleplaying experience for both the player and game master.
 
@@ -41,9 +41,11 @@ If you're running a plot-point session, familiarize yourself with the plot point
 
 If you're running a sandbox session, consider what hooks or leads the players are currently investigating and what they're likely to do next. You generally want to plan out between 30% and 75% of your upcoming adventures. If you've got a strong sense of what the players will do, plan 75%. If you've got a weak sense for where they're going, plan 30%.
 
-What does it mean to leave 25% to 75% of your adventure unplanned? It means random tables.
-
-> **Editor's Note:**
+> **Editor's Note:** In this section, when we'll talk about leaving some percentage of your adventure unplanned. This refers to a general idea of how much content you are expecting yourself to run based off a predesigned scenario, versus how much you are expecting to generate with random tables. 
+> 
+> On the low end, you might only have a few ideas jotted down about the location your players are going to be visiting, and you're planning on creating most of the scenes and encounters from random tables while gaming. 
+> 
+> On the high end, you've got a pretty solidly fleshed out scenario, and you're confident the players will stick to the script. You've still got random tables on hand in case things go off the rails, but you're not expecting to need them.
 
 You know where your players characters are, what is going on in the world, and what could be happening: come up with some exciting ideas and stick them in random tables. Use random stakes and challenges to incentivize them or create complications.
 

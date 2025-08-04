@@ -40,7 +40,9 @@ After avoiding zombies, the next most important thing you can do in the end of d
 
 As you adventure, you will suffer from the stresses of the end of the world. Each time you incur a point of stress, you must make a __courage save__. If you fail, you have __cracked__.
 
-When you crack, everything you do becomes **hard**. If you have cracked and have more than four points of stress, everything you do is __very hard__; If you have cracked with more than eight points of stress, everything you do is __extremely hard__.
+If you have more than four points of stress, you are __burdened__. At your game masters discretion——and especially during the most important moments——the burdens of your stress catch up to you, making tasks **hard**.
+
+When you crack, everything you do becomes **hard**. If you have cracked and you are **burdened**, everything you do is __very hard__; If you have cracked and you have more than eight points of stress, everything you do is __extremely hard__.
 
 | Stress | Difficulty | Modifier |
 | :-: | :-: | :-: |
