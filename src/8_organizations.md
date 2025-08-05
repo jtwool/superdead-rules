@@ -55,6 +55,7 @@ Because of their role in licensing  mutants and protecting the civilian populati
 
 ### Corporations 
 
+
 ### Religious Organizations
 
 ### Labor Unions
@@ -64,7 +65,9 @@ Because of their role in licensing  mutants and protecting the civilian populati
 ### Schools / Universities
 
 ### Secret Societies 
+Remnants of days long past, when skilled tradesmen would meet in shadowy rooms to share secrets and shape the world's events in their favor, only a scarce few Secret Societies existed, and even fewer survived into the end of days. Those that did though, did so because they were prepared. They were a powerful force, lurking in the shadows all along, anticipating an apocalypse——if not several.
 
+Now that its here, these Secret Societies have a plan to rebuild the world in their vision. Those who help them will reap their generosity; those who stand it their way, garner their wrath.
 
 ## Criminal Organizations
 The ruthless and secretive nature of criminal organizations prepared them better, in many ways, for the end of the world. 
@@ -126,3 +129,4 @@ That makes these gangs formidable forces on the scene where ever they exist, wit
 ### Navy
 ### Air Force
 ### Marines
+### Intelligence Agency
