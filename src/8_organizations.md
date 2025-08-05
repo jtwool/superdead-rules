@@ -55,10 +55,14 @@ Because of their role in licensing  mutants and protecting the civilian populati
 
 ### Corporations 
 
-
 ### Religious Organizations
+Religious organizations exist to cultivate community and nurture the faith of their followers——and never have community and faith been more essential than in the end of times. While their is nothing that makes these organizations particularly well suited for surviving a zombie apocalypse, religious organizations tend to be close knit and optimistic, as much as one can be at the end of the world.
 
 ### Labor Unions
+Labor unions existed in a state of constant struggle before the end of times——but now their foe is even more soulless than ever. Labor unions are run by——and privilege the interests of——workers and members among others. Labor organizations have no fear about operating two tiered systems, where everyone pulls together, but only true members reap the full rewards.
+
+Labor union organizations can also be home to leftist idealists who view the end of times as a blessing in disguise: an opportunity to rebuild societies free of capitalist exploitation and corporate greed.
+
 
 ### Research Labs
 
