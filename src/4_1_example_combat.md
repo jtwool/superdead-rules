@@ -125,5 +125,50 @@ Two heroes, Max "Mouse" McMillan and Emily "Electric Girl" Evans—played by Kyl
 
 **Sarah:** I think we should run, Max. There are probably more on the way.  
 
-**Kyle:** Alright, alright, let's scram.
+**Kyle:** Alright, alright, let's scram. Create a distraction for us, will you?
 
+**Sarah:** I can do that. Electric Girl wants to power surge and create a huge electric storm. I'll take two stress and add two dice. [5d10: 1,4,6,6,8] Three successes plus three is six. I want to create a huge thunderbolt off in the distance to create a lot of noise and draw the zombies away from us.
+
+> Okay. With six successes, a bolt of lightning blasts from your hand and shatters into a building. It's mixture of metal and wood goes up in flames and creates a roaring noise. You know all the zombies in the area are going to be headed towards it. The ones directly in front of you, however, are locked on you and move towards you to attack. What do you do?
+
+**Kyle:** Stand and fight! I charge into the mix and start to attack with my baseball bat.
+
+**Sarah:** Electric Girl joins the fray too — I'll use my lightning powers at close range.
+
+> Alright. The zombies won't attack until after all three hand-to-hand exchanges have passed, and there are four of them. Make three attacks each. Kyle, you must make a hard athletics check, so give me 3x 1d10 rolls to hit. Any hit that deals more than 2 damage will kill a zombie. Sarah, the electric damage isn't particularly potent against zombies, so you'll need to do 15 or more points of electric damage to a zombie to kill it.
+
+**Kyle:** [3d10: 1, 3, 7] My athletics is 5, so hard becomes 4. I got two successes. [2x 1d10-2: 6, 8] And for damage, I got a 5 and a 7. 
+
+> Awesome, you charge into combat with the zombies and smash two heads with your baseball bat, their brains splatter over the sidewalk and the corpses fall to the ground. Sarah?
+
+**Sarah:** Yeah. [3x3d10: 1,5,7; 6,7,8; 7,8,8]. Woo! Two successes, three successes, and three successes. Plus three thats five, six, and six.
+
+> All of those will be 2d10 damage. Beat 15 to to take down the zombies.
+
+**Sarah:** Come on, 15! [3x2d10: 6+1, 5+3, 5+6] Oof. 7, 8, and 11 damage.
+
+> Electric Girl summons a tempest of elemental energy and zaps away at one of the zombies, burning its limbs into an immobilized crisp. She turns her attention to the last one standing, but isn't able to bring it down before it grabs at her. Make an athletics check to avoid the zombie's bite.
+
+**Sarah:** [1d10: 6] Ah! No! That's a six. Just barely over my athletics of five.
+
+> Electric Girl is grabbed by the zombie, and for a second it looks like she'll be able to hold him at bay, until she can't, and it chomps down on her arm. I'm going to make a secret infection roll and show you, Sarah, but not you, Kyle. [1d10: 8 - infected: turn in days]
+
+**Kyle:** Em! I run up and smash the zombie with my bat [3x1d10: 2,4,7]. That's two hits [2x1d10-2: 5, 1] for 3 damage and zero damage. 
+
+> You smash at the zombie clawing at Emily, splattering blood all over the place. Meanwhile, Elastic Girl is bleeding from the bite. 
+
+**Sarah:** Max! You saved me. But... I think I was bit. Oh my god. I'm going to turn. You need to kill me now.
+
+**Kyle:** Don't be ridiculous, you'll be fine. How do you feel?
+
+**Sarah:** I don't know I...
+
+> You feel fine.
+
+**Sarah:** I guess I feel fine. But sometimes it happens like this too, doesn't it? You feel fine at first, and then you get the fever later? You guys have to go on without me.
+
+**Kyle:** Fine. You're right. We'll head back to the lair without you. But lay low and take it easy and use this first aid kit to patch yourself up. We'll meet at the cannon in the town square in three days—the virus always sets in faster than that.
+
+**Sarah:** Elastic Girl is holding back tears. Okay. Thanks for the first aid kit, Max. Get The Botanist to safety. Run, quickly. That lightning is going to bring even more zombies down on us. And then Elastic Girl takes off.
+
+**Kyle:** Max takes The Botanists hand and runs off in the opposite direction of Elastic Girl, looking over his shoulder every hundred feet.
