@@ -63,6 +63,7 @@ Your powers may have drawbacks: a cost associated with using the power.
 Some common drawbacks are:
 - Appearance: your appearance is disfigured
 - Activation: you must activate the power before using it
+- Build Up: the power starts weaker (-2, -1), but gets stronger as you use it more (+1, +2)
 - Charge Up: you must charge up the power before using it
 - Dependency: you must wait for something to happen before you can use the power
 - Linked: you must use another power to use this one

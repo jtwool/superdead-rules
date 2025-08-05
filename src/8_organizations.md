@@ -64,8 +64,10 @@ Labor unions existed in a state of constant struggle before the end of times—�
 Labor union organizations can also be home to leftist idealists who view the end of times as a blessing in disguise: an opportunity to rebuild societies free of capitalist exploitation and corporate greed.
 
 ### Research Labs
+Research Labs are collections of top scientists, dedicated to furthering public knowledge in a specific area: usually a deeply scientific area. These organizations prize intelligence and reputation above all else. When they do manage to exist in the end of days, they tend towards one of two tracks: one in which they pursue the same research goals they did before, not knowing any different; and one in which they rotate all their knowledge and brainpower for solving the current crisis, finding a cure, and rebuilding civilization.
 
 ### Schools / Universities
+
 
 ### Secret Societies 
 Remnants of days long past, when skilled tradesmen would meet in shadowy rooms to share secrets and shape the world's events in their favor, only a scarce few Secret Societies existed, and even fewer survived into the end of days. Those that did though, did so because they were prepared. They were a powerful force, lurking in the shadows all along, anticipating an apocalypse——if not several.

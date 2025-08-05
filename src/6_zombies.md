@@ -91,7 +91,7 @@ When players make noise to attract zombies, they will naturally want to flee the
 Zombies will use doors and other obvious pathways to get to their destinations, so if the players attempt to escape by the most obvious means, they are more likely to run into zombies.
 
 ##### Table. Fleeing Zombies
-| 2d6 | Flee Result | Escape Tactic | Modifier |
+| 2d10 | Flee Result | Escape Tactic | Modifier |
 | :-: | :- | :- | :-: |
 | 1-7 | Escape | Take obvious path | +1
 | 8-9 | Spotted by Zombies | Zombies are less than 2m away | +1

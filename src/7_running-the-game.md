@@ -62,6 +62,23 @@ The opening moments of a gaming session are your time to set the stage for the h
 | 9 | Warmth | 
 | 10 | Roll twice | 
 
+<br/>
+
+-----
+## Prepping for your session
+
+1. Local Map
+2. Location Map(s)
+3. Player Characters
+4. NPCs
+5. Encounter Tables
+
+### Local Map
+### Location Map
+### Player Characters
+### NPCs
+### Encounter Tables
+
 <!-- ## Building Adventures 
 
 - Assume 1-3 scenes per hour, depending on the size of your group
