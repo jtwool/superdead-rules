@@ -167,7 +167,8 @@
 <p>During the movement phase, you declare your intent to move. You may move 30 feet with <strong>standard movement</strong> or up to 100 feet with <strong>reckless movement</strong>.</p>
 <p>Reckless movement makes any other task <strong>very hard</strong> and makes attacks against you <strong>easy</strong>.</p>
 <p>If you move into another character's line of sight, you are exposed to <strong>opportunity fire</strong>. If you take opportunity fire, regardless of whether or not you take damage, you must make a <strong>courage save</strong>. On a failed save, you must retreat and find cover.</p>
-<p><strong>Opportunity fire</strong> is a free ranged attack against a combatant who enters your line of sight. You may take one opportunity attack per target so long as you have ammunition (if necessary).</p>
+<p><strong>Opportunity fire</strong> is a free ranged attack against a combatant who enters your line of sight. You may take one opportunity attack per target so long as you have ammunition (if necessary). Any target you hit with opportunity fire must immediately retreat to a safe position and make a courage check or be <strong>pinned</strong>.</p>
+<p>While you are <strong>pinned</strong>, ranged attacks against you by the enemy that pinned you are <strong>very easy</strong> and movement in the direction of the attackers requires a <strong>very hard</strong> courage test. You can only remove the pinned condition by retreating or if the attackers die or run out of ammo.</p>
 <h3 id="the-hand-to-hand-phase"><a class="header" href="#the-hand-to-hand-phase">The Hand-to-Hand Phase</a></h3>
 <p>After the <a href="#the-movement-phase">movement phase</a> is resolved, if there are any combatants within <a href="#ranges"><strong>immediate range</strong></a> of one another, the hand-to-hand phase of combat occurs.</p>
 <p>The hand-to-hand phase consists of up to <strong>three exchanges</strong> of attacks. Within an exchange, each combatant declares their intention, and then attacks are resolved simultaneously.</p>
@@ -208,45 +209,57 @@
 <p>Shooting beyond the range of your weapon is <strong>very hard</strong> or <strong>extremely hard</strong>.</p>
 <p>Zombies must get to immediate range to attack.</p>
 <h2 id="attacks-damage-and-wounds"><a class="header" href="#attacks-damage-and-wounds">Attacks, Damage, and Wounds</a></h2>
-<p>When you take damage, subtract any armor you have from the damage taken. For every three points of damage remaining, you incur one wound.</p>
-<p>If you have taken no wounds, you are <strong>healthy</strong>. If you have taken one wound you are <strong>hurt</strong>. If you have taken two wounds you are <strong>wounded</strong>. Once you have taken three wounds, you suffer from <strong>disfigurement</strong> or <strong>death</strong>.</p>
-<p>Being hurt makes things <strong>hard</strong>. Being wounded makes things <strong>very hard</strong>.</p>
-<p>You naturally go from <strong>hurt</strong> back to <strong>healthy</strong> as soon as combat ends.</p>
-<div class="table-wrapper"><table><thead><tr><th>Wounds</th><th>Status</th><th>Recovery</th><th>Penalty</th></tr></thead><tbody>
-<tr><td>0</td><td>Healthy</td><td>-</td><td>-</td></tr>
-<tr><td>1</td><td>Hurt</td><td>End of Combat</td><td>Hard</td></tr>
-<tr><td>2</td><td>Wounded</td><td>First Aid / Medicine</td><td>Very Hard</td></tr>
-<tr><td>3</td><td>Disfigured or Dead</td><td>Never</td><td>Very Hard</td></tr>
+<p>When you deal damage, roll the damage dice associated with the weapon or power and count the total. Damage dice always explode. That is, you can reroll any dice that show their maximum value.</p>
+<p>When you take damage, for every five points of damage, you incur one wound. You may choose to absorb any number of wounds with armor, if you are able.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">Damage</th><th style="text-align: center">Wounds</th><th style="text-align: center">Damage</th><th style="text-align: center">Wounds</th></tr></thead><tbody>
+<tr><td style="text-align: center">1-5</td><td style="text-align: center">1</td><td style="text-align: center">21-25</td><td style="text-align: center">5</td></tr>
+<tr><td style="text-align: center">6-10</td><td style="text-align: center">2</td><td style="text-align: center">26-30</td><td style="text-align: center">6</td></tr>
+<tr><td style="text-align: center">11-15</td><td style="text-align: center">3</td><td style="text-align: center">31-35</td><td style="text-align: center">7</td></tr>
+<tr><td style="text-align: center">16-20</td><td style="text-align: center">4</td><td style="text-align: center">36-40</td><td style="text-align: center">8</td></tr>
 </tbody></table>
 </div>
-<p>If you are wounded, however, you need medical attention. A successful <strong>first aid</strong> save will treat the wound, but leave you with its lingering effects for 14 days. A failed <strong>first aid</strong> save will leave you with the lingering effects of the wound for 28 days.</p>
-<p>A successful <strong>medicine</strong> save will relieve you of all effects of the wound.</p>
-<div class="table-wrapper"><table><thead><tr><th style="text-align: center">2d6</th><th style="text-align: left">Wound</th></tr></thead><tbody>
-<tr><td style="text-align: center">2</td><td style="text-align: left">Severe Burn</td></tr>
-<tr><td style="text-align: center">3</td><td style="text-align: left">Dislocation</td></tr>
-<tr><td style="text-align: center">4</td><td style="text-align: left">Laceration</td></tr>
-<tr><td style="text-align: center">5</td><td style="text-align: left">Minor Burn</td></tr>
-<tr><td style="text-align: center">6</td><td style="text-align: left">Bruising</td></tr>
-<tr><td style="text-align: center">7</td><td style="text-align: left">Sprained Ligaments</td></tr>
-<tr><td style="text-align: center">8</td><td style="text-align: left">Broken Bone</td></tr>
-<tr><td style="text-align: center">9</td><td style="text-align: left">Minor Concussion</td></tr>
-<tr><td style="text-align: center">10</td><td style="text-align: left">Compound Fracture</td></tr>
-<tr><td style="text-align: center">11</td><td style="text-align: left">Severe Concussion</td></tr>
-<tr><td style="text-align: center">12</td><td style="text-align: left">Tissue Loss</td></tr>
+<p>|</p>
+<p>If you have taken no wounds, you are <strong>healthy</strong>. If you have taken one or two wounds you are <strong>hurt</strong>. If you have taken three wounds you are <strong>wounded</strong>. At four wounds, you are severly wounded. Upon five wounds, you suffer from <strong>disfigurement</strong> or <strong>death</strong>.</p>
+<div class="table-wrapper"><table><thead><tr><th>Wounds</th><th>Status</th><th>Recovery</th><th>Penalty</th></tr></thead><tbody>
+<tr><td>0</td><td>Healthy</td><td>-</td><td>-</td></tr>
+<tr><td>1-2</td><td>Hurt</td><td>End of Combat</td><td>Hard</td></tr>
+<tr><td>3</td><td>Wounded</td><td>First Aid / Medicine</td><td>Very Hard</td></tr>
+<tr><td>4</td><td>Severely Wounded</td><td>First Aid / Medicine</td><td>Very Hard</td></tr>
+<tr><td>5</td><td>Disfigured or Dead</td><td>Never</td><td>Very Hard</td></tr>
+</tbody></table>
+</div>
+<p>Being hurt makes things <strong>hard</strong>. Being wounded makes things <strong>very hard</strong>.</p>
+<p>You naturally go from <strong>hurt</strong> back to <strong>healthy</strong> as soon as combat ends.</p>
+<h3 id="being-wounded"><a class="header" href="#being-wounded">Being Wounded</a></h3>
+<p>If you are wounded, you will stay wounded until you receive medical attention. A successful <strong>first aid</strong> save will treat the wound, but leave you with its lingering effects for 28 hours. A failed <strong>first aid</strong> save will leave you with the lingering effects of the wound for 7 days.</p>
+<p>For a severe wound, you will suffering lingering effects of the wound for 7 days on a successful <strong>first aid</strong> check, and 28 days on a failed check.</p>
+<p>The game master will tell you how those lingering effects impact your character.</p>
+<p>A successful <strong>medicine</strong> save, assuming the appropriate medical equipment is available, will relieve you of all effects of the wound.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d10</th><th style="text-align: left">Wounds</th><th style="text-align: center">1d10</th><th style="text-align: left">Wounds</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Severe Burn</td><td style="text-align: center">6</td><td style="text-align: left">Sprained Ligaments</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Dislocation</td><td style="text-align: center">7</td><td style="text-align: left">Broken Bone</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Laceration</td><td style="text-align: center">8</td><td style="text-align: left">Minor Concussion</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Minor Burn</td><td style="text-align: center">9</td><td style="text-align: left">Compound Fracture</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Major Bruising</td><td style="text-align: center">10</td><td style="text-align: left">Severe Concussion</td></tr>
 </tbody></table>
 </div>
 <h4 id="disfigurement-and-death"><a class="header" href="#disfigurement-and-death">Disfigurement and Death</a></h4>
-<p>Upon taking your third wound, you may elect to take a disfigurement, by rolling on the disfigurement table. If you choose not to take a disfigurement, or your disfigurement roll would double a disfigurement you already have, you die.</p>
-<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d8</th><th style="text-align: left">Disfigurement</th><th style="text-align: center">1d8</th><th style="text-align: left">Disfigurement</th></tr></thead><tbody>
-<tr><td style="text-align: center">1</td><td style="text-align: left">Death</td><td style="text-align: center">5</td><td style="text-align: left">Severed Hand</td></tr>
-<tr><td style="text-align: center">2</td><td style="text-align: left">Facial Scar</td><td style="text-align: center">6</td><td style="text-align: left">Lost Eye</td></tr>
-<tr><td style="text-align: center">3</td><td style="text-align: left">Lost Ear</td><td style="text-align: center">7</td><td style="text-align: left">Mangled Jaw</td></tr>
-<tr><td style="text-align: center">4</td><td style="text-align: left">Limp Leg</td><td style="text-align: center">8</td><td style="text-align: left">Annihilated Arm</td></tr>
+<p>Upon taking your fifth wound, you will either become disfigured or die.</p>
+<p>You may elect to become disfigured up to three times. Each time you do so, you and your game master will come up with a permanent injury your character will suffer, and the penalty for that injury.</p>
+<p>If you already have three disfigurements, or you elect not to select a disfigurement, you die.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d10</th><th style="text-align: left">Disfigurement</th><th style="text-align: center">1d10</th><th style="text-align: left">Disfigurement</th></tr></thead><tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left">Blinded</td><td style="text-align: center">6</td><td style="text-align: left">Severed Hand</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Facial Scar</td><td style="text-align: center">7</td><td style="text-align: left">Lost Eye</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Lost Ear</td><td style="text-align: center">8</td><td style="text-align: left">Mangled Jaw</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Limp Leg</td><td style="text-align: center">9</td><td style="text-align: left">Annihilated Arm</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Deafened</td><td style="text-align: center">10</td><td style="text-align: left">Destroyed Vocal Chords</td></tr>
 </tbody></table>
 </div>
 <h2 id="using-powers-in-combat"><a class="header" href="#using-powers-in-combat">Using Powers in Combat</a></h2>
-<p>You will often want to use super powers in combat. When you do so, your single die pool roll will serve as both attack and damage.</p>
-<p>So long as you achieve at least one success with your die pool, you can deal damage to one or more targets. Damage must be distributed based on whole dice rolled.</p>
+<p>You will often want to use super powers in combat. When you do so, make a power roll to determine the strength of the expression of your powers.</p>
+<p>As long as you achieve at least one success, in your power dice pool, you will deal damage. If you do, make a damage roll based on the corresponding intensity.</p>
+<p>If all your dice are below the target number you deal no damage.</p>
+<p>If you are <strong>cracked</strong>, subtract any dice below your stress level from the number of successes before counting your successes.</p>
 <blockquote>
 <p><em><strong>Example</strong>: Fionna Firefist is engaged in hand-to-hand combat with two bad guys. She rolls her Bravo 2 power "fire control" and gets a 3 and an 6. The 6 is above her target number (4), so she succeeds in her attack and can deal damage. She can either choose to deal 9 damage to one opponent, or 3 damage to one and 6 to the other.</em></p>
 </blockquote>
@@ -259,7 +272,7 @@
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="5_gear.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="4_1_example_combat.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -273,13 +286,29 @@
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="5_gear.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="4_1_example_combat.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
