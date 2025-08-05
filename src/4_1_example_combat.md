@@ -59,11 +59,15 @@ Two heroes, Max "Mouse" McMillan and Emily "Electric Girl" Evans—played by Kyl
 
 **Sarah:** [3d10: 2, 2, 8] Not my best, one success, plus 2 for the teleport power is three total successes.
 
-> Your teleport brings you within hand-to-hand range, but you have to close on him by foot. Roll 1d10 for damage based on your three successes. And the guard is going to fire on you. [rolls 1d10] He gets a 5, which is at his athletics, but because shooting in hand-to-hand is hard, he's going to fail.
+> Your teleport brings you within hand-to-hand range, but you have to close on him by foot. Roll 1d10 for damage based on your three successes. And the guard is going to fire on you as well. [rolls 1d10: 3] He gets a 3, which is below his athletics, even with the penalty for shooting in hand-to-hand. His shot is going to hit.
 
 **Sarah:** [1d10: 10 (5)] I got a 10, and then a 5 on the bonus roll, for 15 total damage.
 
-> Bang! The guard fires a shot, but in a panic as a flash of electricity moves towards him, he misses and hits nothing but air. Emily, on the other hand, is true with her strikes. A swift kick to the sternum sends shocking bolts of electricity skittering through the guard and he falls to the ground. </br></br>
+> And the guard rolls for damage [2d10-2: 7, 10 + 6]. Oof. 21 damage. That will be four wounds.
+
+**Sarah:** I'll soak one wound with my teleportation power and one with my electric shock—so that will only bring me to hurt.
+
+> Bang! The guard fires a shot right into your side, but in an electric flash, you zap to the side and you go sprawling into the ground. Then, with a twist and a lunge, you deliver a swift kick to the guard's sternum, along with shocking bolts of electricity that go skittering through the guard. He falls to the ground. </br></br>
 > Because of the gunshot, I'm going to make a noise roll. [Secretly: 2d10 (10, 2 = 12 zombies)] You know zombies are inbound now, it's just a matter of time.
 
 **Kyle.** Shit, do we know where the Botanist is yet?
@@ -109,7 +113,7 @@ Two heroes, Max "Mouse" McMillan and Emily "Electric Girl" Evans—played by Kyl
 
 > Okay, give me a 3d10 power roll as well.
 
-**Sarah:** [3d10: 4, 10, 9; 3d10: 6, 10, 10] Wow. Big rolls. Two successes plus three and three successes plus two is five for the lightning and five for the teleport.
+**Sarah:** I'd like [3d10: 4, 10, 9; 3d10: 6, 10, 10] Wow. Big rolls. Two successes plus two and three successes plus one is four for the lightning and four for the teleport.
 
 > Okay, that'll be 2d10 damage. And you can distribute it among the zombies as you'd like.
 
@@ -127,13 +131,15 @@ Two heroes, Max "Mouse" McMillan and Emily "Electric Girl" Evans—played by Kyl
 
 **Kyle:** Alright, alright, let's scram. Create a distraction for us, will you?
 
-**Sarah:** I can do that. Electric Girl wants to power surge and create a huge electric storm. I'll take two stress and add two dice. [5d10: 1,4,6,6,8] Three successes plus three is six. I want to create a huge thunderbolt off in the distance to create a lot of noise and draw the zombies away from us.
+**Sarah:** I can do that. Electric Girl will try to create a huge electric storm as a distraction [3d10: 6,6,8] Three successes plus two is six. I want to create a huge thunderbolt off in the distance to create a lot of noise and draw the zombies away from us.
 
 > Okay. With six successes, a bolt of lightning blasts from your hand and shatters into a building. It's mixture of metal and wood goes up in flames and creates a roaring noise. You know all the zombies in the area are going to be headed towards it. The ones directly in front of you, however, are locked on you and move towards you to attack. What do you do?
 
 **Kyle:** Stand and fight! I charge into the mix and start to attack with my baseball bat.
 
-**Sarah:** Electric Girl joins the fray too — I'll use my lightning powers at close range.
+> Even as supers, just a single blow from a zombie could mean death, so be careful.
+
+**Sarah:** Electric Girl will join the fray too — I'll use my lightning powers at close range.
 
 > Alright. The zombies won't attack until after all three hand-to-hand exchanges have passed, and there are four of them. Make three attacks each. Kyle, you must make a hard athletics check, so give me 3x 1d10 rolls to hit. Any hit that deals more than 2 damage will kill a zombie. Sarah, the electric damage isn't particularly potent against zombies, so you'll need to do 15 or more points of electric damage to a zombie to kill it.
 
@@ -141,7 +147,7 @@ Two heroes, Max "Mouse" McMillan and Emily "Electric Girl" Evans—played by Kyl
 
 > Awesome, you charge into combat with the zombies and smash two heads with your baseball bat, their brains splatter over the sidewalk and the corpses fall to the ground. Sarah?
 
-**Sarah:** Yeah. [3x3d10: 1,5,7; 6,7,8; 7,8,8]. Woo! Two successes, three successes, and three successes. Plus three thats five, six, and six.
+**Sarah:** Yeah. [3x3d10: 1,5,7; 6,7,8; 7,8,8]. Woo! Two successes, three successes, and three successes. Plus two thats four, five, and five.
 
 > All of those will be 2d10 damage. Beat 15 to to take down the zombies.
 
