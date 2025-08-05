@@ -149,3 +149,15 @@ As such, navy organizations take the security of their boats as a first order pr
 
 
 ### Intelligence Agency
+Intelligence Agencies are shadowy organizations adjacent to the military, used to operating in a clandestine fashion. They do not have the large armaments for direct conflict, but they have highly trained operatives and penchant for thinking outside the box.
+
+Their true strengths lie in the ability to form relationships with diverse sets of power brokers, establish a strong situational awareness, and devise cunning plans to achieve their desired outcomes.
+
+Any organization founded on the remnants of an intelligence agency is going to be hard to detect—likely operating under some form of cover—and with a dispersed network of moles and agents throughout the relevant location.
+
+
+__Agent Amy Aspen__ (3 wounds)
+<br> _After receiving special dispensation to serve as a Air Force pararescue jumper and serving several tours of duty, Amy disappeared into the intelligence service. Now, she uses her intuition and training to save others, wherever possible._
+<br/>Ath: 8, Int: 7, Per: 7, Crg: 8
+<br/>__Carrying:__ handgun, knives, flashlight, rations, cyanide pill, gloves, crowbar, first aid kit.
+<br/>__Skills:__ shooting, fighting, medicine
