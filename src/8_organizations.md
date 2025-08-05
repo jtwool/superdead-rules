@@ -23,9 +23,19 @@
 
 ## Civil Organizations
 
+Civil organizations reflect both the best and worst aspects of society. On one hand, they represent self-less public servants who give their lives and careers for the betterment of their neighbors and fellow citizens. On the other, they are home to the most corrupt grifters who line their pockets on the backs of the misfortunate, and the self-righteous zealots who believe they alone can know the good path for everyone.
+
 ### Government
+Where an arm of government has made it to the end of days, it is no doubt due to the charisma of a cunning politician. Savvy and charming, a good politician can encourage their supporters just as well in the end of days as in the before times. Arguably, the skill is even more powerful now: keeping their hands clean while others risk their lives on their behalf.
+
+Followers who are attracted to government organizations are optimists, who believe that their is a return to normal possible. And they look down on those who would turn to crime to stay alive.
+
 ### Firefighters
+
+
 ### Police
+
+
 
 ## Civilian Organizations
 
