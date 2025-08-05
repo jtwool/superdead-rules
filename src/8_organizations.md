@@ -31,7 +31,9 @@ Where an arm of government has made it to the end of days, it is no doubt due to
 Followers who are attracted to government organizations are optimists, who believe that their is a return to normal possible. And they look down on those who would turn to crime to stay alive.
 
 ### Firefighters
+Firefighters——both career and volunteer——are fearless and physically impressive. Used to braving danger for their fellow man at a moments notice, the apocalypse is in some way, not so new. The threat, however, is much deadlier than what they are used to.
 
+Firefighters thrive on comradery, self-sacrifice, duty, and action. Where organizations of firefighters have survived into the end times, they always seek to rescue other survivors and organize for safety. With a strong preference for action, firefighters stake out into the world to save lives——often tearing up buildings in the process.
 
 ### Police
 
