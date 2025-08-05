@@ -157,3 +157,11 @@ Poppers are bloated zombies, full of infectious fluid. They move slowly and awkw
 **Attack.** Poppers bite at the end of every hand-to-hand phase, like shamblers. 
 
 **Popping.** If a popper takes damage during any phase, it has a 1-in-2 chance of **popping**. If you are in immediate range of a popping popper, you must succeed at a **hard** athletics save or be subject to the effects of [a bite](#bite-outcome-table).
+
+
+### Mutants
+Most often, when a mutant becomes infected by the virus, they lose their powers. This was the intended purpose of the virus. Sometimes, however, the full effect doesn't take and a mutant will retain their powers in zombie form.
+
+Combining an insatiable thirst for flesh with super natural powers, mutant zombies are truly fearsome.
+
+Their base zombie type determines their stats, however, these are augmented by one or more super powers.

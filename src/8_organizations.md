@@ -63,7 +63,6 @@ Labor unions existed in a state of constant struggle before the end of times—�
 
 Labor union organizations can also be home to leftist idealists who view the end of times as a blessing in disguise: an opportunity to rebuild societies free of capitalist exploitation and corporate greed.
 
-
 ### Research Labs
 
 ### Schools / Universities
@@ -129,8 +128,24 @@ That makes these gangs formidable forces on the scene where ever they exist, wit
 
 ## Military Organizations
 
+Prepared to defend the homeland, military organizations are some of the best suited to surviving a zombie apocalypse. They are stocked with well trained and disciplined warriors, who have committed to putting the mission first and their own survival second.
+
+Military organizations can be bastions of peace and security. But they can be ruthless if you find yourself on the wrong side of their objectives.
+
 ### Army
+Responsible for invasion and defense by land, the Army is in many ways the best equipped to directly deal with a local zombie threat. They have the most troops, ammunition, and tools to manage direct conflict with infantry-on-infantry combat——like the living dead.
+
+Organizations built on the remnants of an Army command will distinguish themselves from other military organizations with zombie impenetrable vehicles——tanks and armored personnel carriers——as well as earth-moving vehicles and tactics for reinforcing positions for defense. Whether the Army can use these techniques effectively is another story.
+
+Army organizations are in excellent position to defend against the zombie apocalypse, but their tactics rely heavily on both **fuel and ammo**. Without these resources, the army's approaches are dramatically less effective. Securing these supplies will become an essential activity.
+
 ### Navy
+Unlike the land-locked army, many naval commands have survived simply by virtue of being isolated on or underneath the water. The nuclear reactors on board submarines and aircraft carriers are capable of powering these vessels for decades without interruption. And these carrier groups are wholly equipped armies, with Marines that can be dispatched for land operations; pilots who can provide surveillance, air cover, and deliver crushing anti-zombie ordinance; and any number of daring sailors, familiar with spartan conditions.
+
+As such, navy organizations take the security of their boats as a first order priority, sending small teams onto land to incrementally secure territory. The limiting factor to their effectiveness——like common survivors, in many ways——is the availability of food, water, and other supplies necessary for daily life.
+
 ### Air Force
-### Marines
+
+
+
 ### Intelligence Agency

@@ -26,3 +26,4 @@ This work stands on the shoulders of giants. The following sources of media and 
 - [**Shadowdark**](https://www.thearcanelibrary.com/) by Kelsey Dionne
 - [**Skirmish Ragers**](https://haylandterrain.com/en-us/collections/skirmish-ragers) by Colin Phillips and Chris Pooch
 - [**Tiny Supers**](https://shop.gallantknightgames.com/products/tiny-supers) by Alan Bahr
+- [**Savage Worlds**](https://peginc.com/product/swade-super-powers-companion/) by Pinnacle Games
