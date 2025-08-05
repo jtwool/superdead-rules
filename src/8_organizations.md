@@ -36,8 +36,20 @@ Firefighters——both career and volunteer——are fearless and physically imp
 Firefighters thrive on comradery, self-sacrifice, duty, and action. Where organizations of firefighters have survived into the end times, they always seek to rescue other survivors and organize for safety. With a strong preference for action, firefighters stake out into the world to save lives——often tearing up buildings in the process.
 
 ### Police
+At their best, police organizations are hierarchical, with a strict chain of command, and operate according to the code of law. Because they are well ordered and disciplined, many police organizations did survive into the end of days. There, they largely operate in the same fashion they always have: enforcing rules and protecting the populace, from both zombie, human, and mutant threats.
 
+At their worst, police organizations are rigid, inflexible, and intentionally ignore the suffering of the people they purport to protect——to say nothing of nakedly corrupt. In the end of times, these flaws can be exaggerated. A jaded police organization can grow to see everyone as a lawbreaker, a threat, or simply someone that can be taken advantage of without recourse.
 
+##### Police Organization Objectives 
+| 1d10 | Police Objective | 
+| :-: | :- | 
+| 1-2 | Reclaim territory
+| 3-4 | Punish lawbreakers
+| 5-8 | Protect survivors 
+| 9 | Kill mutants
+| 10 | Any two
+
+Because of their role in licensing  mutants and protecting the civilian population from mutants during the before times, some police officers have strongly held, negative prejudices towards mutants. Some police organizations even make it their primary goal to eliminate mutants, as they work to restore peace.
 
 ## Civilian Organizations
 
