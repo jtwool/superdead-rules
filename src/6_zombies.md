@@ -8,6 +8,8 @@ A bite does not *always* turn someone undead.
 
 If you are a bitten, the game master will make a bite roll in secret and narrate the effects to you.
 
+> **Optional Rule: Player-facing zombie rolls.** Because zombies are so deadly in Super Dead, you may wish to have your players make all the attack rolls for zombies and—if they are bitten—make the bite outcome roll as well. For players who are not used to high-lethality games, this can give them a sense of agency that makes their characters death easier to stomach.
+
 ##### Bite Outcome Table.
 | 1d10 | Outcome |
 | :-: | :- |

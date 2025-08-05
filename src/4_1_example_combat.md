@@ -1,12 +1,16 @@
-# Example Combat
+# Example of Play
 
 The following is an example of play, including a combat encounter, designed to introduce you to the world of Super Dead and the mechanics.
 
 Two heroes, Max "Mouse" McMillan and Emily "Electric Girl" Evans—played by Kyle and Sarah—are braving the night to save their friend: "The Botanist", a weak mutant who's ability to encourage plant growth has nontheless become highly valuable in the end of days. The botanist was abducted by several survivors that Max and Emily were staying with. After investigating the matter, they've discovered that their friend The Botanist is at the town library, under the thumb of the city's former mayor: Moira Mullens, and a group of thugs in her employ.
 
-> GM Text
+---
+**NB:** In the following section
+> Things the game master says look like this
 
-**Player Name.** Player text.
+**Player name:** And things the players say look like this
+
+---
 
 > You have made your way to the outskirts of the library. The building is in sight. It's two stories tall, with large glass windows on the second floor, a door on the first, and a flourishing "public garden" out front. You feel confident that you're hidden around the corner and no one can see you. What does Max do, Kyle? 
 

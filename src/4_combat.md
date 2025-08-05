@@ -44,7 +44,6 @@ To hit in hand-to-hand combat with a handheld weapon--such as a bat, knife, axe,
 
 Because most characters will not be skilled in fighting, the default is a **hard** **athletics** save.
 
-
 ### The Shooting Phase 
 Once the movement and hand-to-hand phases have been resolved, combatants in the ranges close, near, and far may declare one target within range of their weapon and make a ranged attack. 
 
@@ -149,3 +148,13 @@ If all your dice are below the target number you deal no damage.
 If you are **cracked**, subtract any dice below your stress level from the number of successes before counting your successes.
 
 > _**Example**: Fionna Firefist is engaged in hand-to-hand combat with two bad guys. She rolls her Bravo 2 power "fire control" and gets a 3 and an 6. The 6 is above her target number (4), so she succeeds in her attack and can deal damage. She can either choose to deal 9 damage to one opponent, or 3 damage to one and 6 to the other._
+
+## When Supers Fight
+
+When you are engaged in combat with another super, you may call for the **Super Phase** of combat to be added.
+
+During this phase, you may declare up to one other super-powered target. You and the super you targeted then make opposed power checks, using the power of your choice. The super who scores the fewest successes on their power roll, after adding bonuses, must reduce one of their powers by one.
+
+If they have no more powers to reduce, they are knocked unconscious.
+
+If a super is targeted more than one time in the same Super Phase, they count 1 less success for each time they have been targeted.
