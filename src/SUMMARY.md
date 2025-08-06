@@ -9,6 +9,7 @@
 - [Gear](./5_gear.md)
 - [Zombies](./6_zombies.md)
 - [Running the World](./7_running-the-game.md)
+  - [Reference Tables](./7_reference_tables.md)
 - [Campaign Pointers](./7_adventuring.md)
 - [Organizations](./8_organizations.md)
   - [Enemies and NPCs](./8_statblocks.md)

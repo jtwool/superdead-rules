@@ -53,7 +53,12 @@ Because of their role in licensing  mutants and protecting the civilian populati
 
 ## Civilian Organizations
 
+Civilian organizations are made up of and run by every day Jacks and Jills of the world. When these organizations survive, it is typically because of luck or an outstanding leader, more than any specific preparedness for the end of the world. Unlike many of the other organizations, civilian organizations are not particularly well prepared for the end of the world. Without help, they are likely to become prey for criminal organizations, or find themselves absorbed into police or military organizations that are better armed and able to protect the survivors that join them. 
+
 ### Corporations 
+Corporations are driven by one thing: money. And the mega-corporations that were able to survive the apocalypse carry forward with that same motivation. These organizations take from their surrounding areas: pillaging, stockpiling, accumulating, and developing critical resources. Often to give it back to survivors unassociated with the corporation at a significant markup.
+
+People who can help corporations accumulate wealth will find themselves in the corporations good graces—for so long as they are useful. But those who other motives, like putting an end to the zombie apocalypse, will find them subject to a corporations ire.
 
 ### Religious Organizations
 Religious organizations exist to cultivate community and nurture the faith of their followers——and never have community and faith been more essential than in the end of times. While their is nothing that makes these organizations particularly well suited for surviving a zombie apocalypse, religious organizations tend to be close knit and optimistic, as much as one can be at the end of the world.
@@ -67,7 +72,9 @@ Labor union organizations can also be home to leftist idealists who view the end
 Research Labs are collections of top scientists, dedicated to furthering public knowledge in a specific area: usually a deeply scientific area. These organizations prize intelligence and reputation above all else. When they do manage to exist in the end of days, they tend towards one of two tracks: one in which they pursue the same research goals they did before, not knowing any different; and one in which they rotate all their knowledge and brainpower for solving the current crisis, finding a cure, and rebuilding civilization.
 
 ### Schools / Universities
+Like research labs, schools and universities prize intelligence. But unlike research labs, schools are fundamentally democratic institutions, drawing from all sections of the population. The professors and students may be intellectual powerhouses, but the football coaches, janitors, and administrators who make the schools runs are not necessarily so formidable. In this sense, schools serve as a post-apocalyptic mixing bowl, where members of the academic community come together and fight the undead.
 
+Schools and universities have the distinct drawback of being high density areas, which attracted a lot of zombies initially. But once secured, sturdy and regal buildings with Labarynthian corridors are excellent defense against the living dead.
 
 ### Secret Societies 
 Remnants of days long past, when skilled tradesmen would meet in shadowy rooms to share secrets and shape the world's events in their favor, only a scarce few Secret Societies existed, and even fewer survived into the end of days. Those that did though, did so because they were prepared. They were a powerful force, lurking in the shadows all along, anticipating an apocalypse——if not several.
@@ -147,8 +154,7 @@ Unlike the land-locked army, many naval commands have survived simply by virtue 
 As such, navy organizations take the security of their boats as a first order priority, sending small teams onto land to incrementally secure territory. The limiting factor to their effectiveness——like common survivors, in many ways——is the availability of food, water, and other supplies necessary for daily life.
 
 ### Air Force
-
-
+Air Force bases no longer serve as potent sigils of destruction and dominance, but rather, as technological havens. Succumbing to an unsustainable dependence on modern resources—like jet fuel—the Air Force organizations that remain have pivoted into canny and brilliant logistic and technical operations. These outposts are now the sophisticated and well armed engineering operations in the world. Behind their chain fences and armed with simple personal weaponry, the Air Force's technicians build a new set of machines. Not to achieve air superiority, but to dispatch the zombie threat once and for all.
 
 ### Intelligence Agency
 Intelligence Agencies are shadowy organizations adjacent to the military, used to operating in a clandestine fashion. They do not have the large armaments for direct conflict, but they have highly trained operatives and penchant for thinking outside the box.
