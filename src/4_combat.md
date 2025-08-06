@@ -22,9 +22,11 @@ While you are __pinned__, ranged attacks against you by the enemy that pinned yo
 ### The Hand-to-Hand Phase 
 After the [movement phase](#the-movement-phase) is resolved, if there are any combatants within [**immediate range**](#ranges) of one another, the hand-to-hand phase of combat occurs.
 
-The hand-to-hand phase consists of up to **three exchanges** of attacks. Within an exchange, each combatant declares their intention, and then attacks are resolved simultaneously. 
+The hand-to-hand phase consists of up to **three exchanges** of attacks. Within an exchange, each combatant declares who and how they would like to attack, and then attacks are resolved simultaneously.
 
 Shooting a pistol or shotgun at immediate range is **hard**, and shooting a long-gun is **very hard**. Attacks with ranged powers are also **hard**.
+
+**Obstacles** within immediate range can obstruct hand-to-hand combat. If during the hand-to-hand phase you are separated from your intended target by an obstacle, e.g., a table, a car, a chain link fence, etc., your damage from the first exchange occurs during second exchange.
 
 | Situation | Difficulty in H2H | Modifier | 
 | :- | :- | :-: |
@@ -32,7 +34,7 @@ Shooting a pistol or shotgun at immediate range is **hard**, and shooting a long
 | Pistol | Hard |  +1 
 | Shotgun | Hard | +1 
 | Other gun | Very Hard | +2 
-| Melee Power | Normal | -
+| Hand-to-Hand Power | Normal | -
 | Ranged Power | Hard | +1 
 
 After damage has been dealt, for each exchange, another exchange occurs until one side has been entirely eliminated or until three hand-to-hand exchanges have occurred.
