@@ -1,64 +1,41 @@
 # Powers
 
+Your character's powers are rated by the bonus they apply to your power rolls.
+
 ## Using Powers 
-When you use a power, roll the dice associated with the level of the power you are using. If any of the dice meet or exceed the target number for the power, you succeed. If all of the dice you rolled are below your target number, then you have partially succeeded, and incur stress.
+To use a power, you will compare the result of a power roll to the power scale table to determine if you mustered enough energy to create your desired effect.
 
-Superhuman feats of power levels two or more levels below your own power level are trivial, and you can succeed at these feats without rolling.
+To make a power roll, roll 3d10, count the number of dice that exceed the target number, and add your power's rank. The standard target number is 6.
 
-## Power Level
+> **Example.** Bianca Blues wants to use a Sonic Blast (+3) to open a whole in a brick wall. She rolls 3d10 and gets a 3, a 6, and a 8. The 6 and 8 are at or above the target number, so her power roll total is a 5: 2 successes plus her +3 rating for Sonic Blast. She compares this to power scale table and finds that 5 successes is enough to destroy brick: brick wall demolished. 
 
-In coordination with the Department of Justice and the Department of Defense,  the Department of Homeland Security's Mutant Registration and Protection Agency enumerated four categories of mutants, based on the threat they posed to public safety: 
+### Power Scale Table
 
-- Alpha-level mutants, who pose limited or no threat to public safety;
-- Bravo-level mutants who pose moderate threat to public safety;
-- Charlie-level mutants who pose a severe threat to public safety; and
-- Zulu-level mutants, who pose a critical threat to public safety.
+Successes|Distance|Damage|Weight|Speed|
+| :-: | :- | :-: | -: | -: |
+2|Self|1d10|600 lbs|30 mph|
+3|30 feet|1d10|800 lbs|45 mph|
+4|60 feet|2d10|1200 lbs|60 mph|
+5|120 feet|2d10|2000 lbs|70 mph|
+7|300 feet|3d10|2 tons|80 mph|
+8|600 feet|3d10|3 tons|95 mph|
+10|1000 feet|4d10|5 tons|120 mph|
+15|2 miles|5d10 + 15|10 tons|150 mph|
+20|City|5d10 + 30|25 tons|170 mph|
+30|Nation|5d10 + 60|80 tons|200 mph|
+40|Continent|5d10 + 120|200 tons|500 mph|
+50|World| +250 | +1000 tons| +800 mph|
 
-MRPA did not require Alpha-level mutants to register with the government, but all mutants at Bravo-level and above were required to be registered. Charlie- and Zulu-level mutants were required to register, and serve 10-years in the U.S. armed forces.
+In the power scale table, **weight** indicates the weight that can be lifted over head. The weight that can be thrown 50 feet is approximately 1/10th of the weight shown.
 
-Powers at the Alpha and Bravo level, the domain of player characters in Super Dead, are considered "street level". At this level, heroes' powers are approximately equal to the destructiveness of handheld weapons. Though in practice, because of the versatility of powers, mutants will be more dangerous than an armed individual.
-
-| Level | Dice | TN | Comparable Weapon | Strength | Speed  | 
-| :- | :-: | :-: | :- | :- | :-: | 
-| Alpha |  2d4 | 2 | Bat / Knife | 800 lbs | 30 MPH 
-| Bravo 1 | 2d6 | 3 | Handgun | 2000 lbs | 45 MPH 
-| Bravo 2 | 2d8 | 4 | Rifle | 5 ton | 60 MPH 
-| Bravo 3 | 3d8 | 4 | Automatic Weapon | 10 ton | 75 MPH 
-| Bravo 4 | 3d10 | 5 | Machine Gun | 20 ton | 90 MPH 
- 
-## Using your powers 
-When you declare your intent to use super powers, the gamemaster may have you roll to determine the outcome. If they do, you will attempt to roll your dice pool associated with the level of that power, against the target number of the effect you are trying to create. If at least 1 die exceeds the target number, you succeed.
-
-If no die exceeds the target number, your attempt succeeds, but you incur a point of **stress** may **crack** as a result.
-
-Normally, you may attempt to create any effect at your power level or below it. Any effect three or more power levels below your current power level is considered trivial and should not require a roll.
-
-To create more intense effects, you will need to use a [__power surge__](#power-surge).
-
-> _**Example:** Sammy Strong has the power Super Strength at power-level Bravo 3. He can attempt to lift 10 tons by rolling 3d8 and attempting to get at least one 4, or 1 ton by exceeding a 3. He may also attempt to lift 800lbs without rolling. To lift 20 tons, he would need to power surge._
-
-### Using Powers While Cracked
-When you have cracked, your stress reduces your ability to control your powers.
-
-To succeed in using your powers while cracked, one die must exceed your target number as usual, and one other die must exceed your stress.
-
-If both conditions are not met, you lose control of your powers and the gamemaster determines what happens.
-
-| 1d6 | Power Mishap | 
-| :-: | :- |
-1 | Disfigure Self
-2 | Harm Ally
-3 | Lose Access to Power
-4 | Harm Self
-5 | Harm Random
-6 | No effect 
+The **speed** shown is the maximum running speed for 50m. Over a mile or more, the speed is approximately 1/2. 
 
 ## Power Surge
-Your powers are not fixed; they ebb and flow with your energy, adrenaline and intensity. At critical times, you can surge your powers to achieve a more incredible effect than you are normally capable of. Doing so is stressful, but allows you to temporarily exceed your normal limitations.
+Your powers are not fixed: they ebb and flow with your energy, adrenaline and intensity. At critical times, you can surge your powers to achieve incredible effects that you are normally incapable of. Doing so is stressful, but allows you to temporarily exceed your normal limitations.
 
-When you make a power surge attempt, pick a power level one or two levels above your current power level and roll your power dice against the target number for that power level. If you succeed, you achieve the intended effect. If you fail, your power surge attempt will fail or succeed with a significant cost.
+When you perform a power surge, you add a number of dice to your power roll die pool and incur a number of stress. To add 1 die to your die pool, you will incur 1 point of stress. To add 2 dice to your die pool, you will incur 3 points of stress. 
 
-Regardless if you succeed or fail, you will incur **stress** after you power surge. Following a power surge attempt, you will take 1 point of stress for a 1 level power surge, and 3 points of stress for a 2 level power surge.
+During your power surge, any 10s rolled during your power rolls "explode": you can reroll them and add subsequent successes to your success count. Any 10s rolled during these subsequent rolls explode as well.
 
 > **Designer's Note:** Because this is a rules-light system that involving super powers, you will often find yourself wondering "would a player's powers be able to do that?" If the answer seems to rest somewhere between certainly yes and certainly not, allow the player to take a power surge to accomplish the feat.
 
@@ -67,38 +44,54 @@ Your powers also provide you with an enhanced durability. You can use your power
 
 When you soak damage, you temporarily reduce a power by as many levels as you would have taken wounds. Your power stays at this reduced level for 24 hours, or until you have a full night's sleep, whichever is longer.
 
-Powers reduced below Alpha in this way cannot be used until you have recovered.
+Powers reduced below +1 in this way cannot be used until you have recovered.
 
 If you incur more wounds than you can soak with a single power, you can use multiple powers to soak the damage. If damage is partially soaked, the remainder is incurred as wounds.
 
-## Complete Power Tables
+## Power Stunt
+Alternative, you can also use your powers to "stunt" other abilities. So long as it makes narrative sense, your game master may allow you to pay a stress to use your power to achieve effects normally associated with another.
 
-While the tables above are sufficient for player characters, non-player characters may be more powerful. These complete power tables include the effectiveness of Charlie- and Zulu-level mutants.
+After a power stunt has been performed, the next time you advance in level, you may elect to be able to perform this stunt without paying the stress cost. If you elect not to gain the stunt at that level, you must perform the stunt again in order to take it again.
 
-##### Table. Complete Strength, Speed and Area of Powers
-| Level | Strength | Speed | Area 
-| :- | :-: | :-: | :-: |  
-| Alpha | 800 lbs | 30 MPH | Personal
-| Bravo 1 | 2000 lbs | 45 MPH | Wall
-| Bravo 2 | 5 ton | 60 MPH | Small Room
-| Bravo 3 | 10 ton | 75 MPH | Large Room
-| Bravo 4 | 20 ton | 90 MPH | Floor
-| Charlie 1 | 50 tons | 125 MPH | Small Building
-| Charlie 2 | 100 tons | 200 MPH | Large Building
-| Zulu 1 | 500 tons | 300 MPH | City Block
-| Zulu 2 | 1000 tons | 600 MPH | Neighborhood
-| Zulu 3 | * | * | *
+If you are performing a stunt you have already performed this level, the courage save to resist cracking is **very easy**.
 
-##### Table. Complete Weapon Comparisons of Powers
-| Level | Dice | TN | Comparable Weapon |
-| :- | :-: | :-: | :- |
-| Alpha | 2d4 | 2 | Bat / Knife
-| Bravo 1 | 2d6 | 3 | Handgun
-| Bravo 2 | 2d8 | 4 | Rifle
-| Bravo 3 | 3d8 | 4 | Automatic Weapon
-| Bravo 4 | 3d10 | 5 | Machine Gun
-| Charlie 1 | 4d10 | 6 | Rocket Propelled Grenade
-| Charlie 2 | 4d12 | 7 | Tank Gun
-| Zulu 1 | 6d12 | 8 | Tactical Missile
-| Zulu 2 | 6d20 | 9 | Short-Range Missile
-| Zulu 3 | 10d20 | 10| Nuclear Bomb
+> **Example.** Strong Steve is fighting three zombies. He wants to smash his hands into the ground and create a thunderwave. The game master rules he can do this. Steve rolls his Strength (+7) power pool (9, 4, 7) and counts 9 successes: his shockwave tosses the zombies back several hundred feet. Steve incurs a stress and must make a courage save.
+
+## Drawbacks
+Your powers may have drawbacks: a cost associated with using the power.
+
+Some common drawbacks are:
+- Appearance: your appearance is disfigured
+- Activation: you must activate the power before using it
+- Build Up: the power starts weaker (-2, -1), but gets stronger as you use it more (+1, +2)
+- Charge Up: you must charge up the power before using it
+- Dependency: you must wait for something to happen before you can use the power
+- Linked: you must use another power to use this one
+- Utility Belts / Super Suits: you are dependent on items or equipment
+- Vulnerability / Weakness: you are particularly susceptible to something
+
+Power drawbacks can be **minor** (+1) or **major** (+2).
+
+**Minor drawbacks** are drawbacks that hinder the use of a power, but do not prevent the character from performing other tasks or fitting in in society. For example, dependency on a super suit, or the requirement to activate a "fire form" before manipulating fire energy would be minor drawbacks.
+
+**Major drawbacks** impact a character's ability to fit in in society or significantly reduce the utility of more than one power. Examples of a major drawback would be: an inability to make physical contact with others, or a grotesque and monstrous appearance.
+
+The same drawback cannot apply to more than one power.
+
+## Using Powers While Cracked
+When you have cracked, controlling your powers becomes more difficult.
+
+Whenever you make a power roll, subtract any dice below your stress level from the number of successes you would have achieved.
+
+If the number of dice rolled below your stress level is greater than the number of successes rolled, you have lost control of your powers.
+
+Roll on the table below:
+
+| 1d10 | Outcome |
+| :-: | :- |
+| 1 | All powers go to +0 until you recover a point of stress
+| 2-3 | Power used goes to +0 until you recover a point of stress | 
+| 4-6 | Power drops 1 rank (-1)
+| 7-8 | Reroll with power surge (4d10, take 1 stress), random target
+| 9 | Reroll with power surge (5d10, take 2 stress), random target
+| 10 | Power surge (5d10, 0 stress), random target

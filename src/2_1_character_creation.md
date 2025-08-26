@@ -8,7 +8,12 @@ Super Dead characters can be recorded on a note card, a piece of paper, or [dedi
 Roll 4d6. Add 2 to each die and assign each value to an attribute. Higher is better.
 
 #### 2. Powers
-Select either 2 powers at the Bravo 1 (2d6) level or 1 power at the Bravo 2 (2d8) level.
+Select either:
+- 2 powers at +2
+- 1 power at +3, 1 power at +1
+- 1 power at +2, 2 powers at +1
+
+You do not need to select a power from the table below. And you should work with the game master on the specific manifestations of your powers.
 
 |d20|Power |d20 | Power
 |:-:|:-|:-:|:-|
@@ -23,8 +28,10 @@ Select either 2 powers at the Bravo 1 (2d6) level or 1 power at the Bravo 2 (2d8
 |9|Matter Control|19|Toughness|
 |10|Mind Control|20|Transformation|
 
+**Drawbacks:** Optionally, you may elect to have a minor (+1) or serious (+2) [drawback](./3_powers.md#drawbacks) for any of your powers.
+
 #### 3. Background
-Roll 1d20 for a random background.
+Choose a background or roll 1d20 for a random background.
 
 | d20 | Background | d20 | Background | 
 | :-: | :- | :-: | :- |
@@ -40,7 +47,7 @@ Roll 1d20 for a random background.
 |10|	Healthcare|	20	|Transportation
 
 #### 4. Flaws
-Roll  1d20 for a random flaw.
+Choose two flaws, or roll  2d20 for a random flaws.
 |1d20|Flaw|1d20|Flaw
 |:-:|:- |:-:|:- |
 |1|Addicted|11|Indecisive|
@@ -69,10 +76,9 @@ Roll  1d6 for a random form of stress relief.
 #### 6. Equipment
 Add any equipment your character may have, depending on their background.
 
-## New Survivors
-When creating new parties, roll on the following table to create bonds between the characters. 
+## 7. Bonds
 
-Assuming there are more than two players in the party, each player should roll at least twice. Each time, pick a player you do not already have a bond with.
+Roll a bond for at least one other player character, and once NPC.
 
 | 1d10 | Bond | 
 | :-: |:-| 

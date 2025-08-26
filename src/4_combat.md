@@ -15,7 +15,9 @@ Reckless movement makes any other task **very hard** and makes attacks against y
 
 If you move into another character's line of sight, you are exposed to **opportunity fire**. If you take opportunity fire, regardless of whether or not you take damage, you must make a **courage save**. On a failed save, you must retreat and find cover.
 
-__Opportunity fire__ is a free ranged attack against a combatant who enters your line of sight. You may take one opportunity attack per target so long as you have ammunition (if necessary).
+__Opportunity fire__ is a free ranged attack against a combatant who enters your line of sight. You may take one opportunity attack per target so long as you have ammunition (if necessary). Any target you hit with opportunity fire must immediately retreat to a safe position and make a courage check or be **pinned**.
+
+While you are __pinned__, ranged attacks against you by the enemy that pinned you are **very easy** and movement in the direction of the attackers requires a **very hard** courage test. You can only remove the pinned condition by retreating or if the attackers die or run out of ammo. 
 
 ### The Hand-to-Hand Phase 
 After the [movement phase](#the-movement-phase) is resolved, if there are any combatants within [**immediate range**](#ranges) of one another, the hand-to-hand phase of combat occurs.
@@ -43,7 +45,6 @@ Fighting in hand-to-hand combat when outnumbered is at least **hard**, but can b
 To hit in hand-to-hand combat with a handheld weapon--such as a bat, knife, axe, or even your fists--you must make a fighting check. On a successful fighting check, you deal damage to your opponent determined by the weapon you are using.
 
 Because most characters will not be skilled in fighting, the default is a **hard** **athletics** save.
-
 
 ### The Shooting Phase 
 Once the movement and hand-to-hand phases have been resolved, combatants in the ranges close, near, and far may declare one target within range of their weapon and make a ranged attack. 
@@ -78,56 +79,84 @@ Shooting beyond the range of your weapon is **very hard** or **extremely hard**.
 Zombies must get to immediate range to attack.
 
 ## Attacks, Damage, and Wounds
+When you deal damage, roll the damage dice associated with the weapon or power and count the total. Damage dice always explode. That is, you can reroll any dice that show their maximum value.
 
-When you take damage, subtract any armor you have from the damage taken. For every three points of damage remaining, you incur one wound.
+When you take damage, for every five points of damage, you incur one wound. You may choose to absorb any number of wounds with armor, if you are able.
 
-If you have taken no wounds, you are **healthy**. If you have taken one wound you are **hurt**. If you have taken two wounds you are **wounded**. Once you have taken three wounds, you suffer from **disfigurement** or **death**.
+| Damage | Wounds |  Damage | Wounds |
+| :-: | :-: | :-: | :-: |
+| 1-5 | 1 | 21-25 | 5
+| 6-10 | 2 | 26-30 | 6
+| 11-15 | 3 | 31-35 | 7 
+| 16-20 | 4 | 36-40 | 8
+| 
+
+If you have taken no wounds, you are **healthy**. If you have taken one or two wounds you are **hurt**. If you have taken three wounds you are **wounded**. At four wounds, you are severly wounded. Upon five wounds, you suffer from **disfigurement** or **death**.
+
+| Wounds | Status | Recovery | Penalty |
+| - | - | - | - |
+| 0 | Healthy | - | - |
+| 1-2 | Hurt | End of Combat | Hard |
+| 3 | Wounded | First Aid / Medicine | Very Hard |
+| 4 | Severely Wounded | First Aid / Medicine | Very Hard |
+| 5 | Disfigured or Dead | Never |  Very Hard |
 
 Being hurt makes things **hard**. Being wounded makes things **very hard**.
 
 You naturally go from **hurt** back to **healthy** as soon as combat ends. 
 
-| Wounds | Status | Recovery | Penalty |
-| - | - | - | - |
-| 0 | Healthy | - | - |
-| 1 | Hurt | End of Combat | Hard |
-| 2 | Wounded | First Aid / Medicine | Very Hard |
-| 3 | Disfigured or Dead | Never |  Very Hard |
+### Being Wounded
 
-If you are wounded, however, you need medical attention. A successful **first aid** save will treat the wound, but leave you with its lingering effects for 14 days. A failed **first aid** save will leave you with the lingering effects of the wound for 28 days. 
+If you are wounded, you will stay wounded until you receive medical attention. A successful **first aid** save will treat the wound, but leave you with its lingering effects for 28 hours. A failed **first aid** save will leave you with the lingering effects of the wound for 7 days.
 
-A successful **medicine** save will relieve you of all effects of the wound.
+For a severe wound, you will suffering lingering effects of the wound for 7 days on a successful **first aid** check, and 28 days on a failed check.
 
-| 2d6 | Wound  
-| :-: | :- | 
-| 2 | Severe Burn |
-| 3 | Dislocation |
-| 4 | Laceration | 
-| 5 |  Minor Burn | 
-| 6 | Bruising | 
-| 7 | Sprained Ligaments | 
-| 8 | Broken Bone| 
-| 9 | Minor Concussion | 
-| 10 | Compound Fracture |
-| 11 | Severe Concussion |
-| 12 | Tissue Loss |
+The game master will tell you how those lingering effects impact your character.
+
+A successful **medicine** save, assuming the appropriate medical equipment is available, will relieve you of all effects of the wound.
+
+| 1d10 | Wounds | 1d10 | Wounds |
+| :-: | :- |  :-: | :- | 
+| 1 | Severe Burn | 6 | Sprained Ligaments | 
+| 2 | Dislocation | 7 | Broken Bone| 
+| 3 | Laceration | 8 | Minor Concussion | 
+| 4 |  Minor Burn | 9 | Compound Fracture |
+| 5 | Major Bruising | 10 | Severe Concussion |
 
 #### Disfigurement and Death
 
-Upon taking your third wound, you may elect to take a disfigurement, by rolling on the disfigurement table. If you choose not to take a disfigurement, or your disfigurement roll would double a disfigurement you already have, you die.
+Upon taking your fifth wound, you will either become disfigured or die. 
 
-| 1d8 | Disfigurement | 1d8 | Disfigurement
+You may elect to become disfigured up to three times. Each time you do so, you and your game master will come up with a permanent injury your character will suffer, and the penalty for that injury.
+
+If you already have three disfigurements, or you elect not to select a disfigurement, you die.
+
+| 1d10 | Disfigurement | 1d10 | Disfigurement
 | :-: | :- | :-: | :- 
-| 1 | Death | 5 | Severed Hand
-| 2 | Facial Scar | 6| Lost Eye
-| 3 | Lost Ear |7 | Mangled Jaw
-| 4 | Limp Leg | 8| Annihilated Arm
-
+| 1 | Blinded | 6 | Severed Hand
+| 2 | Facial Scar | 7| Lost Eye
+| 3 | Lost Ear | 8 | Mangled Jaw
+| 4 | Limp Leg | 9 | Annihilated Arm
+| 5 | Deafened | 10 | Destroyed Vocal Chords 
 
 ## Using Powers in Combat
 
-You will often want to use super powers in combat. When you do so, your single die pool roll will serve as both attack and damage.
+You will often want to use super powers in combat. When you do so, make a power roll to determine the strength of the expression of your powers. 
 
-So long as you achieve at least one success with your die pool, you can deal damage to one or more targets. Damage must be distributed based on whole dice rolled.
+As long as you achieve at least one success, in your power dice pool, you will deal damage. If you do, make a damage roll based on the corresponding intensity.
+
+If all your dice are below the target number you deal no damage.
+
+If you are **cracked**, subtract any dice below your stress level from the number of successes before counting your successes.
 
 > _**Example**: Fionna Firefist is engaged in hand-to-hand combat with two bad guys. She rolls her Bravo 2 power "fire control" and gets a 3 and an 6. The 6 is above her target number (4), so she succeeds in her attack and can deal damage. She can either choose to deal 9 damage to one opponent, or 3 damage to one and 6 to the other._
+
+## When Supers Fight
+
+When you are engaged in combat with another super, you may call for the **Super Phase** of combat to be added.
+
+During this phase, you may declare up to one other super-powered target. You and the super you targeted then make opposed power checks, using the power of your choice. The super who scores the fewest successes on their power roll, after adding bonuses, must reduce one of their powers by one.
+
+If they have no more powers to reduce, they are knocked unconscious.
+
+If a super is targeted more than one time in the same Super Phase, they count 1 less success for each time they have been targeted.

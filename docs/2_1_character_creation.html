@@ -161,7 +161,13 @@
 <h4 id="1-roll-attributes"><a class="header" href="#1-roll-attributes">1. Roll Attributes</a></h4>
 <p>Roll 4d6. Add 2 to each die and assign each value to an attribute. Higher is better.</p>
 <h4 id="2-powers"><a class="header" href="#2-powers">2. Powers</a></h4>
-<p>Select either 2 powers at the Bravo 1 (2d6) level or 1 power at the Bravo 2 (2d8) level.</p>
+<p>Select either:</p>
+<ul>
+<li>2 powers at +2</li>
+<li>1 power at +3, 1 power at +1</li>
+<li>1 power at +2, 2 powers at +1</li>
+</ul>
+<p>You do not need to select a power from the table below. And you should work with the game master on the specific manifestations of your powers.</p>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: center">d20</th><th style="text-align: left">Power</th><th style="text-align: center">d20</th><th style="text-align: left">Power</th></tr></thead><tbody>
 <tr><td style="text-align: center">1</td><td style="text-align: left">Absorption</td><td style="text-align: center">11</td><td style="text-align: left">Senses</td></tr>
 <tr><td style="text-align: center">2</td><td style="text-align: left">Alternate Form</td><td style="text-align: center">12</td><td style="text-align: left">Speed</td></tr>
@@ -175,8 +181,9 @@
 <tr><td style="text-align: center">10</td><td style="text-align: left">Mind Control</td><td style="text-align: center">20</td><td style="text-align: left">Transformation</td></tr>
 </tbody></table>
 </div>
+<p><strong>Drawbacks:</strong> Optionally, you may elect to have a minor (+1) or serious (+2) <a href="./3_powers.html#drawbacks">drawback</a> for any of your powers.</p>
 <h4 id="3-background"><a class="header" href="#3-background">3. Background</a></h4>
-<p>Roll 1d20 for a random background.</p>
+<p>Choose a background or roll 1d20 for a random background.</p>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: center">d20</th><th style="text-align: left">Background</th><th style="text-align: center">d20</th><th style="text-align: left">Background</th></tr></thead><tbody>
 <tr><td style="text-align: center">1</td><td style="text-align: left">Agriculture</td><td style="text-align: center">11</td><td style="text-align: left">Hospitality</td></tr>
 <tr><td style="text-align: center">2</td><td style="text-align: left">Arts &amp; Ent.</td><td style="text-align: center">12</td><td style="text-align: left">Law</td></tr>
@@ -191,7 +198,7 @@
 </tbody></table>
 </div>
 <h4 id="4-flaws"><a class="header" href="#4-flaws">4. Flaws</a></h4>
-<p>Roll  1d20 for a random flaw.</p>
+<p>Choose two flaws, or roll  2d20 for a random flaws.</p>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d20</th><th style="text-align: left">Flaw</th><th style="text-align: center">1d20</th><th style="text-align: left">Flaw</th></tr></thead><tbody>
 <tr><td style="text-align: center">1</td><td style="text-align: left">Addicted</td><td style="text-align: center">11</td><td style="text-align: left">Indecisive</td></tr>
 <tr><td style="text-align: center">2</td><td style="text-align: left">Arrogant</td><td style="text-align: center">12</td><td style="text-align: left">Jealous</td></tr>
@@ -218,9 +225,8 @@
 </div>
 <h4 id="6-equipment"><a class="header" href="#6-equipment">6. Equipment</a></h4>
 <p>Add any equipment your character may have, depending on their background.</p>
-<h2 id="new-survivors"><a class="header" href="#new-survivors">New Survivors</a></h2>
-<p>When creating new parties, roll on the following table to create bonds between the characters.</p>
-<p>Assuming there are more than two players in the party, each player should roll at least twice. Each time, pick a player you do not already have a bond with.</p>
+<h2 id="7-bonds"><a class="header" href="#7-bonds">7. Bonds</a></h2>
+<p>Roll a bond for at least one other player character, and once NPC.</p>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d10</th><th style="text-align: left">Bond</th></tr></thead><tbody>
 <tr><td style="text-align: center">1</td><td style="text-align: left">They have confided a secret in you. They'll tell you what it is and why nobody else can know.</td></tr>
 <tr><td style="text-align: center">2</td><td style="text-align: left">You have saved their life. They'll tell you how.</td></tr>
@@ -263,6 +269,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

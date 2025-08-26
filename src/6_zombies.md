@@ -8,14 +8,16 @@ A bite does not *always* turn someone undead.
 
 If you are a bitten, the game master will make a bite roll in secret and narrate the effects to you.
 
+> **Optional Rule: Player-facing zombie rolls.** Because zombies are so deadly in Super Dead, you may wish to have your players make all the attack rolls for zombies and—if they are bitten—make the bite outcome roll as well. For players who are not used to high-lethality games, this can give them a sense of agency that makes their characters death easier to stomach.
+
 ##### Bite Outcome Table.
-| 1d6 | Outcome |
+| 1d10 | Outcome |
 | :-: | :- |
 | 1 | Turn in seconds |
-| 2 | Turn in minutes |
-| 3 | Turn in hours | 
-| 4 | Turn in days | 
-| 5-6 | Safe |
+| 2-4 | Turn in minutes |
+| 5-7 | Turn in hours | 
+| 8 | Turn in days | 
+| 9-10 | Safe |
 
 If you turn in minutes, hours or days, over the course of that time you will develop flu-like symptoms, that peak, break, and then disappear as your body gets cold and you become undead.
 
@@ -39,6 +41,23 @@ This means that most zombies killed during the hand-to-hand phase will not be ab
 
 ### Killing Zombies
 
+Zombies weaknesses are well known. But taking advantage of those weaknesses is harder than it seems.
+
+The most successful means of killing a zombie are:
+- destroying or severing the zombies head
+- crushing the entire zombie
+- burning or otherwise destroying the zombies body
+
+Many weapons that work well on humans, especially those that rely on causing internal bleeding or organ damage, are ineffective on zombies.
+
+For an attack to kill a zombie, it must:
+- deal 2 or more points of damage directed at the head
+- deal 10 or more points of damage via "blunt-force trauma"
+- deal 15 or more points of magical or elemental damage
+
+Otherwise the attack rends at the zombie's flesh, but it keeps advancing on its prey.
+
+Head shots with firearms are **very hard**. Targeting the head in hand-to-hand is **hard**.
 
 ## Threat and Noise
 If a zombies is not actively devouring a victim, it is on the lookout for its next. Zombies feel neither fear nor exhaustion, and their hunger for flesh is never ending.
@@ -53,18 +72,18 @@ During the daytime, anything louder than a normal conversation will attract zomb
 | Noise | Daytime | Nighttime |
 | :- | :-: | :-: |
 | Whisper | - | - |
-| Conversation | - | 1d10 |
-| Shout | 1d6 | 2d10 |
-| Starting a car | 1d6 | 2d10 |
-| Breaking a window | 2d6 | 3d10 |
-| Starting a Motorcycle | 2d6 | 3d10 | 
-| Gunfire | 3d6 | 4d10 |
+| Conversation | - | 1d10+1 |
+| Shout | 1d10-2 | 2d10+2 |
+| Starting a car | 1d10-1 | 2d10+4 |
+| Breaking a window | 1d10+1 | 3d10 |
+| Starting a Motorcycle | 1d10+2 | 3d10+2 | 
+| Gunfire | 2d10 | 4d10 |
 
 Once a noise loud enough to attract zombies is made, the zombies are on their way. 
 
-If the zombies will **arrive all at once**, they arrive in 2d6 minutes of real time. 
+If the zombies will **arrive all at once**, they arrive in 1d10+2 minutes of real time. 
 
-If the zombies will **arrive in waves**, then the first wave arrives in 1d8 minutes, each each subsequent wave arrives 1d8 minutes later.
+If the zombies will **arrive in waves**, then the first wave arrives in 1d10 minutes, each each subsequent wave arrives 1d10 minutes later.
 
 > **Designer's note:** If you are the game master, making these roles in secret can increase suspense. Set a timer on your phone out of sight of the players, and interrupt the action when the timer goes off.
 
@@ -74,7 +93,7 @@ When players make noise to attract zombies, they will naturally want to flee the
 Zombies will use doors and other obvious pathways to get to their destinations, so if the players attempt to escape by the most obvious means, they are more likely to run into zombies.
 
 ##### Table. Fleeing Zombies
-| 2d6 | Flee Result | Escape Tactic | Modifier |
+| 2d10 | Flee Result | Escape Tactic | Modifier |
 | :-: | :- | :- | :-: |
 | 1-7 | Escape | Take obvious path | +1
 | 8-9 | Spotted by Zombies | Zombies are less than 2m away | +1
@@ -98,12 +117,12 @@ Hordes can also be deterred, blocked, or delayed by environmental effects. For m
 ##### Table. Zombies destroyed by environmental feature
 | Environmental Feature | Weight | Zombies | 
 | :- | -: | -: |
-| Car | 1 T | 2d20 |
-| Truck | 5 T | 3d20 |
-| Semi-Truck | 20 T | 5d20 |
-| Subway Car | 40 T | 8d20 |
-| Small Building | +100 T | 15d20 | 
-| Lg. Building | +1,000 T | 25d20 | 
+| Car | 1 T | 1d10x4 |
+| Truck | 5 T | 1d10x6 |
+| Semi-Truck | 20 T | 1d10x10 |
+| Subway Car | 40 T | 1dx16 |
+| Small Building | +100 T | 1d10x30 | 
+| Lg. Building | +1,000 T | 1d10x50 | 
 
 
 **Shooting** at hordes is mostly ineffective because of the sheer number of zombies present. Some very high output, area fire weapons, like machine guns, can be useful against hordes of less than 50 zombies.
@@ -140,3 +159,11 @@ Poppers are bloated zombies, full of infectious fluid. They move slowly and awkw
 **Attack.** Poppers bite at the end of every hand-to-hand phase, like shamblers. 
 
 **Popping.** If a popper takes damage during any phase, it has a 1-in-2 chance of **popping**. If you are in immediate range of a popping popper, you must succeed at a **hard** athletics save or be subject to the effects of [a bite](#bite-outcome-table).
+
+
+### Mutants
+Most often, when a mutant becomes infected by the virus, they lose their powers. This was the intended purpose of the virus. Sometimes, however, the full effect doesn't take and a mutant will retain their powers in zombie form.
+
+Combining an insatiable thirst for flesh with super natural powers, mutant zombies are truly fearsome.
+
+Their base zombie type determines their stats, however, these are augmented by one or more super powers.
