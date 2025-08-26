@@ -4,7 +4,7 @@
 
 You will gather supplies, rescue survivors, and face off against villains, while staying one step ahead of the ever present zombie threat.
 
-Super Dead is designed to be rules-light and intuitive, encouraging quick, narrative-driven decision making, inspired by the [New School Revolution](https://boneboxchant.wordpress.com/2022/05/04/revisiting-the-nsr/) (See also: [What is the NSR?](https://www.congas.blog/what-is-the-nsr/)) in tabletop gaming as well as modern tactical war games.
+Super Dead is [designed around tactical combat, cinematic action, and suspense-building horror](./1_introduction.md#super-dead-design-principles) gaming, inspired by the [New School Revolution](https://boneboxchant.wordpress.com/2022/05/04/revisiting-the-nsr/) (See also: [What is the NSR?](https://www.congas.blog/what-is-the-nsr/)) in tabletop gaming as well as modern tactical war games.
 
 Everything you need to play can be found in this ruleset.
 
@@ -61,3 +61,17 @@ If you're an experienced TTRPG player, or you have already read the rules, the f
 2. Encountering [a **horde** of twenty of more zombies](6_zombies.md#zombie-hordes) is stressful and dangerous.
 2. Though hordes may be defeated through combat, your best is to run away or use environmental features.
 2. Anyone who finds themselves in immediate range of a zombie horde is devoured.
+
+
+----
+
+## Super Dead Design Principles
+
+1. Tactical Combat
+Combat in Super Dead is not a combat of attrition. For the most part, combats will be fast and fatal. Even as a super, one well placed bullet can take you from on top of the world, to scratching in the dirt. And that's just humans. Your best bet? Stay out of the fray, unless you know you can end it quickly. Use the environment and always engage on your own terms.
+
+2. Cinematic Action
+You're not some run of the mill schmuck: you're a super-powered mutant. You can do impressive things. And we don't want "the rules" to limit what you can do with your super strength, or your super speed, or your energy fields. Just know that everything you do will have a cost...
+
+3. Suspense and Horror
+Death lurks around every corner in the zombie apocalypse, no matter who you are. One bite from a zombie is likely to kill you. And while your powers can keep you safe for the most part, as you build up stress, they're less and less consistent.
