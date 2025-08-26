@@ -16,23 +16,6 @@ A plot-point campaign creates that same structure. The plot points are those fiv
 
 When done well, plot-point campaigns offer a satisfying blend of exploration and narrative climax that mixes the best parts of linear and sandbox-style games.
 
-### Example Plot-Point Campaign  
-
-To get a better feel for a plot-point campaign, let's look at an example of a plot-point campaign set in Skunk City.
-
-**Campaign Overview.** The heroes have an on/off collaboration with a pair of anti-heroes Corn Maize and Dust Bowl. Corn Maize goes missing and Dust Bowl solicits the players for help. (P1) The players seek out Corn Maize at a warehouse where the Samurai Brothers were operating. It has been entirely overrun by corn, but the players can't find anything but corn and ninja-weapon wielding zombies. (P2) Following rumors of an overgrown building in f
-
-Background:
-
-PP1. Dust Bowl reports that Corn Maize is missing and solicits the players help to find her. 
-PP2. Players and Dust Bowl track Corn Maize to a warehouse where the Samurai Brothers are operating. The warehouse is entirely overrun by sword-wielding zombies.
-PP3. 
-PP4.
-PP5. Mind controlled Corn Maize and Ear Wurm
-PP6. Discover the way to stop the mind control
-PP7. Fight Corn Maize, stop the mind control, defeat Ear Wurm
-
-
 ### How do you run one
 
 One of the things that makes plot-point campaigns great is that they don't require a ton of prep, but they do require some. To prep a plot-point campaign you should start by asking yourself what type of session you are about to run: a plot-point session or a sandbox session.
