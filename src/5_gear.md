@@ -61,7 +61,7 @@ Keep track of the ammo that you use. When you have shot all the bullets in your 
 | Rifle, Civilian | 3d10-2 | Near | 5.56mm | Rare
 | Rifle, Hunting | 3d10-2 | Near | .375 caliber | Uncommon
 | Rifle, Sniper | 4d10 | Far | 7.62mm | Very Rare
-| Shotgun | 4d10-10* | Close | 12-gauge | Uncommon
+| Shotgun | 3d10-10* | Close | 12-gauge | Uncommon
 
 **Machine guns** and **Assault rifles** are capable of providing **suppressive fire**. Suppressive fire makes it **very hard** to take actions in the area under fire. Because **machine guns** are purpose made for suppressive fire, if you attempt to take an action while under suppressive fire from a machine gun it is **extremely hard**.
 
