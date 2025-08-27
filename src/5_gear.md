@@ -18,18 +18,18 @@ Hand-to-hand weapons aren't the best way to take on groups of zombies. But for o
 
 ##### Table. Hand-to-Hand Weapons
 
-| Weapon | Damage | Range | Rarity | 
+| Weapon | Damage (Avg.) | Range | Rarity | 
 | :- | :-: | :-: | :- |
-| Axe | 1d10+1 | - | Common
-| Baseball Bat | 1d10-1 | - | Common 
-| Chainsaw | 4d10 | - | Uncommon
-| Club | 1d10-1 | - | Common
-| Fists | 1d10-2 | - | -
-| Hatchet | 1d10-1 | - | Common |
-| Knife | 1d10 | - | Common |
-| Maul | 1d10+1 | - | Uncommon |
-| Sledge | 1d10+1 | - | Uncommon |
-| Sword | 1d10+3 | - | Rare |
+| Axe | 1d10+1 (7) | - | Common
+| Baseball Bat | 1d10-1 (5) | - | Common 
+| Chainsaw | 4d10 (22) | - | Uncommon
+| Club | 1d10-1 (6) | - | Common
+| Fists | 1d10-2 (4) | - | -
+| Hatchet | 1d10-1 (5) | - | Common |
+| Knife | 1d10 (6) | - | Common |
+| Maul | 1d10+1 (7)| - | Uncommon |
+| Sledge | 1d10+1 (7) | - | Uncommon |
+| Sword | 1d10+3 (9) | - | Rare |
 
 **Chainsaw.** Attacking with a chainsaw is **hard** because they are unwieldy. Because they are clumsy, chainsaws only deal damage during the second and third exchanges of a [hand-to-hand phase](4_combat.md#the-hand-to-hand-phase). Using a chainsaw is as [**loud as a motorcycle**](6_zombies.md#threat-and-noise).
 
@@ -53,19 +53,19 @@ The amount of ammunition that takes up a single slot in your inventory is determ
 Keep track of the ammo that you use. When you have shot all the bullets in your magazine, you may reload only if you have another.
 
 ##### Table. Firearms
-| Weapon | Damage | Range | Ammo | Rarity | 
+| Weapon | Damage (Avg.) | Range | Ammo | Rarity | 
 | :- | :-: | :- | :- | :- |
-| Handgun | 2d10-4 | Close | 9mm |  Uncommon  
-| Machine Gun | 4d10 | Far | 7.62mm | Very Rare
-| Rifle, Assault | 3d10 | Near | 5.56mm | Very Rare
-| Rifle, Civilian | 3d10-2 | Near | 5.56mm | Rare
-| Rifle, Hunting | 3d10-2 | Near | .375 caliber | Uncommon
-| Rifle, Sniper | 4d10 | Far | 7.62mm | Very Rare
-| Shotgun | 3d10-10* | Close | 12-gauge | Uncommon
+| Handgun | 2d10-4 (8) | Close | 9mm |  Uncommon  
+| Machine Gun | 4d10 (22) | Far | 7.62mm | Very Rare
+| Rifle, Assault | 3d10 (17) | Near | 5.56mm | Very Rare
+| Rifle, Civilian | 3d10-2 (15) | Near | 5.56mm | Rare
+| Rifle, Hunting | 3d10-2 (15)| Near | .375 caliber | Uncommon
+| Rifle, Sniper | 4d10 (22) | Far | 7.62mm | Very Rare
+| Shotgun | 3d10-10* (7 / 24*) | Close | 12-gauge | Uncommon
 
 **Machine guns** and **Assault rifles** are capable of providing **suppressive fire**. Suppressive fire makes it **very hard** to take actions in the area under fire. Because **machine guns** are purpose made for suppressive fire, if you attempt to take an action while under suppressive fire from a machine gun it is **extremely hard**.
 
-**Shotgun.** Attacking with a shotgun at immediate range is deadly; shotguns do double damage in immediate range.
+**Shotgun.** Attacking with a shotgun at immediate range is deadly; shotguns use double damage dice in immediate range.
 
 ## Armor
 Armor is hard to come by in the modern world, but against unarmed zombies, even makeshift protection can be the difference between life and death.
