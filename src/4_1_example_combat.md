@@ -20,7 +20,7 @@ Two heroes, Max "Mouse" McMillan and Emily "Electric Girl" Evans—played by Kyl
 
 **Sarah:** If Max is turning into a mouse, Emily will sneak between the buildings and get as close as she can while staying hidden, to try and see what she can see inside.
 
-> Okay. Max turns into a mouse and the two of you try to sneak closer to the library. Max finds it easy to hide in the lush garden, but unfortunately, the door is still in pretty good shape and you can't seem to find an easy way in. Sarah, give me an intelligence check to see how Emily does sneaking.
+> Okay. Max turns into a mouse and the two of you try to sneak closer to the library. Max finds it easy to hide in the lush garden, but unfortunately, the door is still in pretty good shape and you can't seem to find an easy way in. Sarah, give me an intelligence test to see how Emily does sneaking.
 
 **Sarah:** [Rolls a 3 on 1d10 versus her intelligence of 5] Success.
 
@@ -145,7 +145,7 @@ Two heroes, Max "Mouse" McMillan and Emily "Electric Girl" Evans—played by Kyl
 
 **Sarah:** Electric Girl will join the fray too — I'll use my lightning powers at close range.
 
-> Alright. The zombies won't attack until after all three hand-to-hand exchanges have passed, and there are four of them. Make three attacks each. Kyle, you must make a hard athletics check, so give me 3x 1d10 rolls to hit. Any hit that deals more than 2 damage will kill a zombie. Sarah, the electric damage isn't particularly potent against zombies, so you'll need to do 15 or more points of electric damage to a zombie to kill it.
+> Alright. The zombies won't attack until after all three hand-to-hand exchanges have passed, and there are four of them. Make three attacks each. Kyle, you must make a hard athletics test, so give me 3x 1d10 rolls to hit. Any hit that deals more than 2 damage will kill a zombie. Sarah, the electric damage isn't particularly potent against zombies, so you'll need to do 15 or more points of electric damage to a zombie to kill it.
 
 **Kyle:** [3d10: 1, 3, 7] My athletics is 5, so hard becomes 4. I got two successes. [2x 1d10-2: 6, 8] And for damage, I got a 5 and a 7. 
 
@@ -157,7 +157,7 @@ Two heroes, Max "Mouse" McMillan and Emily "Electric Girl" Evans—played by Kyl
 
 **Sarah:** Come on, 15! [3x2d10: 6+1, 5+3, 5+6] Oof. 7, 8, and 11 damage.
 
-> Electric Girl summons a tempest of elemental energy and zaps away at one of the zombies, burning its limbs into an immobilized crisp. She turns her attention to the last one standing, but isn't able to bring it down before it grabs at her. Make an athletics check to avoid the zombie's bite.
+> Electric Girl summons a tempest of elemental energy and zaps away at one of the zombies, burning its limbs into an immobilized crisp. She turns her attention to the last one standing, but isn't able to bring it down before it grabs at her. Make an athletics test to avoid the zombie's bite.
 
 **Sarah:** [1d10: 6] Ah! No! That's a six. Just barely over my athletics of five.
 
