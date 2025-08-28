@@ -90,6 +90,16 @@ Every character has a background. This background may allow you to have skills, 
 
 Backgrounds are not strictly professions, but rather broad areas of familiarity. You should specify your background as it applies to your character.
 
+## Flaws
+We are all flawed. And our flaws define us as much as our strengths.
+
+In stressful times, like a zombie apocalypse, these flaws are especially likely to rule our personality.
+
+Once per day, you may succumb to one of your flaws and relieve one point of stress.
+
+If you try to resist your flaws in a pivotal moment, your stress will increase. You may try to resist this by making a courage test. On a successful test, you tame your flaw — for the time being. On a failed test you incur two points of stress and succumb to your flaw.
+
+
 ## Improving Your Character
 As you strive to survive the end of days, certain activities such as killing zombies, rescuing survivors, gathering supplies, and defeating villains will gain you experience points.
 
