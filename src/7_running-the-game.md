@@ -11,6 +11,8 @@ There are a few unique things about running an explicit Super Hero game. First o
 
 In a Supers Game, we also need to be aware that we're not playing by "earth rules". We're playing by comic-book rules. You'll want to be careful how far you stretch this, because there is a natural tension between the heroism of comic book rules and the grittiness of the zombie apocalypse -- but it essential to lean into some degree of comic book eccentricity and camp to give the full comic book feel.
 
+> **NB: Survivability and Power.** In Super Dead, the player characters are super in terms of their abilities, but rifle rounds can change that in a hurry, and zombies are always deadly. Your players should NOT expect to have survivability on par with a "hit points"-style fantasy game.
+
 Third, your villains shouldn't go away that easily. Did your heroes soundly defeat the villain by pushing them into a pit of acid? Did they fling them out of a building? Flatten them with car? No matter. Villains come back. Your players will want their villains to come back. A recurring rogue's gallery of foes that they can build relationships with is part of the intrigue. 
 
 With that said, not all villains must be evil all the time. Feel free to team your villains up against the heroes. Or have a villain invite the heroes to team up against another, even stronger villain. 
