@@ -15,7 +15,7 @@ Reckless movement makes any other task **very hard** and makes attacks against y
 
 If you move into another character's line of sight, you are exposed to **opportunity fire**. If you take opportunity fire, regardless of whether or not you take damage, you must make a **courage save**. On a failed save, you must retreat and find cover.
 
-__Opportunity fire__ is a free ranged attack against a combatant who enters your line of sight. You may take one opportunity attack per target so long as you have ammunition (if necessary). Any target you hit with opportunity fire must immediately retreat to a safe position and make a courage check or be **pinned**.
+__Opportunity fire__ is a free ranged attack against a combatant who enters your line of sight. You may take one opportunity attack per target so long as you have ammunition (if necessary). Any target you hit with opportunity fire must immediately retreat to a safe position and make a courage test or be **pinned**.
 
 While you are __pinned__, ranged attacks against you by the enemy that pinned you are **very easy** and movement in the direction of the attackers requires a **very hard** courage test. You can only remove the pinned condition by retreating or if the attackers die or run out of ammo. 
 
@@ -42,7 +42,7 @@ After damage has been dealt, for each exchange, another exchange occurs until on
 Fighting in hand-to-hand combat when outnumbered is at least **hard**, but can be **very hard**, or **extremely hard** depending on the number and skill of your opponents.
 
 #### Fighting
-To hit in hand-to-hand combat with a handheld weapon--such as a bat, knife, axe, or even your fists--you must make a fighting check. On a successful fighting check, you deal damage to your opponent determined by the weapon you are using.
+To hit in hand-to-hand combat with a handheld weapon--such as a bat, knife, axe, or even your fists--you must make a fighting test. On a successful fighting test, you deal damage to your opponent determined by the weapon you are using.
 
 Because most characters will not be skilled in fighting, the default is a **hard** **athletics** save.
 
@@ -54,7 +54,7 @@ All successful ranged attackers roll damage, and damage is evaluated simultaneou
 The best way to avoid enemy fire is by hiding behind **cover**. Cover may make you **hard**, **very hard**, or **extremely hard** to hit, depending on the quality and degree of cover. If you are completely shielded by cover, you may not be targeted.
 
 #### Shooting
-To hit a target with a firearm, you must make a successful shooting check. On a successful shooting check, you deal damage to your opponent determined by the weapon you are using.
+To hit a target with a firearm, you must make a successful shooting test. On a successful shooting test, you deal damage to your opponent determined by the weapon you are using.
 
 Because most characters will not be skilled in shooting, the default is a **hard** **athletics** save.
 
@@ -83,13 +83,15 @@ When you deal damage, roll the damage dice associated with the weapon or power a
 
 When you take damage, for every five points of damage, you incur one wound. You may choose to absorb any number of wounds with armor, if you are able.
 
+> **Armor and Toughness Powers.**
+> Powers that derive most of their effect from replicating the effect of armor, like armor or toughness, can absorb one wound, per turn, per success.
+
 | Damage | Wounds |  Damage | Wounds |
 | :-: | :-: | :-: | :-: |
 | 1-5 | 1 | 21-25 | 5
 | 6-10 | 2 | 26-30 | 6
 | 11-15 | 3 | 31-35 | 7 
 | 16-20 | 4 | 36-40 | 8
-| 
 
 If you have taken no wounds, you are **healthy**. If you have taken one or two wounds you are **hurt**. If you have taken three wounds you are **wounded**. At four wounds, you are severly wounded. Upon five wounds, you suffer from **disfigurement** or **death**.
 
@@ -109,7 +111,7 @@ You naturally go from **hurt** back to **healthy** as soon as combat ends.
 
 If you are wounded, you will stay wounded until you receive medical attention. A successful **first aid** save will treat the wound, but leave you with its lingering effects for 28 hours. A failed **first aid** save will leave you with the lingering effects of the wound for 7 days.
 
-For a severe wound, you will suffering lingering effects of the wound for 7 days on a successful **first aid** check, and 28 days on a failed check.
+For a severe wound, you will suffering lingering effects of the wound for 7 days on a successful **first aid** test, and 28 days on a failed test.
 
 The game master will tell you how those lingering effects impact your character.
 
@@ -155,7 +157,7 @@ If you are **cracked**, subtract any dice below your stress level from the numbe
 
 When you are engaged in combat with another super, you may call for the **Super Phase** of combat to be added.
 
-During this phase, you may declare up to one other super-powered target. You and the super you targeted then make opposed power checks, using the power of your choice. The super who scores the fewest successes on their power roll, after adding bonuses, must reduce one of their powers by one.
+During this phase, you may declare up to one other super-powered target. You and the super you targeted then make opposed power tests, using the power of your choice. The super who scores the fewest successes on their power roll, after adding bonuses, must reduce one of their powers by one.
 
 If they have no more powers to reduce, they are knocked unconscious.
 
