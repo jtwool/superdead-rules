@@ -21,9 +21,9 @@ This work stands on the shoulders of giants. The following sources of media and 
 - [**Basic Action Super Heroes!**](https://www.bashrpg.com/index.htm) by Chris Rutkowsky
 - [**Black Hack**](https://the-black-hack.jehaisleprintemps.net/) by David Black
 - [**Cairn**](https://cairnrpg.com/) by Yochai Gal
+- [**DC Universe RPG**](https://en.wikipedia.org/wiki/DC_Universe_Roleplaying_Game) by Fred Jandt and Nikola Vrtis
 - [**Force on Force**](https://www.wargamevault.com/product/373295/Force-on-Force-1st-Edition) by Shawn Carpenter
 - **Marvel Superhero Roleplaying Game** by [Jeff Grubbs](https://grubbstreet.blogspot.com/)
 - [**Shadowdark**](https://www.thearcanelibrary.com/) by Kelsey Dionne
 - [**Skirmish Ragers**](https://haylandterrain.com/en-us/collections/skirmish-ragers) by Colin Phillips and Chris Pooch
-- [**Tiny Supers**](https://shop.gallantknightgames.com/products/tiny-supers) by Alan Bahr
 - [**Savage Worlds**](https://peginc.com/product/swade-super-powers-companion/) by Pinnacle Games
