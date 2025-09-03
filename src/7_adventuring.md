@@ -82,7 +82,7 @@ Having this in your back pocket, and using it to update the world between advent
 ## Point Crawls
 Point crawls are an adjacent and supplemental game-planning tool to plot-point campaigns. Where plot-point campaigns focus on supporting a satisfying story, point-crawls focus on supporting satisfying exploration. 
 
-The basics of a point crawl are as follows. The players begin at a point on a map. When they need to accomplish something in another place, they declare where they'd like to go. As the game master, you might check for random encounters as they travel. If there is a random encounter, you play it out. Then the players adventure at the new location.
+The basics of a point crawl are as follows. The players begin at a point on a map. When they need to accomplish something in another place, they declare where they'd like to go. As the game master, you might test for random encounters as they travel. If there is a random encounter, you play it out. Then the players adventure at the new location.
 
 By talking to NPCs or picking up clues by other means, the players will learn of even more locations, which they can then travel to, as necessary, to accomplish their goals.
 
