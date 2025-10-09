@@ -162,7 +162,7 @@
 <p>A bite does not <em>always</em> turn someone undead.</p>
 <p>If you are a bitten, the game master will make a bite roll in secret and narrate the effects to you.</p>
 <blockquote>
-<p><strong>Optional Rule: Player-facing zombie rolls.</strong> Because zombies are so deadly in Super Dead, you may wish to have your players make all the attack rolls for zombies and—if they are bitten—make the bite outcome roll as well. For players who are not used to high-lethality games, this can give them a sense of agency that makes their characters death easier to stomach.</p>
+<p><strong>Alternate Rule: Player-facing zombie rolls.</strong> Because zombies are so deadly in Super Dead, you may wish to have your players make all the attack rolls for zombies and—if they are bitten—make the bite outcome roll as well. For players who are not used to high-lethality games, this can give them a sense of agency that makes character death easier to stomach.</p>
 </blockquote>
 <h5 id="bite-outcome-table"><a class="header" href="#bite-outcome-table">Bite Outcome Table.</a></h5>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: center">1d10</th><th style="text-align: left">Outcome</th></tr></thead><tbody>
@@ -174,6 +174,9 @@
 </tbody></table>
 </div>
 <p>If you turn in minutes, hours or days, over the course of that time you will develop flu-like symptoms, that peak, break, and then disappear as your body gets cold and you become undead.</p>
+<blockquote>
+<p><strong>Alternate Rule: Player-facing bite outcomes.</strong> Another common variant is to have all players except the bitten player close their eyes when rolling for the bite outcome. This way the player can better roleplay their, sometimes quite lengthy, descent into undeath.</p>
+</blockquote>
 <h2 id="the-zomb-3"><a class="header" href="#the-zomb-3">The Zomb-3</a></h2>
 <p>Zombies are ravenous monsters that mindlessly hunt their prey. To a human, it looks like they follow a three-step process.</p>
 <ol>
@@ -185,8 +188,11 @@
 <p>Zombies are a predictable, but deadly foe -- you must not let yourself get complacent.</p>
 <p><strong>During the <a href="4_combat.html#the-movement-phase">movement phase</a>,</strong> zombies will attempt to move towards the nearest person they see, until they are in immediate range of at least one opponent.</p>
 <p>If zombies are in immediate range of one or more opponents, they will attempt to stay in immediate range.</p>
-<p><strong>During the <a href="4_combat.html#the-hand-to-hand-phase">hand-to-hand phase</a>,</strong> zombies will attack with their rigor-mortis hardened, claw-like fingers and their infectious bites. Because most zombies are shambling, uncoordinated creatures, their bite only occurs if the zombie is still standing at the <strong>end of the hand-to-hand phase</strong>.</p>
-<p>This means that most zombies killed during the hand-to-hand phase will not be able to infect you.</p>
+<p><strong>During the <a href="4_combat.html#the-hand-to-hand-phase">hand-to-hand phase</a>,</strong> zombies will attack with their rigor-mortis hardened, claw-like fingers and their infectious bites (1d10 damage). Because most zombies are shambling, uncoordinated creatures, their bite only occurs if the zombie is still standing at the <strong>end of the hand-to-hand phase</strong>.</p>
+<p>Most zombies killed during the hand-to-hand phase will not be able to infect you.</p>
+<blockquote>
+<p><strong>Designer's note:</strong> Every time a regular, shambler-type zombie manages to attack you in melee you have approximately a 1-in-3 chance of getting bitten, dying, and becoming a zombie. Whenever you are outnumbered by zombies, the situation is non-trivially fatal.</p>
+</blockquote>
 <h3 id="killing-zombies"><a class="header" href="#killing-zombies">Killing Zombies</a></h3>
 <p>Zombies weaknesses are well known. But taking advantage of those weaknesses is harder than it seems.</p>
 <p>The most successful means of killing a zombie are:</p>
@@ -265,13 +271,13 @@
 <p>Crickets get their name from the way they hop about on all fours. These zombies are fast and agile, in addition to being enraged.</p>
 <p><strong>Stats.</strong> 8 Ath., 2 Int.</p>
 <p><strong>Movement.</strong> Crickets always move at <a href="4_combat.html#the-movement-phase">reckless speed</a>.</p>
-<p><strong>Attack.</strong> Crickets bites happen at the end of each hand-to-hand <strong>exchange</strong>.</p>
+<p><strong>Attack.</strong> Crickets bites happen at the end of each hand-to-hand <strong>exchange</strong>, instead of once at the end of each hand-to-hand phase.</p>
 <h3 id="poppers"><a class="header" href="#poppers">Poppers</a></h3>
 <p>Poppers are bloated zombies, full of infectious fluid. They move slowly and awkwardly, with stiff joints struggling against taught, waterlogged flesh.</p>
 <p><strong>Stats.</strong> 3 Ath., 2 Int.</p>
 <p><strong>Movement.</strong> Poppers always move at <a href="4_combat.html#the-movement-phase">regular speed</a>.</p>
 <p><strong>Attack.</strong> Poppers bite at the end of every hand-to-hand phase, like shamblers.</p>
-<p><strong>Popping.</strong> If a popper takes damage during any phase, it has a 1-in-2 chance of <strong>popping</strong>. If you are in immediate range of a popping popper, you must succeed at a <strong>hard</strong> athletics save or be subject to the effects of <a href="#bite-outcome-table">a bite</a>.</p>
+<p><strong>Popping.</strong> If a popper takes damage during any phase, it has a 5-in-10 chance of <strong>popping</strong>. If you are in immediate range of a popping popper, you must succeed at a <strong>hard</strong> athletics save or be subject to the effects of <a href="#bite-outcome-table">a bite</a>.</p>
 <h3 id="mutants"><a class="header" href="#mutants">Mutants</a></h3>
 <p>Most often, when a mutant becomes infected by the virus, they lose their powers. This was the intended purpose of the virus. Sometimes, however, the full effect doesn't take and a mutant will retain their powers in zombie form.</p>
 <p>Combining an insatiable thirst for flesh with super natural powers, mutant zombies are truly fearsome.</p>
@@ -306,6 +312,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

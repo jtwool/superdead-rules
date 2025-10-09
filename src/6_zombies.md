@@ -8,7 +8,7 @@ A bite does not *always* turn someone undead.
 
 If you are a bitten, the game master will make a bite roll in secret and narrate the effects to you.
 
-> **Optional Rule: Player-facing zombie rolls.** Because zombies are so deadly in Super Dead, you may wish to have your players make all the attack rolls for zombies and—if they are bitten—make the bite outcome roll as well. For players who are not used to high-lethality games, this can give them a sense of agency that makes their characters death easier to stomach.
+> **Alternate Rule: Player-facing zombie rolls.** Because zombies are so deadly in Super Dead, you may wish to have your players make all the attack rolls for zombies and—if they are bitten—make the bite outcome roll as well. For players who are not used to high-lethality games, this can give them a sense of agency that makes character death easier to stomach.
 
 ##### Bite Outcome Table.
 | 1d10 | Outcome |
@@ -20,6 +20,8 @@ If you are a bitten, the game master will make a bite roll in secret and narrate
 | 9-10 | Safe |
 
 If you turn in minutes, hours or days, over the course of that time you will develop flu-like symptoms, that peak, break, and then disappear as your body gets cold and you become undead.
+
+> **Alternate Rule: Player-facing bite outcomes.** Another common variant is to have all players except the bitten player close their eyes when rolling for the bite outcome. This way the player can better roleplay their, sometimes quite lengthy, descent into undeath.
 
 ## The Zomb-3
 Zombies are ravenous monsters that mindlessly hunt their prey. To a human, it looks like they follow a three-step process.
@@ -35,9 +37,11 @@ Zombies are a predictable, but deadly foe -- you must not let yourself get compl
 
 If zombies are in immediate range of one or more opponents, they will attempt to stay in immediate range.
 
-**During the [hand-to-hand phase](4_combat.md#the-hand-to-hand-phase),** zombies will attack with their rigor-mortis hardened, claw-like fingers and their infectious bites. Because most zombies are shambling, uncoordinated creatures, their bite only occurs if the zombie is still standing at the **end of the hand-to-hand phase**.
+**During the [hand-to-hand phase](4_combat.md#the-hand-to-hand-phase),** zombies will attack with their rigor-mortis hardened, claw-like fingers and their infectious bites (1d10 damage). Because most zombies are shambling, uncoordinated creatures, their bite only occurs if the zombie is still standing at the **end of the hand-to-hand phase**.
 
-This means that most zombies killed during the hand-to-hand phase will not be able to infect you.
+Most zombies killed during the hand-to-hand phase will not be able to infect you.
+
+> **Designer's note:** Every time a regular, shambler-type zombie manages to attack you in melee you have approximately a 1-in-3 chance of getting bitten, dying, and becoming a zombie. Whenever you are outnumbered by zombies, the situation is non-trivially fatal.
 
 ### Killing Zombies
 
@@ -146,7 +150,7 @@ Crickets get their name from the way they hop about on all fours. These zombies 
 
 **Movement.** Crickets always move at [reckless speed](4_combat.md#the-movement-phase).
 
-**Attack.** Crickets bites happen at the end of each hand-to-hand **exchange**. 
+**Attack.** Crickets bites happen at the end of each hand-to-hand **exchange**, instead of once at the end of each hand-to-hand phase. 
 
 
 ### Poppers
@@ -158,7 +162,7 @@ Poppers are bloated zombies, full of infectious fluid. They move slowly and awkw
 
 **Attack.** Poppers bite at the end of every hand-to-hand phase, like shamblers. 
 
-**Popping.** If a popper takes damage during any phase, it has a 1-in-2 chance of **popping**. If you are in immediate range of a popping popper, you must succeed at a **hard** athletics save or be subject to the effects of [a bite](#bite-outcome-table).
+**Popping.** If a popper takes damage during any phase, it has a 5-in-10 chance of **popping**. If you are in immediate range of a popping popper, you must succeed at a **hard** athletics save or be subject to the effects of [a bite](#bite-outcome-table).
 
 
 ### Mutants
