@@ -23,7 +23,8 @@ Hand-to-hand weapons aren't the best way to take on groups of zombies. But for o
 | Axe | 1d10+1 (7) | - | Common
 | Baseball Bat | 1d10-1 (5) | - | Common 
 | Chainsaw | 4d10 (22) | - | Uncommon
-| Club | 1d10-1 (6) | - | Common
+| Crowbar | 1d10-1 (5) | - | Common
+| Club | 1d10-1 (5) | - | Common
 | Fists | 1d10-2 (4) | - | -
 | Hatchet | 1d10-1 (5) | - | Common |
 | Knife | 1d10 (6) | - | Common |
@@ -78,19 +79,19 @@ Each piece of armor has three properties:
 ##### Table. Armor
 | Kind | Armor | Type | Durability | Rarity
 | :- | :-: | :- | -: | :- |
-| Makeshift Armor | 1 | Hand-to-Hand | 1d4 | Common
-| Bulletproof Vest | 1 | Firearms | 1d6 | Very Rare
-| Rifle Plate | 2 | Firearms | 1d8  | Very Rare
-| Riot Gear | 2 | Hand-to-Hand | 1d8 | Very Rare
-| Ballistic Shield | 3 | Both | 1d10 | Very Rare
+| Makeshift Armor | 1 | Hand-to-Hand | 3 | Common
+| Bulletproof Vest | 1 | Firearms | 4 | Very Rare
+| Rifle Plate | 2 | Firearms | 5  | Very Rare
+| Riot Gear | 2 | Hand-to-Hand | 7 | Very Rare
+| Ballistic Shield | 3 | Both | 8 | Very Rare
 
 **Armor value** indicates the number of wounds that can be absorbed by the armor in a single combat round. Whenever you take damage, you may choose to use one or more points of armor to absorb that damage instead.
 
 **Armor type** indicates whether the armor protects against hand-to-hand weapons, firearms, or both. Armor is only useful against the type of damage indicated.
 
-**Durability** indicates the propensity for the armor to fail when it absorbs damage. Any time you absorb damage with your armor, roll your durability die. If your durability die shows a 1, your armor is broken and cannot be repaired.
+**Durability** indicates the propensity for the armor to fail when it absorbs damage. Any time you absorb damage with your armor, roll 1d10. If the number is less than the durability, the armor is damaged beyond repair.
 
-Anytime you absorb damage with your armor and still incur wounds, your armor is damaged beyond repair.
+Anytime you absorb damage with your armor and still suffer harm, your armor is damaged beyond repair.
 
 ## Equipment and Vehicles
 
@@ -111,14 +112,14 @@ Anytime you absorb damage with your armor and still incur wounds, your armor is 
 
 
 ## Anti-Mutant Weapons
-When the power of the mutants was understood, the Army Research Labratory developed anti-mutant weapons for both war and policing. Becasue of the unique dangers of the mutant threat, even small-town police forces were provided anti-mutant weapons by the federal government.
+When the power of the mutants was understood, the Army Research Laboratory, in conjunction with private contractors, developed anti-mutant weapons for both war and policing. Because of the unique dangers of the mutant threat, even small-town police forces were provided anti-mutant weapons by the federal government.
 
 These weapons work by delivering an M-shock: an electrical shock similar to a taser, that vibrates at a critical frequency capable of suppressing mutant powers.
 
 **Suppression.** In addition to their damage, anti-mutant weapons also reduce the power level of mutants a number of steps based on their suppression. These reductions are always applied to the highest-level power first. If any mutant power would be reduced below 1d4 in this way, the super is incapacitated.
 
 ##### Table. Anti-Mutant Wepaons
-| Weapon | Damage | Supression | Range |
+| Weapon | Damage | Suppression | Range |
 | :- | :-: | :-: | :- |
 Stun Baton	| 2d10 | 2 | Immediate
 Suppressor Net | - | 2 | Immediate
@@ -132,6 +133,6 @@ Suppressor Cannon | 3d10 | 6 | Far
 
 | Kind | Armor | Type | Durability | Rarity
 | :- | :-: | :- | -: | :- |
-| Absorbtion Vest | 1 | Mutant Powers | 1d6 | Very Rare
-| Anti-Mutant Gear | 3 | Hand-to-Hand, Mutant Powers | 1d8 | Very Rare
-| Power Shield | 4 | All | 1d12 | Very Rare
+| Absorbtion Vest | 1 | Mutant Powers | 5 | Very Rare
+| Anti-Mutant Gear | 3 | Hand-to-Hand, Mutant Powers | 7 | Very Rare
+| Power Shield | 4 | All | 9 | Very Rare

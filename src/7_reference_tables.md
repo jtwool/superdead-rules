@@ -39,3 +39,11 @@ Successes|Distance|Damage|Weight|Speed|
 | Starting a Motorcycle | 1d10+2 | 3d10+2 | 
 | Gunfire | 2d10 | 4d10 |
 
+##### Table. Armor
+| Kind | Armor | Type | Durability | Rarity
+| :- | :-: | :- | -: | :- |
+| Makeshift Armor | 1 | Hand-to-Hand | 3 | Common
+| Bulletproof Vest | 1 | Firearms | 4 | Very Rare
+| Rifle Plate | 2 | Firearms | 5  | Very Rare
+| Riot Gear | 2 | Hand-to-Hand | 7 | Very Rare
+| Ballistic Shield | 3 | Both | 8 | Very Rare
