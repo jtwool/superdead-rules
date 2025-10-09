@@ -93,7 +93,7 @@ When you take damage, for every five points of damage, you incur one wound. You 
 | 11-15 | 3 | 31-35 | 7 
 | 16-20 | 4 | 36-40 | 8
 
-If you have taken no wounds, you are **healthy**. If you have taken one or two wounds you are **hurt**. If you have taken three wounds you are **wounded**. At four wounds, you are severly wounded. Upon five wounds, you suffer from **disfigurement** or **death**.
+If you have taken no wounds, you are **healthy**. If you have taken one or two wounds you are **hurt**. If you have taken three wounds you are **wounded**. At four wounds, you are severely wounded. Upon five wounds, you suffer from **disfigurement** or **death**.
 
 | Wounds | Status | Recovery | Penalty |
 | - | - | - | - |

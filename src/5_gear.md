@@ -47,7 +47,7 @@ The amount of ammunition that takes up a single slot in your inventory is determ
 | 9mm | 10, 15, 20 | Uncommon
 | 5.56mm | 20, 30 | Very Rare
 | .375 | 3, 6 | Rare
-| 12-guade | 2, 4 | Uncommon
+| 12-gauge | 2, 4 | Uncommon
 | 7.62mm | 6, 100*, 200* | Very Rare
 **100 and 200 round magazines for 7.26mm require 2 item slots to carry.*
 
@@ -89,7 +89,7 @@ Each piece of armor has three properties:
 
 **Armor type** indicates whether the armor protects against hand-to-hand weapons, firearms, or both. Armor is only useful against the type of damage indicated.
 
-**Durability** indicates the propensity for the armor to fail when it absorbs damage. Any time you absorb damage with your armor, roll 1d10. If the number is less than the durability, the armor is damaged beyond repair.
+**Durability** indicates the propensity for the armor to fail when it absorbs damage. Any time you absorb damage with your armor, roll 1d10. If the number is less than the durability, the armor is damaged and the armor value is reduced by 1.
 
 Anytime you absorb damage with your armor and still suffer harm, your armor is damaged beyond repair.
 
