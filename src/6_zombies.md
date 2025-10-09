@@ -57,7 +57,7 @@ For an attack to kill a zombie, it must:
 
 Otherwise the attack rends at the zombie's flesh, but it keeps advancing on its prey.
 
-Head shots with firearms are **very hard**. Targeting the head in hand-to-hand is **hard**.
+Head shots with firearms are **very hard**. Targeting the head in hand-to-hand is **hard**. Head shots that miss have a 3-in-10 chance of hitting the body and dealing damage normally.
 
 ## Threat and Noise
 If a zombies is not actively devouring a victim, it is on the lookout for its next. Zombies feel neither fear nor exhaustion, and their hunger for flesh is never ending.
