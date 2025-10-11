@@ -42,8 +42,12 @@ How do your players respond to someone who is stealing from the community stockp
 
 These questions of morality are key to both superhero stories and zombie stories. Look for opportunities for your NPCs to act selfishly, and worthy punishment, and watch as your players decide how to respond.
 
-#### The costs of connection
 #### Resistance is futile
+One zombie is not that much of a threat for even a single super-powered mutant. But there isn't one zombie; there are billions. Zombies have taken over the earth. The players are one of but a few survivors, and resistance is futile.
+
+Remind the players of the ever-present zombie threat. Have zombies destroy things they build, kill people they come to care about and bond with, and infest the places they hold dear.
+
+Zombies are omnipresent and relentless hunters, with an insatiable taste for flesh. They should appear in calm, quiet moments and especially in loud, climactic moments. The clock is always running. Zombies are always coming. And they will catch the players if they let their guard down for even a second.
 
 ### Stages of Survival
 #### Survive and Evade
