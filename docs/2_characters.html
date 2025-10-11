@@ -235,12 +235,12 @@
 <p>Once per day, you may succumb to one of your flaws and relieve one point of stress.</p>
 <p>If you try to resist your flaws in a pivotal moment, your stress will increase. You may try to resist this by making a courage test. On a successful test, you tame your flaw — for the time being. On a failed test you incur two points of stress and succumb to your flaw.</p>
 <h2 id="improving-your-character"><a class="header" href="#improving-your-character">Improving Your Character</a></h2>
-<p>As you strive to survive the end of days, certain activities such as killing zombies, rescuing survivors, gathering supplies, and defeating villains will gain you experience points.</p>
+<p>As you strive to survive the end of days, certain activities such as killing zombies, rescuing survivors, gathering supplies, and foiling villains plans will gain you experience points.</p>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: left">Activity</th><th style="text-align: center">Min XP</th><th style="text-align: center">Max XP</th></tr></thead><tbody>
 <tr><td style="text-align: left">Killing zombies</td><td style="text-align: center">50</td><td style="text-align: center">200</td></tr>
 <tr><td style="text-align: left">Rescuing survivors</td><td style="text-align: center">100</td><td style="text-align: center">200</td></tr>
 <tr><td style="text-align: left">Gathering supplies</td><td style="text-align: center">50</td><td style="text-align: center">200</td></tr>
-<tr><td style="text-align: left">Defeating a villain</td><td style="text-align: center">200</td><td style="text-align: center">500</td></tr>
+<tr><td style="text-align: left">Foiling a villain</td><td style="text-align: center">200</td><td style="text-align: center">500</td></tr>
 <tr><td style="text-align: left">Progress towards a cure</td><td style="text-align: center">50</td><td style="text-align: center">500</td></tr>
 </tbody></table>
 </div>
@@ -278,6 +278,16 @@
 <tr><td style="text-align: center">16</td><td style="text-align: right">13500</td><td style="text-align: right">1500</td></tr>
 </tbody></table>
 </div>
+<h3 id="negative-experience"><a class="header" href="#negative-experience">Negative Experience</a></h3>
+<p>Experience is not only something you can acquire, it is also something you can lose, by abandon your fellow survivors or killing helpless or innocent survivors.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Activity</th><th style="text-align: center">XP Lost</th></tr></thead><tbody>
+<tr><td style="text-align: left">Abandon survivors</td><td style="text-align: center">-200</td></tr>
+<tr><td style="text-align: left">Kill helpless survivors</td><td style="text-align: center">-300</td></tr>
+<tr><td style="text-align: left">Kill innocent survivors</td><td style="text-align: center">-500</td></tr>
+</tbody></table>
+</div>
+<p>If your experience total is less than the cumulative amount necessary for your current level, the rank of all your powers is decreased by one.</p>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -307,22 +317,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

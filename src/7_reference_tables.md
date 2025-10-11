@@ -16,7 +16,7 @@ Successes|Distance|Damage|Weight|Speed|
 20|City|5d10 + 30|25 tons|170 mph|
 30|Nation|5d10 + 60|80 tons|200 mph|
 40|Continent|5d10 + 120|200 tons|500 mph|
-50|World| +250 | +1000 tons| +800 mph|
+50|World| 5d10 + 250 | +1000 tons| +800 mph|
 
 ##### Damage and Wounds Table
 | Damage | Wounds |  Damage | Wounds |

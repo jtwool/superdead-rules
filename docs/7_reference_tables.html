@@ -169,7 +169,7 @@
 <tr><td style="text-align: center">20</td><td style="text-align: left">City</td><td style="text-align: center">5d10 + 30</td><td style="text-align: right">25 tons</td><td style="text-align: right">170 mph</td></tr>
 <tr><td style="text-align: center">30</td><td style="text-align: left">Nation</td><td style="text-align: center">5d10 + 60</td><td style="text-align: right">80 tons</td><td style="text-align: right">200 mph</td></tr>
 <tr><td style="text-align: center">40</td><td style="text-align: left">Continent</td><td style="text-align: center">5d10 + 120</td><td style="text-align: right">200 tons</td><td style="text-align: right">500 mph</td></tr>
-<tr><td style="text-align: center">50</td><td style="text-align: left">World</td><td style="text-align: center">+250</td><td style="text-align: right">+1000 tons</td><td style="text-align: right">+800 mph</td></tr>
+<tr><td style="text-align: center">50</td><td style="text-align: left">World</td><td style="text-align: center">5d10 + 250</td><td style="text-align: right">+1000 tons</td><td style="text-align: right">+800 mph</td></tr>
 </tbody></table>
 </div>
 <h5 id="damage-and-wounds-table"><a class="header" href="#damage-and-wounds-table">Damage and Wounds Table</a></h5>
@@ -256,22 +256,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

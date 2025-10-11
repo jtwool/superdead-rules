@@ -1,8 +1,54 @@
+## Introduction
+This section is intended for game masters and those who would like advice on how to run a game or campaign of Super Dead.
 
-## General
+Running supers-meets-zombies comic horror is different in a number of notable ways from both classic dungeon-crawling medieval fantasy, gothic-punk supernatural storytelling, and  post-apocalyptic narrative gaming. The more you lean into what makes Super Dead unique, the more fun and rewarding you and your players will find the game.
+
 ### Tone and expectations
+The tone of a Super Dead game is more ominous than in traditional tabletop games. The player characters will be super-powered, but the omnipresence of zombies, any of which can kill them in a single bite, is nevertheless scary. Combined with the noise mechanics, players will be on their best behavior, even when there are no zombies to be found. Zombies are mindless, autonomic killers. Play them straight and play them deadly.
+
+On the flip side, your players' characters will have super powers. And with this comes two challenges: one of tone and one of power expression. With respect to tone, there is a natural conflict between the lightness created by the characters super powers and the darkness of the zombie apocalypse. Learn to love this contrast! The characters will breeze by any number of challenges because the world is not designed to keep them out. The world was designed for mortals. This is good. 
+
+At the same time, ground these powers in reality. Every time a character uses their super strength to rip off a door or break down a wall, they risk attracting zombies. Every time a character lights a room on fire with their flame control, they risk burning vital resources.
+
+You should encourage your players to use their powers to interact with the environment and explore their powers in creative ways. The attitude of players should be towards doing more with their powers, while appreciating their limits. Those limits are defined in the power scale table. Having super strength is great. But using that super strength in the context of the world is constrained.
+
+The player characters start as weak street-level heroes and ascend to powerful street-level heroes, but at every stage, they are highly vulnerable. The power scale chart starts at powerless and street-level characters that would fit in on the dark streets of the world's most popular bat-themed hero, and ascends to the universe-level powers of a certain super-strong, super-fast, laser-eye having, flying alien journalist.
+
+That all said, your players will ask you to do things with their powers that are outside of what they can reasonably achieve. If the chart clearly makes the task impossible (for example, lifting a 5 ton object when your super strength roll only lets you lift 1200lbs) you can simply narrate failure. If the resolution is ambiguous – for example, with respect to the application and breadth of a power – you should call for power surges or power stunts. This takes the conversation away from "can I do this?" permission-asking, to "I want to do this, what is it going to cost?". A 1 or 2 point power surge or stunt is common manuever to enable these extraordinary feats. Players will quickly understand the costs associated with these tasks and they will become part of the players reasoning about the limitations of their character.
+
 ### Modern Zombie Game with Supers
+Playing a tabletop roleplaying game is about immersing yourself in a character and a world, and watching as stories emerge in that world. What grounds the game is how well the mechanics simulate being in the scenarios the characters are in. This requires a common understanding of setting. A supers-meets-zombies game is easier in many ways to model, because it is relatively close to reality. The apocalypse is a near-modern setting, so we all have some familiarity with it. The physics are mostly the same.
+
+When it comes to physics, we all pretty much understand how the supers-meets-zombies world works: it works like ours works. However, when it comes to the narratives, we can have distinct ideas of what is meaningful in a supers-meets-zombies world. Here are some tropes you should strongly consider when running a supers-meets-zombies game.
+
+#### The humans were the bad guys all along
+One of the worst parts about a zombie apocalypse is seeing what becomes of your fellow man. How much do we give in to our animal instincts and authoritarian tendencies as stress rises and stakes become dire? Who has morality and who knows only the will to survive?
+
+Double crossing, back-stabbing, and two-faced underhanded behavior are common at the end of the world. Many people are just looking out for themselves. This is especially painful when it comes from NPCs your players have come to like, trust, or even love.
+
+Some humans are courageous. Others are vile. Include both in your game.
+
+#### Rogues gallery
+Heroes are nothing without their foils. The Bat is defined by the Clown; the Spider is defined by the Goblin. When coming up with villains, think about the flaws, weaknesses, and vulnerabilities of your players characters, and choose aspects that play into those traits. If one of the players is playing a high-school science nerd who carries around the guilt of his uncle's death, make the main villain a wealthy, genius scientist who is generous with his time and affirmations, but has a wicked alter ego set on murdering his rivals.
+
+A common trope of members of the Rogue's Gallery is that they come back. However, this often means they won't be fighting to the death. To frame this, it is important that heroes and villains don't hate one another, so much as they oppose one another. And in the zombie apocalypse, they do have one thing in common: a desire to stay alive in the face of the zombie hordes. Use this! 
+
+Your heroes do not always need to fight against your rogues. Have your heroes fight alongside the villains against zombies. Or against other villains. Or against human factions.
+
+#### Retribution versus Morality
+It is not only the NPCs that are faced with tough choices in life after societal collapse: the players should too. People are doing bad deeds all over the place. How do the players choose when to extract vengeance and when to forgive. Do the players hold to a moral code? Or are they base and selfish?
+
+How do your players respond to someone who is stealing from the community stockpile of food? What justice do they dispatch upon a survivor who kills another in anger? What about a survivor who gives away vital information to a villain? Or a fool who brings a horde of zombies to their doorstep and upends months of hard work?
+
+These questions of morality are key to both superhero stories and zombie stories. Look for opportunities for your NPCs to act selfishly, and worthy punishment, and watch as your players decide how to respond.
+
+#### The costs of connection
+#### Resistance is futile
+
 ### Stages of Survival
+#### Survive and Evade
+#### Secure and Establish
+#### Strive and Eliminate
 
 ## Session Play
 ### Opening Stressors
@@ -19,20 +65,15 @@
 
 # Running Zombie-Supers Pulp Horror
 
-This section is for the gamemasters: new, aspiring, experienced, or grizzled.
-
-If you've run a TTRPG before, running a zombie-supers pulp horror game like Super Dead is going to feel familiar -- but it's not the same as your typical dungeon-crawl.
-
-And the more you lean into what makes Super Dead different than other TTRPGs, the more unique of an experience you'll find it, and -- we hope -- the more fun you'll have.
 
 ### Running a Supers game
 There are a few unique things about running an explicit Super Hero game. First off, Everyone wants to feel powerful and do cool stuff. Now, that isn't necessarily too different than any other game -- who wants their character to be boring? But Super Hero games promise that the characters are going to be protagonists. They are going to be mixing it up and making things happen. As a game master, keep this in mind and work to find moments for each character to shine.
 
-In a Supers Game, we also need to be aware that we're not playing by "earth rules". We're playing by comic-book rules. You'll want to be careful how far you stretch this, because there is a natural tension between the heroism of comic book rules and the grittiness of the zombie apocalypse -- but it essential to lean into some degree of comic book eccentricity and camp to give the full comic book feel.
+In a Supers Game, we also need to be aware that we're not playing by "earth rules". Even in a street-level supers game, we're playing by comic-book rules. You'll want to be careful how far you stretch this, because there is a natural tension between the heroism of comic book rules and the grittiness of the zombie apocalypse -- but it essential to lean into some degree of comic book eccentricity and camp to realize the full super hero feel.
 
-> **NB: Survivability and Power.** In Super Dead, the player characters are super in terms of their abilities, but rifle rounds can change that in a hurry, and zombies are always deadly. Your players should NOT expect to have survivability on par with a "hit points"-style fantasy game.
+> **NB: Survivability and Power.** In Super Dead, the player characters are super in terms of their abilities, but rifle rounds can change that in a hurry, and zombies are **deadly**. Your players should not expect to have survivability on par with a "hit points"-style fantasy game.
 
-Third, your villains shouldn't go away that easily. Did your heroes soundly defeat the villain by pushing them into a pit of acid? Did they fling them out of a building? Flatten them with car? No matter. Villains come back. Your players will want their villains to come back. A recurring rogue's gallery of foes that they can build relationships with is part of the intrigue. 
+Additionally, your villains shouldn't go away that easily. Did your heroes soundly defeat the villain by pushing them into a pit of acid? Did they fling them out of a building? Flatten them with car? No matter. Villains come back. Your players will want their villains to come back. A recurring rogue's gallery of foes that they can build relationships with is part of the intrigue. 
 
 With that said, not all villains must be evil all the time. Feel free to team your villains up against the heroes. Or have a villain invite the heroes to team up against another, even stronger villain. 
 

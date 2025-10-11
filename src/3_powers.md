@@ -24,7 +24,7 @@ Successes|Distance|Damage|Weight|Speed|
 20|City|5d10 + 30|25 tons|170 mph|
 30|Nation|5d10 + 60|80 tons|200 mph|
 40|Continent|5d10 + 120|200 tons|500 mph|
-50|World| +250 | +1000 tons| +800 mph|
+50|World| 5d10 + 250 | +1000 tons| +800 mph|
 
 In the power scale table, **weight** indicates the weight that can be lifted over head. The weight that can be thrown 50 feet is approximately 1/10th of the weight shown.
 
@@ -49,7 +49,7 @@ Powers reduced below +1 in this way cannot be used until you have recovered.
 If you incur more wounds than you can soak with a single power, you can use multiple powers to soak the damage. If damage is partially soaked, the remainder is incurred as wounds.
 
 ## Power Stunt
-Alternative, you can also use your powers to "stunt" other abilities. So long as it makes narrative sense, your game master may allow you to pay a stress to use your power to achieve effects normally associated with another.
+Alternative, you can also use your powers to "stunt" other abilities. So long as it makes narrative sense, your game master may allow you to pay one or two stress to use your power to achieve effects normally associated with another.
 
 After a power stunt has been performed, the next time you advance in level, you may elect to be able to perform this stunt without paying the stress cost. If you elect not to gain the stunt at that level, you must perform the stunt again in order to take it again.
 
