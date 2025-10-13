@@ -68,7 +68,7 @@ To hit in hand-to-hand combat with a handheld weapon--such as a bat, knife, axe,
 Because most characters will not be skilled in fighting, the default is a **hard** **athletics** save.
 
 ### The Shooting Phase 
-Once the movement and hand-to-hand phases have been resolved, combatants in the ranges close, near, and far may declare one target within range of their weapon and make a ranged attack. 
+Once the movement and hand-to-hand phases have been resolved, combatants in the ranges close, medium, and far may declare one target within range of their weapon and make a ranged attack. 
 
 All successful ranged attackers roll damage, and damage is evaluated simultaneously for all combatants.
 
@@ -83,13 +83,13 @@ Because most characters will not be skilled in shooting, the default is a **hard
 There are four ranges of engagement. From farthest to nearest, they are: 
 
 1. Far range
-2. Near range
+2. Medium range
 3. Close range, and
 4. Immediate range.
  
 **Far range** begins at 1,000 feet and requires the use of specialized weapons. 
 
-**Near range**, from 300 feet up to 1,000 feet, is the ideal range to engage with a rifle, but too far for many powers. 
+**Medium range**, from 300 feet up to 1,000 feet, is the ideal range to engage with a rifle, but too far for most powers. 
 
 **Close range**, from 30 to 300 feet is the most typical engagement distance, and is the effective range of both handguns and ranged powers. 
 
