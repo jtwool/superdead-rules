@@ -66,7 +66,11 @@ Keep track of the ammo that you use. When you have shot all the bullets in your 
 
 **Machine guns** and **Assault rifles** are capable of providing **suppressive fire**. Suppressive fire makes it **very hard** to take actions in the area under fire. Because **machine guns** are purpose made for suppressive fire, if you attempt to take an action while under suppressive fire from a machine gun it is **extremely hard**.
 
+**Rifle, Sniper.** Trained snipers can aim at a target, as an action. This makes their shot at that target **easy** next round. This action can be taken twice in a row, making the shot **very easy**.
+
 **Shotgun.** Attacking with a shotgun at immediate range is deadly; shotguns use double damage dice in immediate range.
+
+
 
 ## Armor
 Armor is hard to come by in the modern world, but against unarmed zombies, even makeshift protection can be the difference between life and death.
