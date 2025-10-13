@@ -75,6 +75,18 @@ Some example conflicts, all from published Super Dead adventures:
 
 As your game progresses, think about how the other characters respond to what the players have done or what challenges they might get into. Generate conflicts from these ideas. If you're stuck, consider the [flaws](./2_1_character_creation.md#4-flaws) and [stress relief](./2_1_character_creation.md#5-stress-relief) tables from character creation. These can give you ideas for how NPCs might make the players lives more complicated.
 
+Once you've come up with broad ideas for the initial conflicts, as yourself a serious of who, what, where, why questions. Dig two or three levels deep so you can get to the motivations, connections, and reactions of the characters you will be playing.
+
+> **Example**
+> Conflict: Several members of your group are addicted to a drug being sold by a local street gang
+> - Who is addicted?: Jane Redmond and Lonny Waits, former volunteer firefighters who are now romantically involved
+> - How did they get addicted?: Lonny has been depressed after losing his son, and sought drugs to numb the pain.
+> - What was his son's name?: Ethan, he was 14. Died of infection from a wound.
+> - Where did they get the drugs?: The 8th Street Samurai.
+> - Who are the 8th Street Samurai?: A gang run by two brothers, Kai and Roger Hashimoto.
+> - What do the 8th Street Samurai want?: Kai and Roger are cosplaying as samurai. They view selling drugs as a means of acquiring wealth and status. They make their followers follow a moral code based-on bastardized (mis)understanding of bushido, that binds them in service to their masters: Kai and Roger.
+> - Where are the 8th Street Samurai?: They have a number of hideouts around town including a drug lab in an old office building, and a brewery hideout.
+
 ### Opening Stressors
 An opening stressor is stakes for the session. If the heroes do not satisfy this condition, they will incur a significant stress penalty, typically between 2 and 5 stress.
 
@@ -102,9 +114,46 @@ Use this table as a means of generating ideas for opening stressors.
 
 > **Note on Romance:** Romance is a classic motif of both super hero comics and zombie stories. Finding love in the midst of disaster; finding someone who sees you for you, and not just your powers – these are powerful themes to explore. That said, if you are going to bring them to the table, be sure that these concepts are part of what your players wanted to explore. Some tables will love this. Others just want to use their powers to topple abandoned buildings onto a horde of zombies.
 
-### Point Crawl
-### Factions and Zones
-### Random Tables
+### Open Point Crawl
+Once you have kicked off the game, reminding or informing players about the various ongoing challenges, and describing the opening stressor, it is up to the players to take action. It is the players' job to inhabit the minds of their characters, make decisions, and attempt to resolve situations in a way that makes things better for them. Because if they do nothing, things will get worse.
+
+When you prep your sessions, or write adventures, for a zombie apocalypse game, it is useful to think of the session as an "open point crawl". That is, there are a number of locations that you can pre-plan – but you will also need to be able to improvise locations on the fly.
+
+For example, if you have set the players up to search for medicine, you might consider a few places they could find that medicine and prepare those places, e.g., a pharmacy, a hospital, a nursing home. Then you might consider clues / hints that could point people to those locations: flyers, billboards, NPC knowledge / conversation, randomly passing them on the street.
+
+Of course, your players will not only send their characters to places you prepare. If you are running a good game, and your players are playing creatively and thinking for themselves, they will go places that you cannot have prepared. For this, you should rely on a combination of setting knowledge and random tables.
+
+First of all, you know the setting. You know the city, town, or neighborhood that the characters are in. Use this information. Make the the world real, as you understand it. Use your knowledge of our real world to make the imaginary world feel real too. Everywhere has been ravaged by the zombie apocalypse. What has transpired in this place since then? Has it been abandoned? Is it overrun by zombies? Are there just a few lingering in opportune hideouts? Are there survivors left? How many? What are they up to?
+
+Second, you can use random tables to help you generate content on the fly. In general, there are two types of random tables you will use: 
+
+1. Generic random tables, that give you inspiration, but require you to improvise on the spot. A number of these can be found later in this chapter.
+   
+2. Specific random tables that provide you with a particular scenario that you have decided makes sense to introduce. You should create or update these before each session so that you can flavor your sessions.
+
+### Creating Random Tables
+
+A good random table allows you to take your game anywhere. To make one, make a list of ten or so events, encounters, or occurrences. Draw on your knowledge of the setting – what are various characters doing, how are they reacting, is it zombies – the characters recent actions – have they upset anyone recently? Who is out to get them? – and cool things that you want to incorporate into the game. 
+
+Then, assign probabilities to each. As a starting point, set lesser or common occurrences to 15-20%, uncommon or medium-sized encounters as 7-10%, and rare, particularly dangerous, or zany encounters at 2-5%. Then, fudge the numbers so they stretch from 1-100. Voila, you have a d% random encounter table specific to your setting.
+
+To continue our example, we might use the following random encounter table.
+
+| d% | Encounter |
+| :-: | :- | 
+| 1-21 | Nurse fleeing zombies
+| 22-37 | 8th Street Samurai henchmen 
+| 38-53 | Survivors high on drugs
+| 54-65 | Zombies in white doctors coats 
+| 66-75 | Family of survivors hiding, with child mutant
+| 76-85 | Surviving police trying to put an end to the 8th Street Samurai
+| 85-90 | Two dozen zombies close in on some 8th street Samurai
+| 91-96 | A chemical explosion at a Samurai drug lab; loud noise!
+| 97-98 | The mutant Mister Madness is tormenting survivors
+| 99-00 | Kai, Roger, and a dozen samurai henchmen
+
+
+
 
 ## Campaign Play
 ### Plot points
