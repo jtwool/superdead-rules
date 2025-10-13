@@ -1,4 +1,4 @@
-## Introduction
+## The Super Dead Setting
 This section is intended for game masters and those who would like advice on how to run a game or campaign of Super Dead.
 
 Running supers-meets-zombies comic horror is different in a number of notable ways from both classic dungeon-crawling medieval fantasy, gothic-punk supernatural storytelling, and  post-apocalyptic narrative gaming. The more you lean into what makes Super Dead unique, the more fun and rewarding you and your players will find the game.
@@ -50,12 +50,58 @@ Remind the players of the ever-present zombie threat. Have zombies destroy thing
 Zombies are omnipresent and relentless hunters, with an insatiable taste for flesh. They should appear in calm, quiet moments and especially in loud, climactic moments. The clock is always running. Zombies are always coming. And they will catch the players if they let their guard down for even a second.
 
 ### Stages of Survival
-#### Survive and Evade
-#### Secure and Establish
-#### Strive and Eliminate
+When running a game in the zombie apocalypse, it is helpful to consider the stage of survival that the characters are in, because these stages will have implications for what the characters need, want, and seek. 
+
+The worst-to-do survivors are in the ***survive and evade*** stage. In this stage, characters must focus on their basic needs. Top of mind at this stage is simply not being eaten by zombies. Scavenging for basic needs is a formidable and daily task, and other survivors represent a significant threat. Characters can exit this stage by finding and establishing a defensible location.
+
+Once characters have a location that can be fortified for defense against other survivors, and is discreet enough not to draw unnecessary zombie attention, the characters enter the ***secure and establish*** stage. In this stage, the characters have the luxury of focusing on tasks that make their lives better over the course of days and even weeks. Tasks like securing and fortifying their base of operations, establishing dependable ways to get food and medicine, stock piling ammunition, and even simple training in firearms and combat.
+
+If the characters are successful at establishing a safe, defensible area, and keeping this location for an extended period of time - months to a year - they can reasonably have moved into the ***strive and eliminate*** stage. In this stage, some characters can focus on non-survival tasks. People can begin to entertain themselves with art, culture, and sports. The survivors may begin to educate any children among the group. And, if they are feeling especially daring, they may plan and execute offensive maneuvers against the zombie scourge, in an attempt to bring the fight away from their sanctuary.
+
+## Playing the Game
+
+There are three broad ways to play Super Dead: you can run a single-session, one-shot game, never to be continued; you can run a fixed-length campaign for a predetermined number of games (4 to 12) revolving around an urgent conflict; or you can run an open-ended campaign, where you decide to play for as long as you are still having fun. At this level, there are two organizing units of play you need to concern yourself with when running the game: the session and the campaign.
 
 ## Session Play
+Each session of Super Dead begins with initial conflicts and a motivating stressor. These propel characters into action. Initial conflicts are either problems that have arisen from the actions of gamemaster controlled characters, or complications from actions by the player characters. These are essential for giving continuity and credibility to the world. Motivating stressors are degradations in the state of the basic needs of the players that, if not addressed, will result in stress penalties.
+
+### Initial Conflicts
+Creating compelling initial conflicts should be the foremost focus of your prep as a gamemaster for a game of Super Dead. Great conflicts will drive players to action, evoke the setting, and, where possible, connect the players deeper to the world through their relationships with other characters.
+
+Some example conflicts, all from published Super Dead adventures:
+- [A member of your group is sick and you need to find medicine](https://superdeadgames.com/skunk-city.html)
+- [Several members of your group have developed addictions to a drug being sold by a local street gang](https://superdeadgames.com/corn-maize.html)
+- [A member of your group went to investigate some suspicious activity and now they're gone](https://superdeadgames.com/mayhem.html)
+
+As your game progresses, think about how the other characters respond to what the players have done or what challenges they might get into. Generate conflicts from these ideas. If you're stuck, consider the [flaws](./2_1_character_creation.md#4-flaws) and [stress relief](./2_1_character_creation.md#5-stress-relief) tables from character creation. These can give you ideas for how NPCs might make the players lives more complicated.
+
 ### Opening Stressors
+An opening stressor is stakes for the session. If the heroes do not satisfy this condition, they will incur a significant stress penalty, typically between 2 and 5 stress.
+
+Opening stressors can be related to or entirely independent from the initial conflicts. When your initial conflict(s) are distinct from the opening stressor, you will likely want to decrease the penalty for failing to meet the stressor. When your initial conflict and your stressor are the same, make the penalty higher.
+
+For example, if your initial conflict is:
+> [A member of your group is sick and you need to find medicine](https://superdeadgames.com/skunk-city.html)
+
+Then your opening stressor might be:
+> The player characters have developed a strong attachment to the sick party member, if they succumb to their illness, they will gain 5 stress
+
+In this case, the stressor and the conflict both reinforce one another. It also makes it clear what the stakes are for the players. Not only will their group member die, but their characters will suffer as well.
+
+When coming up with opening stressors, a useful guide is Maslow's hierarchy of needs.
+
+| 1d12 | Need | 1d12 | Need
+| :- | :- | :- | :- |
+| 1 | Food | 6 | Social Connection 
+| 2 | Water | 7 | Romance
+| 3 | Shelter | 8 | Clothing 
+| 4 | Sleep | 9 | Safety |
+| 5 | Health | 10 | Fun
+
+Use this table as a means of generating ideas for opening stressors.
+
+> **Note on Romance:** Romance is a classic motif of both super hero comics and zombie stories. Finding love in the midst of disaster; finding someone who sees you for you, and not just your powers – these are powerful themes to explore. That said, if you are going to bring them to the table, be sure that these concepts are part of what your players wanted to explore. Some tables will love this. Others just want to use their powers to topple abandoned buildings onto a horde of zombies.
+
 ### Point Crawl
 ### Factions and Zones
 ### Random Tables
@@ -66,7 +112,7 @@ Zombies are omnipresent and relentless hunters, with an insatiable taste for fle
 ### Putting it all together
 
 
-
+<!-- 
 # Running Zombie-Supers Pulp Horror
 
 
@@ -143,7 +189,7 @@ The opening moments of a gaming session are your time to set the stage for the h
 ### Location Map
 ### Player Characters
 ### NPCs
-### Encounter Tables
+### Encounter Tables -->
 
 <!-- ## Building Adventures 
 

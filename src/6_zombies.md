@@ -119,7 +119,7 @@ When a horde closes in on you, your distance to the horde is reduced by one rang
 Hordes can also be deterred, blocked, or delayed by environmental effects. For most supers, this will be their best approach to surviving a horde.
 
 ##### Table. Zombies destroyed by environmental feature
-| Environmental Feature | Weight | Zombies | 
+| Environmental Feature | Weight | Max Zombies Destroyed | 
 | :- | -: | -: |
 | Car | 1 T | 1d10x4 |
 | Truck | 5 T | 1d10x6 |

@@ -107,11 +107,10 @@ As you strive to survive the end of days, certain activities such as killing zom
 
 | Activity | Min XP | Max XP |
 | :- | :-: | :-: | 
-| Killing zombies | 50 | 200| 
+| Killing zombies | - | 25| 
 | Rescuing survivors | 100 | 200 |
 | Gathering supplies | 50 | 200 |
 | Foiling a villain | 200 | 500 |
-| Progress towards a cure | 50 | 500 |
 
 As you gain experience, you will **level up**. When you have enough XP to reach the next level, you can select one of the following improvements for your character:
 
