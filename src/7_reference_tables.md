@@ -31,9 +31,9 @@ Successes|Distance|Damage|Weight|Speed|
 | :- | :-: | :- | :- | :- |
 | Handgun | 2d10-4 (8) | Close | 9mm |  Uncommon  
 | Machine Gun | 4d10 (22) | Far | 7.62mm | Very Rare
-| Rifle, Assault | 3d10 (17) | Near | 5.56mm | Very Rare
-| Rifle, Civilian | 3d10-2 (15) | Near | 5.56mm | Rare
-| Rifle, Hunting | 3d10-2 (15)| Near | .375 caliber | Uncommon
+| Rifle, Assault | 3d10 (17) | Medium | 5.56mm | Very Rare
+| Rifle, Civilian | 3d10-2 (15) | Medium | 5.56mm | Rare
+| Rifle, Hunting | 3d10-2 (15)| Medium | .375 caliber | Uncommon
 | Rifle, Sniper | 4d10 (22) | Far | 7.62mm | Very Rare
 | Shotgun | 3d10-10* (7 / 24*) | Close | 12-gauge | Uncommon
 
