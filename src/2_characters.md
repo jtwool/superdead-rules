@@ -40,9 +40,11 @@ After avoiding zombies, the next most important thing you can do in the end of d
 
 As you adventure, you will suffer from the stresses of the end of the world. Each time you incur a point of stress, you must make a __courage save__. If you fail, you have __cracked__.
 
+> **Note:** Some common ways you will accumulate stress are by attempting to resist your flaws, by power surging, by ignoring your base needs. At the beginning of each session, your gamemaster will tell you which needs must be met and lay out the stress penalties for failing to satisfy them. Additionally, you may incur stress as a consequence for being embarrassed or ostracized as a result of social conflict.
+
 If you have more than four points of stress, you are __burdened__. At your game masters discretion——and especially during the most important moments——the burdens of your stress catch up to you, making tasks **hard**.
 
-When you crack, everything you do becomes **hard**. If you have cracked and you are **burdened**, everything you do is __very hard__; If you have cracked and you have more than eight points of stress, everything you do is __extremely hard__.
+When you crack, everything you do becomes **hard**. If you have cracked and you are **burdened**, everything you do is __very hard__; If you have cracked and you have more than eight points of stress, you are **severely burdened** everything you do is __extremely hard__.
 
 | Stress | Difficulty | Modifier |
 | :-: | :-: | :-: |
@@ -101,15 +103,14 @@ If you try to resist your flaws in a pivotal moment, your stress will increase. 
 
 
 ## Improving Your Character
-As you strive to survive the end of days, certain activities such as killing zombies, rescuing survivors, gathering supplies, and defeating villains will gain you experience points.
+As you strive to survive the end of days, certain activities such as killing zombies, rescuing survivors, gathering supplies, and foiling villains plans will gain you experience points.
 
 | Activity | Min XP | Max XP |
 | :- | :-: | :-: | 
-| Killing zombies | 50 | 200| 
+| Killing zombies | - | 25| 
 | Rescuing survivors | 100 | 200 |
 | Gathering supplies | 50 | 200 |
-| Defeating a villain | 200 | 500 |
-| Progress towards a cure | 50 | 500 |
+| Foiling a villain | 200 | 500 |
 
 As you gain experience, you will **level up**. When you have enough XP to reach the next level, you can select one of the following improvements for your character:
 
@@ -145,3 +146,16 @@ Once an improvement is selected, you may not select that same upgrade for either
 14|10500|1500
 15|12000|1500
 16|13500|1500
+
+
+### Negative Experience 
+
+Experience is not only something you can acquire, it is also something you can lose, by abandon your fellow survivors or killing helpless or innocent survivors.
+
+| Activity | XP Lost | 
+| :- | :-: |
+Abandon survivors | -200 |
+Kill helpless survivors | -300 |
+Kill innocent survivors | -500 |
+
+If your experience total is less than the cumulative amount necessary for your current level, the rank of all your powers is decreased by one.

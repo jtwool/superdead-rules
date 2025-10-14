@@ -3,13 +3,34 @@ You likely never thought you'd find yourself in a life or death fight. Unfortuna
 
 Whether you are fighting humans, mutants, or zombies, combat is now a fact of life.
 
-> **Designer's Note:** Combat in Super Dead is not modeled on standard tabletop roleplaying game systems that allows for heroes to make decisions on a second-by-second basis. Rather, Super Dead combat is inspired by modern tactical war games. We've chosen to do this because modern firearms and Super Powers, which are present in Super Dead, feel silly in the extended duel-like encounters of fantasy TTRPGs. Firearms and Super Powers are too deadly, from too far away -- and encourage a style of combat where engaging rarely, and on your own terms, is the best approach.
+> **Designer's Note:** Combat in Super Dead is not modeled on standard tabletop roleplaying game systems that allows for heroes to make decisions on a second-by-second basis. Rather, Super Dead combat is inspired by modern tactical war games. We've chosen to do this because modern firearms and super powers, which are present in Super Dead, feel silly in the extended duel-like encounters of fantasy TTRPGs. Firearms and super powers are too deadly, from too far away -- and encourage a style of combat where engaging rarely, and on your own terms, is the best approach.
+
 
 ## Phases of Combat
 Combat in Super Dead takes place in rounds of three phases: [the movement phase](#the-movement-phase), [the hand-to-hand phase](#the-hand-to-hand-phase), and [the shooting phase](#the-shooting-phase).
 
+Characters can do one thing per round. As the complexity of that thing increases, your actions become harder and actions against you become easier. All actions within a combat round occur effectively simultaneously. There is no complexity penalty for charging into hand-to-hand combat.
+
+Some example tasks are below.
+
+| Action | Difficulty | Phase | 
+| :- |:- | :- |
+| Move | Normal | Movement |
+| Fire | Normal | Shooting |
+| Use powers | Normal | Shooting
+| Suppressive Fire | Normal | Movement
+| Use object | Normal | Hand-to-Hand |
+| Fight hand-to-hand | Normal | Hand-to-Hand
+| Charge into hand-to-hand | Normal | Movement, Hand-to-Hand
+| Move and fire | Hard | Movement, Shooting
+| Move and use powers | Hard | Movement, Shooting
+| Move, fire, move | Very hard | Movement, Shooting
+| Move, use object, shoot | Very hard | Movement, Shooting
+
 ### The Movement Phase 
 During the movement phase, you declare your intent to move. You may move 30 feet with **standard movement** or up to 100 feet with **reckless movement**.
+
+If you would like to provide suppressive fire over an area, you must declare that during the movement phase.
 
 Reckless movement makes any other task **very hard** and makes attacks against you **easy**.
 
@@ -47,7 +68,7 @@ To hit in hand-to-hand combat with a handheld weapon--such as a bat, knife, axe,
 Because most characters will not be skilled in fighting, the default is a **hard** **athletics** save.
 
 ### The Shooting Phase 
-Once the movement and hand-to-hand phases have been resolved, combatants in the ranges close, near, and far may declare one target within range of their weapon and make a ranged attack. 
+Once the movement and hand-to-hand phases have been resolved, combatants in the ranges close, medium, and far may declare one target within range of their weapon and make a ranged attack. 
 
 All successful ranged attackers roll damage, and damage is evaluated simultaneously for all combatants.
 
@@ -62,13 +83,13 @@ Because most characters will not be skilled in shooting, the default is a **hard
 There are four ranges of engagement. From farthest to nearest, they are: 
 
 1. Far range
-2. Near range
+2. Medium range
 3. Close range, and
 4. Immediate range.
  
 **Far range** begins at 1,000 feet and requires the use of specialized weapons. 
 
-**Near range**, from 300 feet up to 1,000 feet, is the ideal range to engage with a rifle, but too far for many powers. 
+**Medium range**, from 300 feet up to 1,000 feet, is the ideal range to engage with a rifle, but too far for most powers. 
 
 **Close range**, from 30 to 300 feet is the most typical engagement distance, and is the effective range of both handguns and ranged powers. 
 
@@ -77,6 +98,7 @@ There are four ranges of engagement. From farthest to nearest, they are:
 Shooting beyond the range of your weapon is **very hard** or **extremely hard**.
 
 Zombies must get to immediate range to attack.
+
 
 ## Attacks, Damage, and Wounds
 When you deal damage, roll the damage dice associated with the weapon or power and count the total. Damage dice always explode. That is, you can reroll any dice that show their maximum value.
@@ -93,7 +115,7 @@ When you take damage, for every five points of damage, you incur one wound. You 
 | 11-15 | 3 | 31-35 | 7 
 | 16-20 | 4 | 36-40 | 8
 
-If you have taken no wounds, you are **healthy**. If you have taken one or two wounds you are **hurt**. If you have taken three wounds you are **wounded**. At four wounds, you are severly wounded. Upon five wounds, you suffer from **disfigurement** or **death**.
+If you have taken no wounds, you are **healthy**. If you have taken one or two wounds you are **hurt**. If you have taken three wounds you are **wounded**. At four wounds, you are severely wounded. Upon five wounds, you suffer from **disfigurement** or **death**.
 
 | Wounds | Status | Recovery | Penalty |
 | - | - | - | - |

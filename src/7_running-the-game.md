@@ -1,19 +1,178 @@
+## The Super Dead Setting
+This section is intended for game masters and those who would like advice on how to run a game or campaign of Super Dead.
+
+Running supers-meets-zombies comic horror is different in a number of notable ways from both classic dungeon-crawling medieval fantasy, gothic-punk supernatural storytelling, and  post-apocalyptic narrative gaming. The more you lean into what makes Super Dead unique, the more fun and rewarding you and your players will find the game.
+
+### Tone and expectations
+The tone of a Super Dead game is more ominous than in traditional tabletop games. The player characters will be super-powered, but the omnipresence of zombies, any of which can kill them in a single bite, is nevertheless scary. Combined with the noise mechanics, players will be on their best behavior, even when there are no zombies to be found. Zombies are mindless, autonomic killers. Play them straight and play them deadly.
+
+On the flip side, your players' characters will have super powers. And with this comes two challenges: one of tone and one of power expression. With respect to tone, there is a natural conflict between the lightness created by the characters super powers and the darkness of the zombie apocalypse. Learn to love this contrast! The characters will breeze by any number of challenges because the world is not designed to keep them out. The world was designed for mortals. This is good. 
+
+At the same time, ground these powers in reality. Every time a character uses their super strength to rip off a door or break down a wall, they risk attracting zombies. Every time a character lights a room on fire with their flame control, they risk burning vital resources.
+
+You should encourage your players to use their powers to interact with the environment and explore their powers in creative ways. The attitude of players should be towards doing more with their powers, while appreciating their limits. Those limits are defined in the power scale table. Having super strength is great. But using that super strength in the context of the world is constrained.
+
+The player characters start as weak street-level heroes and ascend to powerful street-level heroes, but at every stage, they are highly vulnerable. The power scale chart starts at powerless and street-level characters that would fit in on the dark streets of the world's most popular bat-themed hero, and ascends to the universe-level powers of a certain super-strong, super-fast, laser-eye having, flying alien journalist.
+
+That all said, your players will ask you to do things with their powers that are outside of what they can reasonably achieve. If the chart clearly makes the task impossible (for example, lifting a 5 ton object when your super strength roll only lets you lift 1200lbs) you can simply narrate failure. If the resolution is ambiguous – for example, with respect to the application and breadth of a power – you should call for power surges or power stunts. This takes the conversation away from "can I do this?" permission-asking, to "I want to do this, what is it going to cost?". A 1 or 2 point power surge or stunt is common manuever to enable these extraordinary feats. Players will quickly understand the costs associated with these tasks and they will become part of the players reasoning about the limitations of their character.
+
+### Modern Zombie Game with Supers
+Playing a tabletop roleplaying game is about immersing yourself in a character and a world, and watching as stories emerge in that world. What grounds the game is how well the mechanics simulate being in the scenarios the characters are in. This requires a common understanding of setting. A supers-meets-zombies game is easier in many ways to model, because it is relatively close to reality. The apocalypse is a near-modern setting, so we all have some familiarity with it. The physics are mostly the same.
+
+When it comes to physics, we all pretty much understand how the supers-meets-zombies world works: it works like ours works. However, when it comes to the narratives, we can have distinct ideas of what is meaningful in a supers-meets-zombies world. Here are some tropes you should strongly consider when running a supers-meets-zombies game.
+
+#### The humans were the bad guys all along
+One of the worst parts about a zombie apocalypse is seeing what becomes of your fellow man. How much do we give in to our animal instincts and authoritarian tendencies as stress rises and stakes become dire? Who has morality and who knows only the will to survive?
+
+Double crossing, back-stabbing, and two-faced underhanded behavior are common at the end of the world. Many people are just looking out for themselves. This is especially painful when it comes from NPCs your players have come to like, trust, or even love.
+
+Some humans are courageous. Others are vile. Include both in your game.
+
+#### Rogues gallery
+Heroes are nothing without their foils. The Bat is defined by the Clown; the Spider is defined by the Goblin. When coming up with villains, think about the flaws, weaknesses, and vulnerabilities of your players characters, and choose aspects that play into those traits. If one of the players is playing a high-school science nerd who carries around the guilt of his uncle's death, make the main villain a wealthy, genius scientist who is generous with his time and affirmations, but has a wicked alter ego set on murdering his rivals.
+
+A common trope of members of the Rogue's Gallery is that they come back. However, this often means they won't be fighting to the death. To frame this, it is important that heroes and villains don't hate one another, so much as they oppose one another. And in the zombie apocalypse, they do have one thing in common: a desire to stay alive in the face of the zombie hordes. Use this! 
+
+Your heroes do not always need to fight against your rogues. Have your heroes fight alongside the villains against zombies. Or against other villains. Or against human factions.
+
+#### Retribution versus Morality
+It is not only the NPCs that are faced with tough choices in life after societal collapse: the players should too. People are doing bad deeds all over the place. How do the players choose when to extract vengeance and when to forgive. Do the players hold to a moral code? Or are they base and selfish?
+
+How do your players respond to someone who is stealing from the community stockpile of food? What justice do they dispatch upon a survivor who kills another in anger? What about a survivor who gives away vital information to a villain? Or a fool who brings a horde of zombies to their doorstep and upends months of hard work?
+
+These questions of morality are key to both superhero stories and zombie stories. Look for opportunities for your NPCs to act selfishly, and worthy punishment, and watch as your players decide how to respond.
+
+#### Resistance is futile
+One zombie is not that much of a threat for even a single super-powered mutant. But there isn't one zombie; there are billions. Zombies have taken over the earth. The players are one of but a few survivors, and resistance is futile.
+
+Remind the players of the ever-present zombie threat. Have zombies destroy things they build, kill people they come to care about and bond with, and infest the places they hold dear.
+
+Zombies are omnipresent and relentless hunters, with an insatiable taste for flesh. They should appear in calm, quiet moments and especially in loud, climactic moments. The clock is always running. Zombies are always coming. And they will catch the players if they let their guard down for even a second.
+
+### Stages of Survival
+When running a game in the zombie apocalypse, it is helpful to consider the stage of survival that the characters are in, because these stages will have implications for what the characters need, want, and seek. 
+
+The worst-to-do survivors are in the ***survive and evade*** stage. In this stage, characters must focus on their basic needs. Top of mind at this stage is simply not being eaten by zombies. Scavenging for basic needs is a formidable and daily task, and other survivors represent a significant threat. Characters can exit this stage by finding and establishing a defensible location.
+
+Once characters have a location that can be fortified for defense against other survivors, and is discreet enough not to draw unnecessary zombie attention, the characters enter the ***secure and establish*** stage. In this stage, the characters have the luxury of focusing on tasks that make their lives better over the course of days and even weeks. Tasks like securing and fortifying their base of operations, establishing dependable ways to get food and medicine, stock piling ammunition, and even simple training in firearms and combat.
+
+If the characters are successful at establishing a safe, defensible area, and keeping this location for an extended period of time - months to a year - they can reasonably have moved into the ***strive and eliminate*** stage. In this stage, some characters can focus on non-survival tasks. People can begin to entertain themselves with art, culture, and sports. The survivors may begin to educate any children among the group. And, if they are feeling especially daring, they may plan and execute offensive maneuvers against the zombie scourge, in an attempt to bring the fight away from their sanctuary.
+
+## Playing the Game
+
+There are three broad ways to play Super Dead: you can run a single-session, one-shot game, never to be continued; you can run a fixed-length campaign for a predetermined number of games (4 to 12) revolving around an urgent conflict; or you can run an open-ended campaign, where you decide to play for as long as you are still having fun. At this level, there are two organizing units of play you need to concern yourself with when running the game: the session and the campaign.
+
+## Session Play
+Each session of Super Dead begins with initial conflicts and a motivating stressor. These propel characters into action. Initial conflicts are either problems that have arisen from the actions of gamemaster controlled characters, or complications from actions by the player characters. These are essential for giving continuity and credibility to the world. Motivating stressors are degradations in the state of the basic needs of the players that, if not addressed, will result in stress penalties.
+
+### Initial Conflicts
+Creating compelling initial conflicts should be the foremost focus of your prep as a gamemaster for a game of Super Dead. Great conflicts will drive players to action, evoke the setting, and, where possible, connect the players deeper to the world through their relationships with other characters.
+
+Some example conflicts, all from published Super Dead adventures:
+- [A member of your group is sick and you need to find medicine](https://superdeadgames.com/skunk-city.html)
+- [Several members of your group have developed addictions to a drug being sold by a local street gang](https://superdeadgames.com/corn-maize.html)
+- [A member of your group went to investigate some suspicious activity and now they're gone](https://superdeadgames.com/mayhem.html)
+
+As your game progresses, think about how the other characters respond to what the players have done or what challenges they might get into. Generate conflicts from these ideas. If you're stuck, consider the [flaws](./2_1_character_creation.md#4-flaws) and [stress relief](./2_1_character_creation.md#5-stress-relief) tables from character creation. These can give you ideas for how NPCs might make the players lives more complicated.
+
+Once you've come up with broad ideas for the initial conflicts, as yourself a serious of who, what, where, why questions. Dig two or three levels deep so you can get to the motivations, connections, and reactions of the characters you will be playing.
+
+> **Example**
+> Conflict: Several members of your group are addicted to a drug being sold by a local street gang
+> - Who is addicted?: Jane Redmond and Lonny Waits, former volunteer firefighters who are now romantically involved
+> - How did they get addicted?: Lonny has been depressed after losing his son, and sought drugs to numb the pain.
+> - What was his son's name?: Ethan, he was 14. Died of infection from a wound.
+> - Where did they get the drugs?: The 8th Street Samurai.
+> - Who are the 8th Street Samurai?: A gang run by two brothers, Kai and Roger Hashimoto.
+> - What do the 8th Street Samurai want?: Kai and Roger are cosplaying as samurai. They view selling drugs as a means of acquiring wealth and status. They make their followers follow a moral code based-on bastardized (mis)understanding of bushido, that binds them in service to their masters: Kai and Roger.
+> - Where are the 8th Street Samurai?: They have a number of hideouts around town including a drug lab in an old office building, and a brewery hideout.
+
+### Opening Stressors
+An opening stressor is stakes for the session. If the heroes do not satisfy this condition, they will incur a significant stress penalty, typically between 2 and 5 stress.
+
+Opening stressors can be related to or entirely independent from the initial conflicts. When your initial conflict(s) are distinct from the opening stressor, you will likely want to decrease the penalty for failing to meet the stressor. When your initial conflict and your stressor are the same, make the penalty higher.
+
+For example, if your initial conflict is:
+> [A member of your group is sick and you need to find medicine](https://superdeadgames.com/skunk-city.html)
+
+Then your opening stressor might be:
+> The player characters have developed a strong attachment to the sick party member, if they succumb to their illness, they will gain 5 stress
+
+In this case, the stressor and the conflict both reinforce one another. It also makes it clear what the stakes are for the players. Not only will their group member die, but their characters will suffer as well.
+
+When coming up with opening stressors, a useful guide is Maslow's hierarchy of needs.
+
+| 1d12 | Need | 1d12 | Need
+| :- | :- | :- | :- |
+| 1 | Food | 6 | Social Connection 
+| 2 | Water | 7 | Romance
+| 3 | Shelter | 8 | Clothing 
+| 4 | Sleep | 9 | Safety |
+| 5 | Health | 10 | Fun
+
+Use this table as a means of generating ideas for opening stressors.
+
+> **Note on Romance:** Romance is a classic motif of both super hero comics and zombie stories. Finding love in the midst of disaster; finding someone who sees you for you, and not just your powers – these are powerful themes to explore. That said, if you are going to bring them to the table, be sure that these concepts are part of what your players wanted to explore. Some tables will love this. Others just want to use their powers to topple abandoned buildings onto a horde of zombies.
+
+### Open Point Crawl
+Once you have kicked off the game, reminding or informing players about the various ongoing challenges, and describing the opening stressor, it is up to the players to take action. It is the players' job to inhabit the minds of their characters, make decisions, and attempt to resolve situations in a way that makes things better for them. Because if they do nothing, things will get worse.
+
+When you prep your sessions, or write adventures, for a zombie apocalypse game, it is useful to think of the session as an "open point crawl". That is, there are a number of locations that you can pre-plan – but you will also need to be able to improvise locations on the fly.
+
+For example, if you have set the players up to search for medicine, you might consider a few places they could find that medicine and prepare those places, e.g., a pharmacy, a hospital, a nursing home. Then you might consider clues / hints that could point people to those locations: flyers, billboards, NPC knowledge / conversation, randomly passing them on the street.
+
+Of course, your players will not only send their characters to places you prepare. If you are running a good game, and your players are playing creatively and thinking for themselves, they will go places that you cannot have prepared. For this, you should rely on a combination of setting knowledge and random tables.
+
+First of all, you know the setting. You know the city, town, or neighborhood that the characters are in. Use this information. Make the the world real, as you understand it. Use your knowledge of our real world to make the imaginary world feel real too. Everywhere has been ravaged by the zombie apocalypse. What has transpired in this place since then? Has it been abandoned? Is it overrun by zombies? Are there just a few lingering in opportune hideouts? Are there survivors left? How many? What are they up to?
+
+Second, you can use random tables to help you generate content on the fly. In general, there are two types of random tables you will use: 
+
+1. Generic random tables, that give you inspiration, but require you to improvise on the spot. A number of these can be found later in this chapter.
+   
+2. Specific random tables that provide you with a particular scenario that you have decided makes sense to introduce. You should create or update these before each session so that you can flavor your sessions.
+
+### Creating Random Tables
+
+A good random table allows you to take your game anywhere. To make one, make a list of ten or so events, encounters, or occurrences. Draw on your knowledge of the setting – what are various characters doing, how are they reacting, is it zombies – the characters recent actions – have they upset anyone recently? Who is out to get them? – and cool things that you want to incorporate into the game. 
+
+Then, assign probabilities to each. As a starting point, set lesser or common occurrences to 15-20%, uncommon or medium-sized encounters as 7-10%, and rare, particularly dangerous, or zany encounters at 2-5%. Then, fudge the numbers so they stretch from 1-100. Voila, you have a d% random encounter table specific to your setting.
+
+To continue our example, we might use the following random encounter table.
+
+| d% | Encounter |
+| :-: | :- | 
+| 1-21 | Nurse fleeing zombies
+| 22-37 | 8th Street Samurai henchmen 
+| 38-53 | Survivors high on drugs
+| 54-65 | Zombies in white doctors coats 
+| 66-75 | Family of survivors hiding, with child mutant
+| 76-85 | Surviving police trying to put an end to the 8th Street Samurai
+| 85-90 | Two dozen zombies close in on some 8th street Samurai
+| 91-96 | A chemical explosion at a Samurai drug lab; loud noise!
+| 97-98 | The mutant Mister Madness is tormenting survivors
+| 99-00 | Kai, Roger, and a dozen samurai henchmen
+
+
+
+
+## Campaign Play
+### Plot points
+### Sandbox session
+### Putting it all together
+
+
+<!-- 
 # Running Zombie-Supers Pulp Horror
 
-This section is for the gamemasters: new, aspiring, experienced, or grizzled.
-
-If you've run a TTRPG before, running a zombie-supers pulp horror game like Super Dead is going to feel familiar -- but it's not the same as your typical dungeon-crawl.
-
-And the more you lean into what makes Super Dead different than other TTRPGs, the more unique of an experience you'll find it, and -- we hope -- the more fun you'll have.
 
 ### Running a Supers game
 There are a few unique things about running an explicit Super Hero game. First off, Everyone wants to feel powerful and do cool stuff. Now, that isn't necessarily too different than any other game -- who wants their character to be boring? But Super Hero games promise that the characters are going to be protagonists. They are going to be mixing it up and making things happen. As a game master, keep this in mind and work to find moments for each character to shine.
 
-In a Supers Game, we also need to be aware that we're not playing by "earth rules". We're playing by comic-book rules. You'll want to be careful how far you stretch this, because there is a natural tension between the heroism of comic book rules and the grittiness of the zombie apocalypse -- but it essential to lean into some degree of comic book eccentricity and camp to give the full comic book feel.
+In a Supers Game, we also need to be aware that we're not playing by "earth rules". Even in a street-level supers game, we're playing by comic-book rules. You'll want to be careful how far you stretch this, because there is a natural tension between the heroism of comic book rules and the grittiness of the zombie apocalypse -- but it essential to lean into some degree of comic book eccentricity and camp to realize the full super hero feel.
 
-> **NB: Survivability and Power.** In Super Dead, the player characters are super in terms of their abilities, but rifle rounds can change that in a hurry, and zombies are always deadly. Your players should NOT expect to have survivability on par with a "hit points"-style fantasy game.
+> **NB: Survivability and Power.** In Super Dead, the player characters are super in terms of their abilities, but rifle rounds can change that in a hurry, and zombies are **deadly**. Your players should not expect to have survivability on par with a "hit points"-style fantasy game.
 
-Third, your villains shouldn't go away that easily. Did your heroes soundly defeat the villain by pushing them into a pit of acid? Did they fling them out of a building? Flatten them with car? No matter. Villains come back. Your players will want their villains to come back. A recurring rogue's gallery of foes that they can build relationships with is part of the intrigue. 
+Additionally, your villains shouldn't go away that easily. Did your heroes soundly defeat the villain by pushing them into a pit of acid? Did they fling them out of a building? Flatten them with car? No matter. Villains come back. Your players will want their villains to come back. A recurring rogue's gallery of foes that they can build relationships with is part of the intrigue. 
 
 With that said, not all villains must be evil all the time. Feel free to team your villains up against the heroes. Or have a villain invite the heroes to team up against another, even stronger villain. 
 
@@ -79,7 +238,7 @@ The opening moments of a gaming session are your time to set the stage for the h
 ### Location Map
 ### Player Characters
 ### NPCs
-### Encounter Tables
+### Encounter Tables -->
 
 <!-- ## Building Adventures 
 

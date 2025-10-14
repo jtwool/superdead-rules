@@ -8,10 +8,10 @@
   - [Example of Play](4_1_example_combat.md)
 - [Gear](./5_gear.md)
 - [Zombies](./6_zombies.md)
-- [Running the World](./7_running-the-game.md)
-  - [Reference Tables](./7_reference_tables.md)
-- [Campaign Pointers](./7_adventuring.md)
+<!-- - [Running the World](./7_running-the-game.md) -->
+<!-- - [Campaign Pointers](./7_adventuring.md) -->
 - [Organizations](./8_organizations.md)
-  - [Enemies and NPCs](./8_statblocks.md)
+- [Enemies and NPCs](./8_statblocks.md)
 - [Micro Settings](./9_settings.md)
 - [Inspiration](./10_inspiration.md)
+- [Reference Tables](./7_reference_tables.md)
