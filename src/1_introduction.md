@@ -27,7 +27,7 @@ If you're an experienced TTRPG player, or you have already read the rules, the f
 4. [**Powers**](3_powers.md) can be used to create supernatural effects; all power uses must be consistent with the narrative.
 5. You can [__power surge__](3_powers.md#power-surge) to create particularly powerful effects, at the cost of stress.
 6. You can [__power soak__](3_powers.md#power-soak) to reduce your power effectiveness, instead of taking a wound.
-7. You can [__power student__](3_powers.md#power-stunt) to use your powers in creative and impressive ways.
+7. You can [__power stunt__](3_powers.md#power-stunt) to use your powers in creative and impressive ways.
 
 **Combat**
 

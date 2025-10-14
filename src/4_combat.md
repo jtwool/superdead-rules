@@ -135,8 +135,6 @@ If you are wounded, you will stay wounded until you receive medical attention. A
 
 For a severe wound, you will suffering lingering effects of the wound for 7 days on a successful **first aid** test, and 28 days on a failed test.
 
-The game master will tell you how those lingering effects impact your character.
-
 A successful **medicine** save, assuming the appropriate medical equipment is available, will relieve you of all effects of the wound.
 
 | 1d10 | Wounds | 1d10 | Wounds |
@@ -146,6 +144,13 @@ A successful **medicine** save, assuming the appropriate medical equipment is av
 | 3 | Laceration | 8 | Minor Concussion | 
 | 4 |  Minor Burn | 9 | Compound Fracture |
 | 5 | Major Bruising | 10 | Severe Concussion |
+
+If you are would be both wounded and severely wounded during the combat, you can choose whether this is a single wound or two separate wounds. However, they must have two different timers and require two different sets of treatment.
+
+#### Lingering Effects of Wounds
+A wound is a specific type of injury – not a general malady. After the combat in which you incur the wound, you will no longer suffer the full wound penalty to all your actions. You will however, continue to suffer this penalty for any action where the wound would be implicated. And the wound will remain on your wound track until you have healed or been treated.
+
+While wounded, you recover hurt as normal after each combat.
 
 #### Disfigurement and Death
 
