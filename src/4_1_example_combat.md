@@ -38,9 +38,9 @@ Two heroes, Max "Mouse" McMillan and Emily "Electric Girl" Evans—played by Kyl
 
 **Sarah:** I'll take it.
 
-> Alright. Make a 3d10 power roll against each. If you succeed, they'll take damage and be pinned.
+> Alright. Make a 3d10 power roll against each. Targeting the second one is hard. If you succeed, they'll take damage and be pinned.
 
-**Sarah:** [3d10: 8, 9, 4; 3d10: 2, 3, 1] Two successes plus three, for a five on the first. And then zero successes on the other.
+**Sarah:** [3d10: 8, 9, 4; 3d10: 2, 6, 1] Two successes plus three, for a five on the first. And then zero successes on the other.
 
 > A strong flash of lightening jolts from your hand, striking one of the guards as he walks into the open. The other dives over the railing on the stairs and manages to duck out of the way. With five successes, that will be a 2d10 damage roll for the one you hit.
 

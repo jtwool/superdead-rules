@@ -22,10 +22,13 @@ Some example tasks are below.
 | Use object | Normal | Hand-to-Hand |
 | Fight hand-to-hand | Normal | Hand-to-Hand
 | Charge into hand-to-hand | Normal | Movement, Hand-to-Hand
-| Move and fire | Hard | Movement, Shooting
-| Move and use powers | Hard | Movement, Shooting
-| Move, fire, move | Very hard | Movement, Shooting
-| Move, use object, shoot | Very hard | Movement, Shooting
+| Move and fire | Normal, hard | Movement, Shooting
+| Move and use powers | Normal, hard | Movement, Shooting
+| Opportunity fire, fire | Normal, hard | Movement, Shooting
+| Move, fire, move | Normal, hard, very hard | Movement, Shooting
+| Move, use object, shoot | Normal, hard, very hard | Movement, Shooting
+
+Before each phase, the game master will provide a description about what you know any non-player characters in the scene to be doing, call for rolls, and then resolve all actions during that phase at once.
 
 ### The Movement Phase 
 During the movement phase, you declare your intent to move. You may move 30 feet with **standard movement** or up to 100 feet with **reckless movement**.
